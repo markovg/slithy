@@ -41,7 +41,7 @@ else
 # linux build
 LINK = 	$(CC) -shared
 FTCONFIG = freetype-config
-CFLAGS = -g -O2 \
+CFLAGS = -g -O2 -fPIC \
 	-I`$(PYTHON) -c "import distutils.sysconfig; print distutils.sysconfig.get_python_inc()"` \
 	-I/uns/include \
 	-I/usr/X11R6/include \

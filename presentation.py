@@ -8,6 +8,8 @@ import search
 import system, library, getopt, os
 import draw, dobj, objects
 
+import pygame
+
 
 #sys.excepthook = error.show_user_error
 
@@ -117,6 +119,18 @@ class PresentationViewer:
             self.s = SlSoggy.Soggy( root, width = screen_size[0], height = screen_size[1],
                                     init = dobj.init, reshape = self.reshape, redraw = self.redraw,
                                     **d )
+            soggy_xid = self.s.winfo_id()
+            # Force SDL to write on our drawing area
+            print 'SDL_WINDOWID ', str(soggy_xid)
+            #os.putenv('SDL_WINDOWID', str(soggy_xid))
+            os.environ['SDL_WINDOWID'] = str(soggy_xid)
+            print 'SDL_WINDOWID ', os.getenv('SDL_WINDOWID')
+
+            # pygame needed for movie support
+            pygame.init()
+            pygame.display.set_mode(screen_size, 0, 0)
+
+
         except (Tk.TclError, ValueError), msg:
             print msg
             sys.exit(1)
