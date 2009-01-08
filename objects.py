@@ -348,7 +348,11 @@ class Drawable(Element):
         dr = self._drawable
 
         params = system.get_object_params( dr )
-        params.append( ('_alpha', parameters.SCALAR, 1.0) )
+        #params_keys = [x[0] for x in params]
+        if _alpha in self._defaults.keys():
+            params.append( ('_alpha', parameters.SCALAR, self._defaults['_alpha']) )
+        else:
+            params.append( ('_alpha', parameters.SCALAR, 1.0) )
         Element.make_timelines( self, params )
 
     def finish_timelines( self ):
