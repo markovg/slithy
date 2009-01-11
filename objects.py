@@ -349,7 +349,7 @@ class Drawable(Element):
 
         params = system.get_object_params( dr )
         #params_keys = [x[0] for x in params]
-        if _alpha in self._defaults.keys():
+        if '_alpha' in self._defaults.keys():
             params.append( ('_alpha', parameters.SCALAR, self._defaults['_alpha']) )
         else:
             params.append( ('_alpha', parameters.SCALAR, 1.0) )
