@@ -1,7 +1,7 @@
 # per-machine configuration.
 # version configs -- for linux, this simplifies 
 # finding the include files and libraries
-TKVER=8.4
+TKVER=8.5
 # which of your pythons? (in case you have python2.3 or /usr/local)
 PYTHON=/usr/bin/python
 #MAC=1   # uncomment this line if you're on a mac.
