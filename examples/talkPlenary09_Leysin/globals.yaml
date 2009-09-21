@@ -1,0 +1,35 @@
+# Here I define the slithy libraries
+image_library:
+  # the library which is used if none is specified
+  path:
+    - ./images
+  default:
+    jens1: jens_slide1.png
+    jens2: jens_slide2.png
+    python-logo: python-logo.png
+    neo: neo2.png
+    neo-site: neo-site.png
+    pin-si: PIN_SI_01.png
+    visual-system: visual-system.png
+    visual-system-code: visual-system-code.png
+    fullin: fullin.png
+    montypython: montypython.png
+    thankyou: thankyou.png
+
+font_library:
+  path:
+    - ./fonts
+
+  default:
+
+    times: times.slf
+    ehrhardt: ehrhardt.slf
+    body: minion.slf
+    bodyi: minion_i.slf
+    title: myriad_b.slf
+    titlei: myriad_bi.slf
+    roman: myriad.slf
+    mono: courier_b.slf
+    dingbats: wingding.slf
+
+

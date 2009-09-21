@@ -1,0 +1,97 @@
+---
+bmark: FAD
+#objects:
+#  - !Image [
+content: |
+  bl = BulletedList( get_camera().inset(0.05),
+                     font = fonts['title'], color = yellow,
+                     bullet = [fonts['dingbats'], 'w'], size = 28, _alpha = 1.0 )
+
+  start( bg, bl)
+
+  bl.add_item( 0, 'FAD', 0.5 )
+  pause()
+  bl.add_item( 1, [white,'Stage-2 demonstrator'], 0.5 )
+  pause()
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+  bl.add_item( 0, 'FHAD', 0.1 )
+  bl.add_item( 1, [white,'Stage-2 demonstrator'], 0.1 )
+
+  pause()
+  bl.add_item( 0, 'FVAD', 0.5 )
+  bl.add_item( 1, [green,'FACETS Brain-on-Python'], 0.5 )
+  pause()
+
+  bl.add_item( 0, 'FSAD', 0.5 )
+  bl.add_item( 1, [yellow,'The Full Monty in Python ...'], 0.5 )
+  bl.add_item( 1, [orange,'and now for something completely different'], 0.5 )
+
+  pause()
+
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+
+  bl.add_item( 0, ['FAD'], 0.1 )
+  bl.add_item( 1, [yellow,'The Full Monty in Python ...'], 0.1 )
+  bl.add_item( 1, [orange,'and now for something completely different'], 0.1 )
+
+  pause()
+
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+
+  
+  bl.add_item( 0, ['FAD'], 0.1 )
+  bl.add_item( 1, [green,'FACETS Brain-on-Python'], 0.1 )
+  bl.add_item( 1, [yellow,'The Full Monty in Python ...'], 0.1 )
+  bl.add_item( 1, [orange,'and now for something completely different'], 0.1 )
+
+  pause()
+
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+
+  bl.remove_item(0.1)
+  bl.remove_item(0.1)
+
+  bl.add_item( 0, ['FAD'], 0.1 )
+  bl.add_item( 1, [red,'PyNN: ',white,'Stage-2 demonstrator'], 0.1 )
+  bl.add_item( 1, [green,'FACETS Brain-on-Python'], 0.1 )
+  bl.add_item( 1, [yellow,'The Full Monty in Python ...'], 0.1 )
+  bl.add_item( 1, [orange,'and now for something completely different'], 0.1 )
+
+  #pause()
+  #bl.add_item( 1, [red,"While we're at it:\nBreak the software complexity barrier ..."], 0.5 )
+
+
+---
+
+bmark: Arguements ...
+#objects:
+#  - !Image [
+content: |
+
+  cap = Text( get_camera().inset(0.25),color = blue, font = 'title', size = 30, _alpha = 0.0, justify = 0.5 )
+
+  start(bg,cap)
+  set(cap.text,'Arguments for ...')
+
+  fade_in(1.0,cap)
+
+  pause()
+
+  fade_out(1.0,cap)
+
+  #wait(10.0)
+
+
+
+

@@ -1,0 +1,23 @@
+---
+bmark: Thank You
+#objects:
+#  - !Image [
+content: |
+  
+  im = Image( get_camera(), 'thankyou',_alpha=0)
+  cap = Text( get_camera().inset(0.1),text='Great work\n Team!',color = yellow, font = 'title', size = 25, _alpha = 0.0, justify = 0.5, vjustify=0.5 )
+
+  start(bg,im,cap)
+
+  fade_in(1.0,im)
+
+  pause()
+
+  fade_in(1.0,cap)
+  #wave( cap._alpha, period = 2.0, min = 25.0, max = 40.0 )
+  linear(1.0,cap.size,55)
+  linear(1.0,cap.size,25)
+  linear(1.0,cap.size,55)
+
+  
+
