@@ -1,0 +1,596 @@
+from slithy.library import *
+from slithy.util import *
+import math
+from math import pi
+from fonts import fonts, images
+import morehint
+import common
+from macros import *
+
+
+inner_frame = Rect( 0.0, -1.3, width = 4, height = 4 )
+outer_frame = Rect( 0.0, -1.3, width = 4.5, height = 5.5 ).move_down( 0.5, abs = 1 )
+shadow_frame = outer_frame.move_down( 0.1, abs = 1 ).move_right( 0.1, abs = 1 )
+
+def draw_diagram_frame( alpha, pull, showlabel, second ):
+    push()
+    scale( 3 - alpha * 2, 0, -1.3 )
+    color( 0, 0.5 )
+    rectangle( shadow_frame )
+    color( 0.8 )
+    rectangle( outer_frame )
+    color( white )
+    rectangle( inner_frame )
+
+    knob( -1, -3.9, pull, 'pull', 1 )
+    
+    if second > 0.0:
+        knob( 1, -3.9, showlabel, 'weight', second )
+
+    pop()
+        
+
+
+knobcolor = Color( 0, 0.4, 0.7 )
+
+knobshape = Path()
+knobshape.moveto( 0.4, 0.0 ).lineto( 0.25 * math.cos( math.pi / 8 ), 0.25 * math.sin( math.pi / 8 ) )
+knobshape.arc( 0, 0, 22.5, -22.5, 0.25 ).closepath()
+
+
+def knob( x, y, a, label, alpha ):
+    push()
+    translate( x, y )
+    color( black, alpha )
+    push()
+    thickness( 0.03 )
+    for i in range(0,9):
+        line( 0.45, 0, 0.55, 0 )
+        rotate( 22.5 )
+    pop()
+    text( 0, -0.3, label, font = fonts['bold'], anchor = 'n', size = 0.3 )
+        
+    rotate( (1-a) * 180.0 )
+    color( knobcolor, alpha )
+    fill( knobshape )
+
+    color( black, alpha )
+    dot( 0.05 )
+    pop()
+
+cameras = (Rect( -0.3, -0.65, width = 4, height = 4 ).outset( 0.3 ),
+           Rect( 0.0, -1.3, width = 4, height = 4 ).outset( 0.3 ),
+           Rect( 0.0, -1.3, width = 4, height = 4 ).outset( 0.3 ).move_down( 0.5, abs = 1 ),
+           Rect( 0.0, -1.3, width = 4, height = 4 ),
+           )
+    
+def pulley_assembly( assemble = (SCALAR, 0, 1, 1),
+                     pull = (SCALAR, 0, 1),
+                     v1 = (SCALAR, 0, 1),
+                     v2 = (SCALAR, 0, 1),
+                     v3 = (SCALAR, 0, 1),
+                     v4 = (SCALAR, 0, 1),
+                     c = (SCALAR, 0, len(cameras)-1),
+                     show_frame = (SCALAR, 0, 1),
+                     weight = (SCALAR, 0, 1),
+                     second_knob = (SCALAR, 0, 1),
+                     ):
+    set_camera( interp_cameralist( c, cameras ) )
+
+    if show_frame > 0.0:
+        draw_diagram_frame( show_frame, pull, weight, second_knob )
+    else:
+        clear( white )
+
+
+    a1, a2, a3 = split_sequence( 3, assemble, 0.7 )
+    v31, v32, v33 = split_sequence( 3, v3, 0.4 )
+
+    color( 0.6 )
+    thickness( 0.035 + v32 * 0.08 )
+    push()
+    translate( 0.75 * a1, -0.8 * a1 )
+    rotate( -90 * a1 )
+    line( 0.5, 0, 0.5, -1-pull )
+    pop()
+
+    push()
+    thickness( 0.035 + v31 * 0.08 )
+    translate( 0.05 * a1, 0.05 * a1 )
+    line( 0.3, -1-pull, 0.7, -1-pull )
+    pop()
+    
+    push()
+    thickness( 0.035 + v33 * 0.08 )
+    translate( -1.25 * a1, -1.15 * a1 )
+    rotate( 90 * a1 )
+    line( -0.5, 0, -0.5, -2+pull )
+    pop()
+    
+    thickness( 0.05 )
+    push()
+    rotate( -pull / 0.5 * 180.0 / math.pi )
+    push()
+    translate( 0.5 * a2, 0 )
+    color( Color(0.9).interp(orange, 0.2) )
+    dot( 0.5 + 0.25 * v1, 0, 0 )
+    pop()
+    push()
+    translate( -0.75 * a2, -0.9 * a2 )
+    color( white )
+    dot( 0.1, 0, 0 )
+    pop()
+    color( black )
+    push()
+    translate( 0.5 * a2, 0 )
+    circle( 0.5 + 0.25 * v1, 0, 0 )
+    pop()
+    push()
+    translate( -0.75 * a2, -0.9 * a2 )
+    rotate( 225 * v4 )
+    scale( 1 + v4 * 3, 1 + v4 * 5 )
+    circle( 0.1, 0, 0 )
+    pop()
+
+    translate( -1.25 * a2, -1.25 * a2 )
+    scale( 1 + v4 * 3, 1 + v4 * 5 )
+    rotate( 225 * v4 )
+    polygon( 0, 0.45, 0.1, 0.15, -0.1, 0.15 )
+    pop()
+    
+#    if show_labels > 0.0:
+#        color( black, show_labels )
+#        msg = '%.1f°' % (pull / 0.5 * 180.0 / math.pi,)
+#        text( 1.6, 0, msg, font = fonts['roman'], anchor = 'e', size = 0.4 )
+
+    color( green.interp( blue, v2 ) )
+    push()
+    translate( -0.5 * a3, 2.5 * a3 )
+    translate( -0.5, -2+pull )
+    rectangle( -0.5, -1-weight*0.5, 0.5, 0 )
+#    if show_labels > 0.0:
+#        color( white, show_labels )
+#        text( 0, -0.5, '1 kg', font = fonts['roman'], size = 0.4, anchor = 'c' )
+    color( black.interp( red, v2 ) )
+    frame( -0.5, -1-weight*0.5, 0.5, 0 )
+    pop()
+    
+def assemble_pulley():
+    d = Drawable( get_camera(), pulley_assembly )
+    
+    start_animation( common.bg, d )
+
+    smooth( 0.5, d.v1, 1.0 )
+    pause()
+    smooth( 0.5, d.v2, 1.0 )
+    #pause()
+    smooth( 0.5, d.v3, 1.0 )
+    pause()
+    smooth( 0.5, d.v4, 1.0 )
+    pause()
+    parallel()
+    smooth( 0.5, d.v1, 0.0 )
+    smooth( 0.5, d.v2, 0.0 )
+    smooth( 0.5, d.v3, 0.0 )
+    smooth( 0.5, d.v4, 0.0 )
+    end()
+    pause()
+
+    set( d.second_knob, 1.0 )
+
+    parallel()
+    smooth( 1.0, d.assemble, 0.0 )
+    smooth( 1.0, d.c, 1.0 )
+    end()
+    parallel()
+    smooth( 1.0, d.c, 2.0 )
+    smooth( 1.0, d.show_frame, 1.0 )
+    end()
+    pause()
+
+    smooth( 2.0, d.pull, 1.0 )
+    smooth( 1.0, d.weight, 1.0 )
+    smooth( 1.0, d.pull, 0.5 )
+    
+    return end_animation()
+assemble_pulley = assemble_pulley()
+
+
+
+inner_aframe = Rect( 0.0, 0.0, width = 4, height = 3 )
+outer_aframe = Rect( 0.0, 0.0, width = 4.5, height = 4.5 ).move_down( 0.5, abs = 1 )
+shadow_aframe = outer_aframe.move_down( 0.1, abs = 1 ).move_right( 0.1, abs = 1 )
+
+def animation_frame( anim = (OBJECT),
+                     t = (SCALAR, 0, 1),
+                     c = (SCALAR, 0, 1),
+                     ):
+    set_camera( inner_aframe.interp( outer_aframe.outset( 0.1 ), c ) )
+
+    color( 0, 0.5 )
+    rectangle( shadow_aframe )
+    color( 0.8 )
+    rectangle( outer_aframe )
+    color( white )
+    rectangle( inner_aframe )
+
+    if anim:
+        embed_object( inner_aframe, anim, { 't' : t * anim.length } )
+
+    knob( 0, -2.15, t, 'time', 1.0 )
+
+
+def framed_animation( a ):
+    c = get_camera()
+    v = viewport.interp( c, c.right( 0.5 ).outset( 0.05 ).move_left( 0.05 ) )
+    d = Drawable( v, animation_frame, anim = a )
+    v2 = viewport.interp( get_camera().left( 0.5 ).outset( 0.035 ).move_left( 1.025 ),
+                          get_camera().left( 0.5 ).outset( 0.035 ).move_left( .025 ) )
+    d2 = Drawable( v2, pulley_assembly, second_knob = 1, assemble = 0,
+                   c = 2.0, show_frame = 1.0 )
+    start_animation( common.bg, d )
+
+    parallel()
+    linear( 15.0, d.t, 1.0 )
+
+    serial( 4.0 )
+    smooth( 3.0, d.c, 1.0 )
+
+    wait( 1.0 )
+
+    enter( d2 )
+    
+    parallel()
+    smooth( 1.0, v.x, 1.0 )
+    serial( 0.5 )
+    smooth( 1.0, v2.x, 1.0 )
+    end()
+    end()
+
+    end()
+    end()
+
+    pause()
+
+    smooth( 0.25, d2.pull, 1.0 )
+    wait( 0.5 )
+    smooth( 0.25, d2.pull, 0.3 )
+    wait( 1.0 )
+    smooth( 0.25, d.t, 0.3 )
+    wait( 0.5 )
+    smooth( 0.25, d.t, 0.8 )
+    
+    return end_animation()
+framed_animation = framed_animation( morehint.expand_and_compress_good[0].anim )
+
+
+weight = Path()
+weight.moveto( 3, 4.9 ).lineto(3,2).lineto(5,2).lineto(5,0).lineto(1,0)
+weight.lineto(1,2).lineto(3,2)
+
+triangle = Path()
+triangle.moveto( 0.3, 0.15 ).lineto(0.7,0).lineto(0.3,-0.15).closepath()
+
+def wheel( x, y, theta ):
+    push()
+    translate( x, y )
+    color( Color(0.9).interp(orange,0.2) )
+    dot( 1, 0,0 )
+    color( white )
+    circle( 0.1, 0,0 )
+    color( black )
+    thickness( 0.15 )
+    circle( 1, 0,0 )
+    thickness( 0.12 )
+    circle( 0.1, 0,0 )
+    rotate( theta )
+    #color( 0.8, 0.8, 0.8 )
+    spokes( 0.3, 0.7 )
+    fill( triangle )
+    pop()
+
+def spokes( r1, r2 ):
+    push()
+    thickness( 0.05 )
+    rotate( 80.0 )
+    for i in range(0,6):
+        line( r1,0, r2,0 )
+        rotate( 40.0 )
+    pop()
+    
+def pulley2( pull1 = (SCALAR, 0, 2.5),
+             pull2 = (SCALAR, 0, 1.5) ):
+    set_camera( Rect(-1.5778, -1.6838, 11.5176, 0, 0.6266) )
+    
+    thickness( 0.1 )
+    line( 0,15, 8,15 )
+
+    lift = pull1 + pull2
+    push()
+    translate( 0, lift )
+    color( green, 0.25 )
+    rectangle( 2,0, 6,2 )
+    color( black )
+    frame( 2, 0, 6, 2 )
+    color( green )
+    text( 4,1, '%04.2f' % (lift,), fonts['bold'], size = 1, anchor = 'c' )
+    pop()
+
+    color( 0, 0, 0.7 )
+    line( 4, 7+pull1, 4,2+lift )
+    line( 6, 7+pull1, 6,6+pull1-pull2, 5.5,5.5+pull1-pull2, 6.5,5.5+pull1-pull2, 6,6+pull1-pull2 )
+    text( 7.5,5.5+pull1-pull2, '%04.2f' % (pull2,), fonts['bold'], size = 1, anchor = 'w' )
+    
+    wheel( 5, 7+pull1, pull2 * -180.0 / pi )
+
+    color( 0.8, 0, 0 )
+    line( 5, 7.1 + pull1, 5,12 )
+    line( 3,12, 3,10-pull1, 2.5,9.5-pull1, 3.5,9.5-pull1, 3,10-pull1 )
+    text( 0,9.5-pull1, '%04.2f' % (pull1,), fonts['bold'], size = 1, anchor = 'w' )
+
+    wheel( 4, 12, pull1 * 180.0 / pi )
+
+    color( black )
+    line( 4, 12.1, 4, 15 )
+
+tall_inner_frame = Rect( 0.0, -1.3, width = 4, height = 6.38 )
+tall_outer_frame = Rect( 0.0, -1.3, width = 4.5, height = 6.38+1.5 ).move_down( 0.5, abs = 1 )
+tall_shadow_frame = tall_outer_frame.move_down( 0.1, abs = 1 ).move_right( 0.1, abs = 1 )
+
+def framed_pulley2( pull1 = (SCALAR, 0, 1),
+                    pull2 = (SCALAR, 0, 1),
+                    ):
+    set_camera( tall_outer_frame.outset( 0.1 ) )
+
+    color( 0, 0.5 )
+    rectangle( tall_shadow_frame )
+    color( 0.8 )
+    rectangle( tall_outer_frame )
+    color( white )
+    rectangle( tall_inner_frame )
+
+    embed_object( tall_inner_frame, pulley2, { 'pull1' : pull1 * 2.5, 'pull2' : pull2 * 1.5 } )
+
+    knob( -1, -5.1, pull1, 'pull1', 1.0 )
+    knob( 1, -5.1, pull2, 'pull2', 1.0 )
+    
+def pulley2_sample_animation():
+    d = Drawable( get_camera(), framed_pulley2 )
+
+    start_animation( common.bg, d )
+
+    parallel()
+    serial()
+    smooth( 1.0, d.pull1, 1.0 )
+    smooth( 1.0, d.pull1, 0.3 )
+    smooth( 1.0, d.pull1, 0.8 )
+    smooth( 1.0, d.pull1, 0.2 )
+    smooth( 1.0, d.pull1, 1.0 )
+    end()
+    serial(0.3)
+    smooth( 1.0, d.pull2, 1.0 )
+    smooth( 1.0, d.pull2, 0.3 )
+    smooth( 1.0, d.pull2, 0.8 )
+    smooth( 1.0, d.pull2, 0.2 )
+    smooth( 1.0, d.pull2, 1.0 )
+    end()
+    end()
+    
+    return end_animation()
+pulley2_sample_animation = pulley2_sample_animation()
+
+def pulley2_animation():
+    c = Rect( 0, 0, 4, 6.38 )
+    v = viewport.interp( c, c.move_right( 1 ).move_up( 1 ) )
+    d = Drawable( v, pulley_assembly, assemble = 0, c = 3 )
+    
+    start_animation( Fill(color=white), d ).view( c )
+
+    smooth( 1.0, d.weight, 1.0 )
+
+    linear( 0.5, d.pull, 0.4 )
+    linear( 0.5, d.pull, 0.2 )
+    linear( 0.5, d.pull, 0.6 )
+    linear( 0.5, d.pull, 0.4 )
+    linear( 0.5, d.pull, 0.8 )
+    linear( 0.5, d.pull, 0.6 )
+    linear( 0.5, d.pull, 1.0 )
+
+    wait( 1.0 )
+
+    smooth( 1.0, v.x, 1 )
+    
+
+    return end_animation()
+pulley2_animation = pulley2_animation()
+
+def tall_animation_frame( anim = (OBJECT),
+                          t = (SCALAR, 0, 1),
+                          inner_alpha = (SCALAR, 0, 1, 1),
+                          ):
+    set_camera( tall_outer_frame.outset( 0.1 ) )
+
+    color( 0, 0.5 )
+    rectangle( tall_shadow_frame )
+    color( 0.8 )
+    rectangle( tall_outer_frame )
+    color( white )
+    rectangle( tall_inner_frame )
+
+    if anim and inner_alpha > 0:
+        embed_object( tall_inner_frame, anim, { 't' : t * anim.length }, _alpha = inner_alpha )
+
+    knob( 0, -5.1, t, 'time', 1.0 )
+
+def framed_pulley2_animation():
+    vd2 = viewport.interp( get_camera(),
+                           get_camera().left(0.5),
+                           get_camera().right(0.75).left(0.666).outset( 0.1 ),
+                           get_camera().right(0.75).left(0.666).inset( 0.2 ) )
+    d2 = Drawable( vd2, pulley_assembly, second_knob = 1, assemble = 0,
+                   c = 2.0, show_frame = 1.0 )
+    vd = viewport.interp( get_camera().right(0.5),
+                          get_camera() )
+    d = Drawable( vd, tall_animation_frame, anim = pulley2_animation[0],
+                  _alpha = 0.0, inner_alpha = 0 )
+
+    start_animation( common.bg, d2 )
+
+    smooth( 1.0, vd2.x, 1 )
+    enter( d )
+    fade_in( 0.5, d )
+
+    pause()
+    
+    lift( d2 )
+
+    smooth( 0.25, d2._alpha, 0.5 )
+    wait( -0.25 )
+    parallel()
+    smooth( 1.0, vd2.x, 2 )
+    smooth( 1.0, vd.x, 1 )
+    end()
+    smooth( 1.0, vd2.x, 3 )
+    wait( -0.75 )
+    fade_out( 0.75, d2 )
+    wait( 0.3 )
+
+    smooth( 0.5, d.inner_alpha, 1 )
+    pause()
+    
+    linear( 6.0, d.t, 1.0 )
+
+    return end_animation()
+framed_pulley2_animation = framed_pulley2_animation()
+
+def container_slide():
+    bg = Fill( style = 'horz', color = black, color2 = Color(0.4) )
+    colors = { 'title' : yellow, 'body' : white }
+    fd = { 'title' : fonts['bold'], 'roman' : fonts['roman'],
+           'dingbats' : fonts['dingbats'] }
+    set_styles( fonts = fd, colors = colors, fade_interval = 0.5 )
+
+    fade_interval = 0.5
+
+    a = Anim( get_camera().bottom(0.85).inset(0.05).right(0.475).restrict_aspect(4/6.38),
+              anim = pulley2_animation[0], t = 0.0, _alpha = 0.0 )
+    
+    camera = start_animation( bg )
+    add_title( 'Lorem ipsum' )
+    bl = add_bulleted_list()
+    bl.add_item( 0, 'Dolor sit amet, consectetaur', fade_interval )
+    parallel()
+    serial()
+    wait( 1.0 )
+    bl.add_item( 1, 'adipisicing elit, sed do', fade_interval )
+    wait( 1.0 )
+    bl.add_item( 1, 'eiusmod tempor incididunt ut labore et dolore magne aliqua', fade_interval )
+    wait( 1.0 )
+    bl.add_item( 0, 'Ut enim ad minim veniam', fade_interval )
+    end()
+    serial()
+    enter( a )
+    fade_in( 0.5, a )
+    a.play( pulley2_animation, pause = 0 )
+    end()
+    end()
+    first = end_animation()
+
+    return first
+container_slide = container_slide()
+
+def framed_container_animation( a ):
+    d = Drawable( get_camera(), animation_frame, anim = a )
+    start_animation( common.bg, d )
+
+    linear( a.length, d.t, 1.0 )
+    pause()
+    smooth( 1.0, d.c, 1.0 )
+    wait( 0.5 )
+    smooth( 1.5, d.t, 0.0 )
+    wait( 0.5 )
+    smooth( 4.0, d.t, 0.5 )
+    
+    return end_animation()
+framed_container_animation = framed_container_animation( container_slide[0] )
+
+def transparent_overlay( message = (STRING, 'hello, world!'),
+                         ):
+    set_camera( Rect( 0, 0, 4, 3 ) )
+    clear( black, 0.75 )
+    
+    color( yellow )
+    text( 2, 1.5, message, font = fonts['bold'], size = 0.3, justify = 0.5, anchor = 'c' )
+    
+                         
+
+def authoring_principles():
+    a2 = Anim( get_camera() )
+    a = Anim( get_camera() )
+    d = Drawable( get_camera(), transparent_overlay, _alpha = 0.0 )
+
+    start_animation( common.bg, a2, d )
+    set( d.message, 'Parameterized models' )
+    fade_in( 0.5, d )
+    parallel()
+    a2.fade_in_start( assemble_pulley, 0.5 )
+    end()
+    exit( common.bg )
+    pause()
+    fade_out( 0.5, d )
+    exit( d )
+    pause()
+    a2.play( assemble_pulley )
+    pause()
+    enter( common.bg )
+    lower( common.bg )
+
+    enter( a, d )
+    set( d.message, 'Animations as objects' )
+    fade_in( 0.5, d )
+    parallel()
+    a.fade_in_start( framed_animation, 0.5 )
+    end()
+    exit( common.bg, a2 )
+    pause()
+    fade_out( 0.5, d )
+    exit( d )
+    
+    a.play( framed_animation )
+    pause()
+    
+    enter( common.bg )
+    lower( common.bg )
+    enter( a2, d )
+    set( a2._alpha, 0.0 )
+    set( d.message, 'Hierarchical assembly' )
+    fade_in( 0.5, d )
+    a2.fade_in_start( framed_pulley2_animation, 0.5 )
+    exit( a, common.bg )
+    pause()
+    fade_out( 0.5, d )
+    pause()
+    
+    a2.play( framed_pulley2_animation )
+    pause()
+
+    
+    enter( common.bg )
+    lower( common.bg )
+    a2.fade_out_end( framed_pulley2_animation, 0.5 )
+    a2.fade_in_start( framed_container_animation, 0.5 )
+    exit( common.bg )
+    pause()
+    a2.play( framed_container_animation )
+    pause()
+    enter( common.bg )
+    lower( common.bg )
+    a2.fade_out_end( framed_container_animation, 0.5 )
+    
+    return end_animation()
+    
+authoring_principles = authoring_principles()
+    
+#test_objects( authoring_principles )
+test_objects( framed_pulley2_animation )
+#test_objects( assemble_pulley, framed_animation, pulley2_sample_animation, framed_pulley2_animation, framed_container_animation )

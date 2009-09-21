@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "polyhedron", "polyhedron\polyhedron.vcproj", "{4F23BC7F-92F1-4C89-AFE3-A612141137EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "trackball", "trackball\trackball.vcproj", "{5836511E-32BF-4C38-BB60-3FEFB768AC33}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4F23BC7F-92F1-4C89-AFE3-A612141137EB}.Debug.ActiveCfg = Debug|Win32
+		{4F23BC7F-92F1-4C89-AFE3-A612141137EB}.Debug.Build.0 = Debug|Win32
+		{4F23BC7F-92F1-4C89-AFE3-A612141137EB}.Release.ActiveCfg = Release|Win32
+		{4F23BC7F-92F1-4C89-AFE3-A612141137EB}.Release.Build.0 = Release|Win32
+		{5836511E-32BF-4C38-BB60-3FEFB768AC33}.Debug.ActiveCfg = Debug|Win32
+		{5836511E-32BF-4C38-BB60-3FEFB768AC33}.Debug.Build.0 = Debug|Win32
+		{5836511E-32BF-4C38-BB60-3FEFB768AC33}.Release.ActiveCfg = Release|Win32
+		{5836511E-32BF-4C38-BB60-3FEFB768AC33}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

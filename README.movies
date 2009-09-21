@@ -1,0 +1,47 @@
+
+The pygame movie player is used, which is based on SDL/SMPEG.  It is
+no where near as flexible a player as mplayer, for example.  It plays
+MPEG-1 video, and MPEG-2 audio ... and even then it is rather fussy.
+
+In short, encode mpegs for this module as the following example:
+
+mencoder something_completely.flv -of mpeg -mpegopts
+format=mpeg1:tsaf:muxrate=2000 \
+  -o test.mpg -srate 44100 -af lavcresample=44100 -oac twolame
+-twolameopts br=160 \
+  -ovc lavc -lavcopts vcodec=mpeg1video:vbitrate=1152:keyint=15:mbd=2
+
+For cutting:
+
+-ss 00:00:20 -endpos 00:00:50
+
+Remove the current audio track:
+
+mencoder -ovc copy -nosound video.avi -o video_nosound.avi
+
+Place a new audio track:
+
+mencoder -ovc copy -audiofile soundtrack.mp3 -oac copy
+video_nosound.avi -o video_new.avi
+
+Blank time
+
+ffmpeg -loop_input -f image2 -i image.jpeg -t 20 image-movie.mpeg
+
+Join 2:
+
+mencoder fishdance.mpg blank.mpg -of mpeg -mpegopts
+format=mpeg1:tsaf:muxrate=2000 \
+  -o fishdance_postgrey.mpg -nosound -twolameopts br=160 \
+  -ovc lavc -lavcopts vcodec=mpeg1video:vbitrate=1152:keyint=15:mbd=2
+
+Cut
+
+mencoder -ovc copy -nosound -o stomp.mpg -ss 37 test.mpg
+
+
+More information at:
+
+http://www.mplayerhq.hu/DOCS/HTML/en/menc-feat-vcd-dvd.html
+
+
