@@ -11,8 +11,10 @@ import os
 
 import slithy.diaimage as diaimage
 
+import slithy.movie as movie
+
 #this has to be configure by the user by load_env
-image_library = {'default':{},'pdf':{}}
+image_library = {'default':{},'pdf':{},'svg':{}}
 font_library = {'default':slithy.fonts.fonts}
 
 #from yamlclasses import *
@@ -107,11 +109,17 @@ def include_slides(filename):
             p.bookmark(slide['bmark'])
         else:
             p.bookmark(filename+' - '+str(i))
+        
 
         if 'pdf' in slide and 'slides' in slide:
             images = pdf2ppm_cache(slide['pdf'],slide['slides'])
             p.play(load_image_slides(images,library='pdf'))
             p.pause()
+        elif 'svg' in slide:
+            images = svg2png_cache(slide['svg'])
+            p.play(load_image_slides(images,library='svg',background=None))
+            p.pause()
+            
         elif 'images' in slide:
             if 'library' in slide:
                 lib = slide['library']
@@ -139,6 +147,7 @@ def clean_slate():
     ns['times'] = font_library['default']['times']
     ns['bg'] = common.bg
     ns['Text'] = Text
+    ns['Movie'] = movie.Movie
     
     return ns
 
@@ -193,14 +202,58 @@ def pdf2ppm_cache(filename,slides):
     return images
 
 
-def load_image_slides(images,library='default'):
+def svg2png_cache(svgs):
+
+    cache_dir = './.slithy_svgcache'
+    if not cache_dir in sylib.fontpath:
+        sylib.fontpath.append(cache_dir)
+
+    width,height = 800,600
+
+    cmd = "inkscape -w "+str(width)+" -h "+str(height)+" -e %s %s"
+
+    images = []
+
+    if type(svgs) == type(''):
+        svgs = [svgs]
+    
+    for svg in svgs:
+        
+
+        # get only trailing pdf name
+        svg_name = os.path.split(svg)[-1]
+
+        target_file = os.path.join(cache_dir,svg_name+'.png')
+        if os.path.exists(target_file):
+           print target_file," exists.  Skipping." 
+        else:
+            final_cmd = cmd % (target_file,svg)
+            print final_cmd
+            os.system(final_cmd)
+
+        img = diaimage.get_image(target_file)
+        print 'target_file: ', img
+        image_library['svg'][target_file] = img 
+        images.append(target_file)
+            
+    return images
+
+
+
+
+def load_image_slides(images,library='default',background=common.bg):
     """ returns sequence of image slides animation """
     
     # get a clean slate
     ns = clean_slate()
 
     exec "image = None" in ns
-    exec "start(bg)" in ns
+
+    if background is not None:
+        ns['bg'] = background
+        exec "start(bg)" in ns
+    else:
+        exec "start()" in ns
 
     cmd = """
 if image:
