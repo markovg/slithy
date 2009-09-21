@@ -168,12 +168,28 @@ def gen_ppm_name(cache_dir,filename,slide):
         return os.path.join(cache_dir,filename+'_-%.2d.ppm' % slide)
     
 
+def setup_cachedir(path):
+
+    import os
+
+    if os.path.exists(path):
+        if os.path.isdir(path):
+            return
+        else:
+            raise OSError, "cache dir %s exists but is not directory." % path
+    else:
+        os.mkdir(path)
+        
+    
+
 
 def pdf2ppm_cache(filename,slides):
 
     cache_dir = './.slithy_pdfcache'
     if not cache_dir in sylib.fontpath:
         sylib.fontpath.append(cache_dir)
+
+    setup_cachedir(cache_dir)
 
     # get only trailing pdf name
     pdf_name = os.path.split(filename)[-1]
@@ -207,6 +223,8 @@ def svg2png_cache(svgs):
     cache_dir = './.slithy_svgcache'
     if not cache_dir in sylib.fontpath:
         sylib.fontpath.append(cache_dir)
+
+    setup_cachedir(cache_dir)
 
     width,height = 800,600
 
