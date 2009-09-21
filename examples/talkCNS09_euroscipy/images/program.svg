@@ -1,0 +1,2739 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="program.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program.png"
+   inkscape:export-xdpi="76.25975"
+   inkscape:export-ydpi="76.25975">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2410"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2960"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3510"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.0875"
+     inkscape:cx="325.69274"
+     inkscape:cy="-1060.9248"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="640"
+     inkscape:window-height="688"
+     inkscape:window-x="301"
+     inkscape:window-y="-23" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(1.25,0,0,-1.25,-53.928567,935.93357)"
+       inkscape:label="Copy_of_CNS2009_Python_workshop"
+       id="g2412"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <path
+         id="path2414"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 72,72 L 540,72 L 540,720 L 72,720 L 72,72 z" />
+      <path
+         id="path2416"
+         style="fill:#d0e0e3;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 72,103.7 L 540,103.7 L 540,658.4 L 72,658.4 L 72,103.7 z" />
+      <path
+         id="path2418"
+         style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 72,429.8 L 134.2303,429.8 L 134.2303,464.6 L 72,464.6 L 72,429.8 z" />
+      <path
+         id="path2420"
+         style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 133.4803,429.8 L 337.1152,429.8 L 337.1152,464.6 L 133.4803,464.6 L 133.4803,429.8 z" />
+      <path
+         id="path2422"
+         style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 336.3651,429.8 L 540,429.8 L 540,464.6 L 336.3651,464.6 L 336.3651,429.8 z" />
+      <path
+         id="path2424"
+         style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 72,205.85 L 134.2303,205.85 L 134.2303,240.65 L 72,240.65 L 72,205.85 z" />
+      <path
+         id="path2426"
+         style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 133.4803,205.85 L 337.1152,205.85 L 337.1152,240.65 L 133.4803,240.65 L 133.4803,205.85 z" />
+      <path
+         id="path2428"
+         style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 336.3651,205.85 L 540,205.85 L 540,240.65 L 336.3651,240.65 L 336.3651,205.85 z" />
+      <path
+         id="path2430"
+         style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 72,103.7 L 134.2303,103.7 L 134.2303,138.5 L 72,138.5 L 72,103.7 z" />
+      <path
+         id="path2432"
+         style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 133.4803,103.7 L 337.1152,103.7 L 337.1152,138.5 L 133.4803,138.5 L 133.4803,103.7 z" />
+      <path
+         id="path2434"
+         style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 336.3651,103.7 L 540,103.7 L 540,138.5 L 336.3651,138.5 L 336.3651,103.7 z" />
+      <path
+         id="path2436"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,623.6 L 72,623.6 L 72.75,624.35 L 539.25,624.35 L 540,623.6 z" />
+      <path
+         id="path2438"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,560.75 L 72,560.75 L 72.75,561.5 L 539.25,561.5 L 540,560.75 z" />
+      <path
+         id="path2440"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,512.3 L 72,512.3 L 72.75,513.05 L 539.25,513.05 L 540,512.3 z" />
+      <path
+         id="path2442"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,463.85 L 72,463.85 L 72.75,464.6 L 539.25,464.6 L 540,463.85 z" />
+      <path
+         id="path2444"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,429.8 L 72,429.8 L 72.75,430.55 L 539.25,430.55 L 540,429.8 z" />
+      <path
+         id="path2446"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,381.35 L 72,381.35 L 72.75,382.1 L 539.25,382.1 L 540,381.35 z" />
+      <path
+         id="path2448"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,347.3 L 72,347.3 L 72.75,348.05 L 539.25,348.05 L 540,347.3 z" />
+      <path
+         id="path2450"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,313.25 L 72,313.25 L 72.75,314 L 539.25,314 L 540,313.25 z" />
+      <path
+         id="path2452"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,293.6 L 72,293.6 L 72.75,294.35 L 539.25,294.35 L 540,293.6 z" />
+      <path
+         id="path2454"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,273.95 L 72,273.95 L 72.75,274.7 L 539.25,274.7 L 540,273.95 z" />
+      <path
+         id="path2456"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,239.9 L 72,239.9 L 72.75,240.65 L 539.25,240.65 L 540,239.9 z" />
+      <path
+         id="path2458"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,205.85 L 72,205.85 L 72.75,206.6 L 539.25,206.6 L 540,205.85 z" />
+      <path
+         id="path2460"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,171.8 L 72,171.8 L 72.75,172.55 L 539.25,172.55 L 540,171.8 z" />
+      <path
+         id="path2462"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,137.75 L 72,137.75 L 72.75,138.5 L 539.25,138.5 L 540,137.75 z" />
+      <path
+         id="path2464"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 134.2303,658.4 L 134.2303,103.7 L 133.4803,104.45 L 133.4803,657.65 L 134.2303,658.4 z" />
+      <path
+         id="path2466"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 337.1151,658.4 L 337.1151,103.7 L 336.3651,104.45 L 336.3651,657.65 L 337.1151,658.4 z" />
+      <path
+         id="path2468"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 72,658.4 L 540,658.4 L 539.25,657.65 L 72.75,657.65 L 72,658.4 z" />
+      <path
+         id="path2470"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,103.7 L 72,103.7 L 72.75,104.45 L 539.25,104.45 L 540,103.7 z" />
+      <path
+         id="path2472"
+         style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 72,103.7 L 72,658.4 L 72.75,657.65 L 72.75,104.45 L 72,103.7 z" />
+      <path
+         id="path2474"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 540,658.4 L 540,103.7 L 539.25,104.45 L 539.25,657.65 L 540,658.4 z" />
+      <text
+         id="text2476"
+         transform="scale(0.9921287,-1.0079338)"
+         x="71.874855"
+         y="-698.93573"
+         style="font-size:20.29948235px">
+        <tspan
+           id="tspan2478"
+           sodipodi:role="line"
+           y="-698.93573"
+           x="71.874855 87.647552 96.860138 111.3066 125.75307 134.96565 148.13326"
+           style="font-size:23.68272972px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">Program</tspan>
+      </text>
+      <text
+         id="text2480"
+         transform="matrix(1,0,0,-1,72,675.9465)">
+        <tspan
+           id="tspan2482"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.992 17.316 23.988001 27.312 33.984001 40.655998 47.976002 55.296001 58.619999 61.944 68.615997 75.288002 81.959999"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">July 22nd, 2009</tspan>
+      </text>
+      <text
+         id="text2484"
+         transform="matrix(1,0,0,-1,75,644.0398)">
+        <tspan
+           id="tspan2486"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 10.668 17.34 24.011999 27.336"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">9:00 –</tspan>
+      </text>
+      <text
+         id="text2488"
+         transform="matrix(1,0,0,-1,75,629.6398)">
+        <tspan
+           id="tspan2490"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 10.668 17.34"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">9:15</tspan>
+      </text>
+      <text
+         id="text2492"
+         transform="matrix(1,0,0,-1,136.4803,644.0398)">
+        <tspan
+           id="tspan2494"
+           sodipodi:role="line"
+           y="0"
+           x="0 9.3240004 15.996 22.667999 29.34 32.004002 38.675999 45.348 48.672001 52.667999 59.34 69.335999 76.008003 80.003998 86.003998 92.003998 95.328003 98.652 102.648 109.32 119.316 122.64 125.964 132.636"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Opening remarks from the</tspan>
+      </text>
+      <text
+         id="text2496"
+         transform="matrix(1,0,0,-1,136.4803,629.6398)">
+        <tspan
+           id="tspan2498"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 10.668 17.34 24.011999 30.684 33.348 39.348 46.02 50.015999"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">organizers</tspan>
+      </text>
+      <text
+         id="text2500"
+         transform="matrix(1,0,0,-1,75,595.5898)">
+        <tspan
+           id="tspan2502"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 10.668 17.34 24.011999 27.336"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">9:15 –</tspan>
+      </text>
+      <text
+         id="text2504"
+         transform="matrix(1,0,0,-1,75,581.1898)">
+        <tspan
+           id="tspan2506"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 17.34 24.011999"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">10:30</tspan>
+      </text>
+      <text
+         id="text2508"
+         transform="matrix(1,0,0,-1,136.4803,609.9898)">
+        <tspan
+           id="tspan2510"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 22.007999 26.004 28.667999 35.34 38.664001 45.335999 52.007999 58.007999 64.008003 67.332001 73.332001 75.996002 79.991997 83.316002 89.987999 96.660004 99.323997 102.648 106.644 113.316 119.988 122.652 125.316 128.64 134.64 137.964 141.28799 147.96001"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">Low-latency virtual reality for</tspan>
+      </text>
+      <text
+         id="text2512"
+         transform="matrix(1,0,0,-1,136.4803,595.5898)">
+        <tspan
+           id="tspan2514"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 20.016001 24.011999 30.684 36.683998 42.683998 45.348 52.02 58.692001 64.692001 71.363998 74.688004 78.012001 82.008003 88.68 95.351997 98.015999 101.34 104.004 114 120.672 123.996 127.32 131.31599 137.98801 143.98801 149.98801 152.65199 159.32401 165.996 169.32001 175.992 182.664"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">neuroscience: realtime tracking and</tspan>
+      </text>
+      <text
+         id="text2516"
+         transform="matrix(1,0,0,-1,136.4803,581.1898)">
+        <tspan
+           id="tspan2518"
+           sodipodi:role="line"
+           y="0"
+           x="0 6 12.672 22.667999 29.34 36.012001 39.335999 46.007999 50.004002 53.327999 60 63.995998 70.667999 77.339996 84.012001 86.676003 92.676003 98.676003 102 108.672 114.672 117.336 124.008 130.67999 134.004 137.328 144 150.672 153.996 163.992 170.664 173.98801 183.98399 190.65601"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">computer graphics using the Motmot</tspan>
+      </text>
+      <text
+         id="text2520"
+         transform="matrix(1,0,0,-1,136.4803,566.7898)">
+        <tspan
+           id="tspan2522"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 20.016001 23.34 31.332001 33.995998 39.995998 42.66 49.332001 56.004002 59.327999 67.32 73.991997 80.664001 83.987999 90.660004 97.332001 103.332 109.332 116.004 122.676 129.34801"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">and Vision Egg packages</tspan>
+      </text>
+      <text
+         id="text2524"
+         transform="matrix(1,0,0,-1,339.3651,609.9898)">
+        <tspan
+           id="tspan2526"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.9920001 14.664 21.336 25.332001 32.004002 40.667999 43.992001 51.984001 55.307999 59.304001 65.975998"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Andrew Straw</tspan>
+      </text>
+      <text
+         id="text2528"
+         transform="matrix(1,0,0,-1,417.3944,609.9898)">
+        <tspan
+           id="tspan2530"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.9960001 11.988 14.652 21.323999 27.996 34.667999 41.34 44.004002 50.675999 57.348 64.019997 68.015999 70.68 77.351997 84.024002"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">(Bioengineering,</tspan>
+      </text>
+      <text
+         id="text2532"
+         transform="matrix(1,0,0,-1,339.3651,595.5898)">
+        <tspan
+           id="tspan2534"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.9920001 14.664 21.336 24 30.672001 37.344002 44.015999 48.012001 50.675999 57.348 64.019997 67.344002 74.015999 80.688004 87.360001 90.683998 98.676003 105.348 112.02 114.684 117.348 124.02 130.692 134.01601 142.008 148.008 150.672 157.34399 164.01601 170.01601 176.688"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Engineering and Applied Science,</tspan>
+      </text>
+      <text
+         id="text2536"
+         transform="matrix(1,0,0,-1,339.3651,581.1898)">
+        <tspan
+           id="tspan2538"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 15.336 18 20.664 23.988001 30.66 34.655998 41.327999 43.992001 50.664001 53.987999 57.312 63.984001 69.984001 73.307999 75.972 79.295998 85.968002 89.292 95.963997 99.288002 105.96 109.284 112.608 119.928 126.6 132.60001 139.272 145.944 152.616 155.28 161.952 168.62399 174.62399"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">California Institute of Technology,</tspan>
+      </text>
+      <text
+         id="text2540"
+         transform="matrix(1,0,0,-1,339.3651,566.7898)">
+        <tspan
+           id="tspan2542"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 16.656 24.648001"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">USA)</tspan>
+      </text>
+      <text
+         id="text2544"
+         transform="matrix(1,0,0,-1,136.4803,547.1398)">
+        <tspan
+           id="tspan2546"
+           sodipodi:role="line"
+           y="0"
+           x="0 9.9960003 16.667999 23.34 30.011999 32.675999 39.348 43.344002 46.667999 49.992001 56.664001 63.335999 66 72 74.664001 77.987999 81.311996 84.636002 91.307999 95.304001 98.627998 107.292 113.964 117.288 123.96 127.284 135.276 139.272 145.944 151.944 158.616 164.616 170.616 173.28 179.952"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">Modular toolkit for Data Processing</tspan>
+      </text>
+      <text
+         id="text2548"
+         transform="matrix(1,0,0,-1,136.4803,532.7398)">
+        <tspan
+           id="tspan2550"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.9960001 13.992 22.656 30.648001 34.644001 37.967999 41.292 47.964001 51.287998 59.279999 65.279999 68.603996 75.276001 81.947998 88.620003 91.944 98.615997 105.288 108.612 115.284 118.608 125.28 129.276 135.948 141.948 148.62 154.62 160.62 163.284 169.95599"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">(MDP): a Python data processing</tspan>
+      </text>
+      <text
+         id="text2552"
+         transform="matrix(1,0,0,-1,136.4803,518.3398)">
+        <tspan
+           id="tspan2554"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.3239999 7.3200002 13.992 23.988001 30.66 39.324001 45.995998 49.992001"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">framework</tspan>
+      </text>
+      <text
+         id="text2556"
+         transform="matrix(1,0,0,-1,339.3651,547.1398)">
+        <tspan
+           id="tspan2558"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.3200002 9.9840002 15.984 18.648001 25.32 31.992001 38.664001 41.987999 49.307999 51.972 55.296001"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Tiziano Zito</tspan>
+      </text>
+      <text
+         id="text2560"
+         transform="matrix(1,0,0,-1,404.7206,547.1398)">
+        <tspan
+           id="tspan2562"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.9960001 11.988 18.66 22.656 29.327999 35.327999 38.652 45.324001 47.987999 54.66 57.984001 66.648003 73.32 79.991997 83.316002 89.987999 93.984001 97.307999 100.632 107.304"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">(Bernstein Center for</tspan>
+      </text>
+      <text
+         id="text2564"
+         transform="matrix(1,0,0,-1,339.3651,532.7398)">
+        <tspan
+           id="tspan2566"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 15.336 25.332001 32.004002 38.675999 42 48.672001 51.995998 54.66 61.332001 68.003998 74.676003 77.339996 80.664001 89.328003 96 102.672 106.668 113.34 119.34 125.34 128.004 134.67599 141.34801 147.34801 154.02"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Computational Neuroscience,</tspan>
+      </text>
+      <text
+         id="text2568"
+         transform="matrix(1,0,0,-1,339.3651,518.3398)">
+        <tspan
+           id="tspan2570"
+           sodipodi:role="line"
+           y="0"
+           x="0 9.3240004 15.996 19.992001 29.988001 36.66 43.332001 49.332001"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Germany)</tspan>
+      </text>
+      <text
+         id="text2572"
+         transform="matrix(1,0,0,-1,136.4803,498.6898)">
+        <tspan
+           id="tspan2574"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 15.336 22.007999 25.332001 29.327999 36 38.664001 41.327999 43.992001 50.664001 57.335999 60.66 67.332001 74.003998 80.676003 84.671997 91.344002 100.008 106.68 113.352 119.352 122.676 126.672 133.34399 139.34399 142.668 145.992 154.65601 157.32001 160.644"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">Controlling neuroConstruct with</tspan>
+      </text>
+      <text
+         id="text2576"
+         transform="matrix(1,0,0,-1,136.4803,484.2898)">
+        <tspan
+           id="tspan2578"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.9920001 13.992 17.316 23.988001 30.66 37.332001 40.655998 43.98 50.652 54.647999 57.972 60.636002 67.307999 71.304001 77.975998 84.648003 87.972 93.972 99.972 106.644 109.308 115.98 119.304 125.304 127.968 137.964 144.636 147.3 153.972 157.29601 159.96001 166.632"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">Python for large scale simulation</tspan>
+      </text>
+      <text
+         id="text2580"
+         transform="matrix(1,0,0,-1,136.4803,469.8898)">
+        <tspan
+           id="tspan2582"
+           sodipodi:role="line"
+           y="0"
+           x="0 9.9960003 16.667999 23.34 30.011999 36.683998 43.355999 53.352001 60.023998 66.695999 70.019997 73.344002 80.015999 86.688004 93.360001 96.683998 103.356 110.028 116.7 119.364 125.364 131.364 134.028"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">management and analysis</tspan>
+      </text>
+      <text
+         id="text2584"
+         transform="matrix(1,0,0,-1,339.3651,484.2898)">
+        <tspan
+           id="tspan2586"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.9920001 14.664 21.336 25.332001 32.004002 34.667999 41.34 44.664001 53.987999 56.652 63.324001 69.996002 75.996002 82.667999"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Padraig Gleeson</tspan>
+      </text>
+      <text
+         id="text2588"
+         transform="matrix(1,0,0,-1,432.0897,484.2898)">
+        <tspan
+           id="tspan2590"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.9960001 12.66 21.323999 27.996 31.32 34.644001 43.307999 51.299999"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">(UCL, UK)</tspan>
+      </text>
+      <text
+         id="text2592"
+         transform="matrix(1,0,0,-1,75,450.2398)">
+        <tspan
+           id="tspan2594"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 17.34 24.011999 30.684 34.007999"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">10:30 –</tspan>
+      </text>
+      <text
+         id="text2596"
+         transform="matrix(1,0,0,-1,75,435.8398)">
+        <tspan
+           id="tspan2598"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 17.34 24.011999"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">11:00</tspan>
+      </text>
+      <text
+         id="text2600"
+         transform="matrix(1,0,0,-1,136.4803,443.0398)">
+        <tspan
+           id="tspan2602"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 15.984 19.98 23.976 30.648001"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">Coffee</tspan>
+      </text>
+      <text
+         id="text2604"
+         transform="matrix(1,0,0,-1,75,408.9898)">
+        <tspan
+           id="tspan2606"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 17.34 24.011999 30.684 34.007999"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">11:00 –</tspan>
+      </text>
+      <text
+         id="text2608"
+         transform="matrix(1,0,0,-1,75,394.5898)">
+        <tspan
+           id="tspan2610"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 17.34 24.011999"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">11:50</tspan>
+      </text>
+      <text
+         id="text2612"
+         transform="matrix(1,0,0,-1,136.4803,416.1898)">
+        <tspan
+           id="tspan2614"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.9920001 13.992 22.656 30.648001 37.967999 44.639999 51.312"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">PyDSTool</tspan>
+      </text>
+      <text
+         id="text2616"
+         transform="matrix(1,0,0,-1,190.4978,416.1898)">
+        <tspan
+           id="tspan2618"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.3239999 6.6479998 13.32 19.992001 23.316 25.98 32.652 35.976002 42.647999 49.32 53.316002 59.987999 63.312 69.984001 76.655998 79.980003 85.980003 88.643997 98.639999 105.312 107.976 114.648 117.972 120.636 127.308 133.98"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">: an integrated simulation,</tspan>
+      </text>
+      <text
+         id="text2620"
+         transform="matrix(1,0,0,-1,136.4803,401.7898)">
+        <tspan
+           id="tspan2622"
+           sodipodi:role="line"
+           y="0"
+           x="0 9.9960003 16.667999 23.34 30.011999 32.675999 35.34 42.012001 48.683998 52.007999 58.68 65.351997 72.024002 75.348 82.019997 88.692001 95.363998 98.028 104.028 110.028 112.692 118.692 122.016 128.688 135.36 141.36 147.36 154.032 160.70399 167.37601 170.7 174.024 180.696"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">modeling and analysis package for</tspan>
+      </text>
+      <text
+         id="text2624"
+         transform="matrix(1,0,0,-1,136.4803,387.3898)">
+        <tspan
+           id="tspan2626"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 12.672 19.344 26.016001 36.012001 38.675999 44.675999 51.348 54.012001 57.335999 63.335999 69.335999 75.335999 78.660004 85.332001 95.328003"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">dynamical systems</tspan>
+      </text>
+      <text
+         id="text2628"
+         transform="matrix(1,0,0,-1,339.3651,408.9898)">
+        <tspan
+           id="tspan2630"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 15.336 22.007999 28.68 32.675999 36 39.324001 47.987999 50.652 57.324001 65.987999 68.652 75.323997"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Robert Clewley</tspan>
+      </text>
+      <text
+         id="text2632"
+         transform="matrix(1,0,0,-1,424.0624,408.9898)">
+        <tspan
+           id="tspan2634"
+           y="0"
+           x="0"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">(</tspan>
+      </text>
+      <text
+         id="text2636"
+         transform="matrix(1,0,0,-1,428.0585,408.9898)">
+        <tspan
+           id="tspan2638"
+           sodipodi:role="line"
+           y="0"
+           x="0 9.3240004 15.996 22.667999 26.664 33.335999 36 42.672001 45.995998 53.987999 57.312 63.984001 67.307999"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Georgia State</tspan>
+      </text>
+      <text
+         id="text2640"
+         transform="matrix(1,0,0,-1,339.3651,394.5898)">
+        <tspan
+           id="tspan2642"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 15.336 18 24 30.672001 34.667999 40.667999 43.332001 46.655998 52.655998 55.98 59.304001 67.968002 75.959999"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">University, USA</tspan>
+      </text>
+      <text
+         id="text2644"
+         transform="matrix(1,0,0,-1,423.3827,394.5898)">
+        <tspan
+           id="tspan2646"
+           y="0"
+           x="0"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">)</tspan>
+      </text>
+      <text
+         id="text2648"
+         transform="matrix(1,0,0,-1,136.4803,367.7398)">
+        <tspan
+           id="tspan2650"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.9920001 11.988 14.652 21.323999 27.996"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">Brian:</tspan>
+      </text>
+      <text
+         id="text2652"
+         transform="matrix(1,0,0,-1,171.1619,367.7398)">
+        <tspan
+           id="tspan2654"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 9.9960003 15.996 18.66 28.656 35.327999 37.992001 44.664001 47.987999 54.66 58.655998 61.98 65.304001 71.975998 75.972 79.295998 85.295998 91.968002 94.632004 100.632 103.296 109.968 116.64 119.964 126.636 133.308 139.98 143.976 150.64799"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">a simulator for spiking neural</tspan>
+      </text>
+      <text
+         id="text2656"
+         transform="matrix(1,0,0,-1,136.4803,353.3398)">
+        <tspan
+           id="tspan2658"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 16.667999 25.332001 32.004002 36 42 48 51.324001 53.987999 60.66 63.984001 71.975998 77.975998 81.300003 87.972 94.643997"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">networks in Python</tspan>
+      </text>
+      <text
+         id="text2660"
+         transform="matrix(1,0,0,-1,339.3651,360.5398)">
+        <tspan
+           id="tspan2662"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 15.336 25.332001 32.004002 34.667999 41.34 44.664001 52.655998 56.652 63.324001 66.648003 69.972"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Romain Brette</tspan>
+      </text>
+      <text
+         id="text2664"
+         transform="matrix(1,0,0,-1,419.3983,360.5398)">
+        <tspan
+           id="tspan2666"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.9960001 11.988 20.652 28.643999 31.968 35.292 43.284 49.956001 53.952 56.616001 62.616001"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">(ENS, Paris)</tspan>
+      </text>
+      <text
+         id="text2668"
+         transform="matrix(1,0,0,-1,75,333.6898)">
+        <tspan
+           id="tspan2670"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 17.34 24.011999 30.684 34.007999"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">11:50 –</tspan>
+      </text>
+      <text
+         id="text2672"
+         transform="matrix(1,0,0,-1,75,319.2898)">
+        <tspan
+           id="tspan2674"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 17.34 24.011999"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">12:20</tspan>
+      </text>
+      <text
+         id="text2676"
+         transform="matrix(1,0,0,-1,136.4803,326.4898)">
+        <tspan
+           id="tspan2678"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.3200002 10.644 17.964001 25.284 29.280001 36.599998 39.924 47.243999 54.563999 57.888 61.883999 68.556 71.879997 78.552002"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">Lightning talks</tspan>
+      </text>
+      <text
+         id="text2680"
+         transform="matrix(1,0,0,-1,136.4803,299.6398)">
+        <tspan
+           id="tspan2682"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.3200002 13.992 20.664 27.336 34.007999 38.004002 44.675999 51.348 58.02 60.683998 66.683998"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">Topographica</tspan>
+      </text>
+      <text
+         id="text2684"
+         transform="matrix(1,0,0,-1,339.3651,299.6398)">
+        <tspan
+           id="tspan2686"
+           sodipodi:role="line"
+           y="0"
+           x="0 6 12.672 22.667999 29.34 35.34 38.664001 46.655998 53.327999 60 66.671997 73.344002"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">James Bednar</tspan>
+      </text>
+      <text
+         id="text2688"
+         transform="matrix(1,0,0,-1,136.4803,279.9898)">
+        <tspan
+           id="tspan2690"
+           sodipodi:role="line"
+           y="0"
+           x="0 9.9960003 13.32 16.643999 25.308001"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">MIIND</tspan>
+      </text>
+      <text
+         id="text2692"
+         transform="matrix(1,0,0,-1,339.3651,279.9898)">
+        <tspan
+           id="tspan2694"
+           sodipodi:role="line"
+           y="0"
+           x="0 9.9960003 16.667999 20.664 26.664 29.988001 36.66 43.332001 46.655998 54.647999 61.32 71.316002 77.987999"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Marc de Kamps</tspan>
+      </text>
+      <text
+         id="text2696"
+         transform="matrix(1,0,0,-1,136.4803,260.3398)">
+        <tspan
+           id="tspan2698"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.3200002 10.644 19.308001 27.972 35.964001 42.636002 45.959999 49.956001 53.279999 56.604 59.268002 62.591999 65.916 68.580002 75.251999 81.924004 85.248001 87.912003 94.584 101.256 103.92 109.92 112.584 119.256 125.928 132.60001 135.26401 138.588 145.25999 151.93201 158.604 162.60001 169.272"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">FINDV1 - fitting individual neural</tspan>
+      </text>
+      <text
+         id="text2700"
+         transform="matrix(1,0,0,-1,136.4803,245.9398)">
+        <tspan
+           id="tspan2702"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 16.667999 23.34 26.664 29.988001 33.984001 40.655998 50.652 53.976002 61.967999"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">data from V1</tspan>
+      </text>
+      <text
+         id="text2704"
+         transform="matrix(1,0,0,-1,339.3651,253.1398)">
+        <tspan
+           id="tspan2706"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.9920001 11.316 17.988001 24.66 31.332001 38.004002 44.675999 48 56.664001 63.335999 70.008003 80.003998 86.676003 93.348"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Stephen Coombes</tspan>
+      </text>
+      <text
+         id="text2708"
+         transform="matrix(1,0,0,-1,75,226.2898)">
+        <tspan
+           id="tspan2710"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 13.344 17.34 24.011999 30.684 34.007999"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">12:20 –</tspan>
+      </text>
+      <text
+         id="text2712"
+         transform="matrix(1,0,0,-1,75,211.8898)">
+        <tspan
+           id="tspan2714"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 10.668 17.34"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">2:00</tspan>
+      </text>
+      <text
+         id="text2716"
+         transform="matrix(1,0,0,-1,136.4803,219.0898)">
+        <tspan
+           id="tspan2718"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 13.332 20.004 26.676001 33.348 36.672001 40.667999 47.987999 52.655998 55.98 59.304001 66.624001 73.944 80.615997"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">Break for lunch</tspan>
+      </text>
+      <text
+         id="text2720"
+         transform="matrix(1,0,0,-1,75,192.2398)">
+        <tspan
+           id="tspan2722"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 10.668 17.34 24.011999 27.336"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">2:00 –</tspan>
+      </text>
+      <text
+         id="text2724"
+         transform="matrix(1,0,0,-1,75,177.8398)">
+        <tspan
+           id="tspan2726"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 10.668 17.34"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">2:50</tspan>
+      </text>
+      <text
+         id="text2728"
+         transform="matrix(1,0,0,-1,136.4803,185.0398)">
+        <tspan
+           id="tspan2730"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 16.656 25.32 33.984001 43.307999 51.972 58.967999 66.959999 72.959999 76.283997 82.956001 89.627998"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">NEURON+Python</tspan>
+      </text>
+      <text
+         id="text2732"
+         transform="matrix(1,0,0,-1,339.3651,185.0398)">
+        <tspan
+           id="tspan2734"
+           sodipodi:role="line"
+           y="0"
+           x="0 9.9960003 12.66 18.66 25.332001 32.004002 38.675999 41.34 44.664001 53.327999 55.992001 62.664001 69.335999"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Michael Hines</tspan>
+      </text>
+      <text
+         id="text2736"
+         transform="matrix(1,0,0,-1,418.0624,185.0398)">
+        <tspan
+           id="tspan2738"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.9960001 11.988 18.66 21.323999 27.996 31.32 34.644001 43.307999 51.299999 59.292"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">(Yale, USA)</tspan>
+      </text>
+      <text
+         id="text2740"
+         transform="matrix(1,0,0,-1,136.4803,158.1898)">
+        <tspan
+           id="tspan2742"
+           sodipodi:role="line"
+           y="0"
+           x="0 7.9920001 13.992 22.656 30.648001 38.639999 45.959999 49.284 52.608002 59.279999 62.604 68.603996 75.276001 81.947998 87.947998 94.620003 101.292 103.956 110.628 117.3 120.624 123.948 126.612 133.284 136.608 143.28 147.276 150.60001 157.272 163.272 169.944 173.26801 176.592"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">PyNEST: a convenient interface to</tspan>
+      </text>
+      <text
+         id="text2744"
+         transform="matrix(1,0,0,-1,136.4803,143.7898)">
+        <tspan
+           id="tspan2746"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.3239999 9.9960003 16.667999 19.992001 28.656 36.647999 44.639999 51.959999 55.284 61.284 63.948002 73.944 80.615997 83.279999 89.952003 93.276001 99.947998"
+           style="font-size:12px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic">the NEST simulator</tspan>
+      </text>
+      <text
+         id="text2748"
+         transform="matrix(1,0,0,-1,339.3651,158.1898)">
+        <tspan
+           id="tspan2750"
+           sodipodi:role="line"
+           y="0"
+           x="0 6 12.672 18.672001 25.344 32.015999 38.688 42.012001 50.004002 56.675999 63.348 66.012001 72.683998"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Jochen Eppler</tspan>
+      </text>
+      <text
+         id="text2752"
+         transform="matrix(1,0,0,-1,419.4159,158.1898)">
+        <tspan
+           id="tspan2754"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.9960001 12.66 19.332001 26.004 32.675999 39.348 42.672001 51.335999 58.007999 64.008003 70.68 77.351997 81.348 87.348"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">(Honda Research</tspan>
+      </text>
+      <text
+         id="text2756"
+         transform="matrix(1,0,0,-1,339.3651,143.7898)">
+        <tspan
+           id="tspan2758"
+           sodipodi:role="line"
+           y="0"
+           x="0 3.3239999 9.9960003 15.996 19.32 21.983999 25.308001 31.98 35.304001 41.976002 45.299999 48.624001 57.948002 61.271999 64.596001 71.267998 77.940002 84.612 91.283997 97.283997 103.956 107.28 110.604 119.928 126.6 130.59599 140.592 147.26401 153.936 159.936"
+           style="font-size:12px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">Institute, Offenbach, Germany)</tspan>
+      </text>
+      <text
+         id="text2760"
+         transform="matrix(1,0,0,-1,75,124.1398)">
+        <tspan
+           id="tspan2762"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 10.668 17.34 24.011999 27.336"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">2:50 –</tspan>
+      </text>
+      <text
+         id="text2764"
+         transform="matrix(1,0,0,-1,75,109.7398)">
+        <tspan
+           id="tspan2766"
+           sodipodi:role="line"
+           y="0"
+           x="0 6.6719999 10.668 17.34"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">3:20</tspan>
+      </text>
+      <text
+         id="text2768"
+         transform="matrix(1,0,0,-1,136.4803,116.9398)">
+        <tspan
+           id="tspan2770"
+           sodipodi:role="line"
+           y="0"
+           x="0 8.6639996 15.984 19.98 23.976 30.648001 37.32 40.644001 47.639999 50.964001 58.284 65.603996 69.599998 76.919998 81.587997 84.912003 91.584 94.907997 98.232002 106.896 110.22 118.884 125.556 136.224 143.54401 146.868 153.53999 160.21201 164.20799 171.528"
+           style="font-size:12px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold">Coffee + Tutorial &amp; Demo setup</tspan>
+      </text>
+    </g>
+    <path
+       d="M 35.938725,1615.1429 L 620.93872,1615.1429 L 620.93872,805.1429 L 35.938725,805.1429 L 35.938725,1615.1429 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2964" />
+    <path
+       d="M 35.938725,891.2054 L 620.93872,891.2054 L 620.93872,805.1429 L 35.938725,805.1429 L 35.938725,891.2054 z"
+       style="fill:#d0e0e3;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2966"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,848.6429 L 35.938725,848.6429 L 36.876225,847.7054 L 620.00122,847.7054 L 620.93872,848.6429 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path2968"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 113.7266,805.1429 L 113.7266,891.2054 L 112.7891,890.2679 L 112.7891,806.0804 L 113.7266,805.1429 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path2970"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 367.3326,805.1429 L 367.3326,891.2054 L 366.3951,890.2679 L 366.3951,806.0804 L 367.3326,805.1429 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path2972"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 35.938725,805.1429 L 620.93872,805.1429 L 620.00122,806.0804 L 36.876225,806.0804 L 35.938725,805.1429 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path2974"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,891.2054 L 35.938725,891.2054 L 36.876225,890.2679 L 620.00122,890.2679 L 620.93872,891.2054 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path2976"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 35.938725,891.2054 L 35.938725,805.1429 L 36.876225,806.0804 L 36.876225,890.2679 L 35.938725,891.2054 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path2978"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,805.1429 L 620.93872,891.2054 L 620.00122,890.2679 L 620.00122,806.0804 L 620.93872,805.1429 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path2980"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 35.938725,1614.7054 L 620.93872,1614.7054 L 620.93872,962.2054 L 35.938725,962.2054 L 35.938725,1614.7054 z"
+       style="fill:#d0e0e3;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2982"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 35.938725,1151.3929 L 113.7266,1151.3929 L 113.7266,1107.8929 L 35.938725,1107.8929 L 35.938725,1151.3929 z"
+       style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2984"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 112.7891,1151.3929 L 367.33273,1151.3929 L 367.33273,1107.8929 L 112.7891,1107.8929 L 112.7891,1151.3929 z"
+       style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2986"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 366.3951,1151.3929 L 620.93872,1151.3929 L 620.93872,1107.8929 L 366.3951,1107.8929 L 366.3951,1151.3929 z"
+       style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2988"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 35.938725,1328.2054 L 113.7266,1328.2054 L 113.7266,1284.7054 L 35.938725,1284.7054 L 35.938725,1328.2054 z"
+       style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2990"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 112.7891,1328.2054 L 367.33273,1328.2054 L 367.33273,1284.7054 L 112.7891,1284.7054 L 112.7891,1328.2054 z"
+       style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2992"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 366.3951,1328.2054 L 620.93872,1328.2054 L 620.93872,1284.7054 L 366.3951,1284.7054 L 366.3951,1328.2054 z"
+       style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2994"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 35.938725,1547.5804 L 113.7266,1547.5804 L 113.7266,1504.0804 L 35.938725,1504.0804 L 35.938725,1547.5804 z"
+       style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2996"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 112.7891,1547.5804 L 367.33273,1547.5804 L 367.33273,1504.0804 L 112.7891,1504.0804 L 112.7891,1547.5804 z"
+       style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2998"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 366.3951,1547.5804 L 620.93872,1547.5804 L 620.93872,1504.0804 L 366.3951,1504.0804 L 366.3951,1547.5804 z"
+       style="fill:#a2c4c9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path3000"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1005.7054 L 35.938725,1005.7054 L 36.876225,1004.7679 L 620.00122,1004.7679 L 620.93872,1005.7054 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3002"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1030.2679 L 35.938725,1030.2679 L 36.876225,1029.3304 L 620.00122,1029.3304 L 620.93872,1030.2679 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3004"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1108.8304 L 35.938725,1108.8304 L 36.876225,1107.8929 L 620.00122,1107.8929 L 620.93872,1108.8304 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3006"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1151.3929 L 35.938725,1151.3929 L 36.876225,1150.4554 L 620.00122,1150.4554 L 620.93872,1151.3929 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3008"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1193.9554 L 35.938725,1193.9554 L 36.876225,1193.0179 L 620.00122,1193.0179 L 620.93872,1193.9554 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3010"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1218.5179 L 35.938725,1218.5179 L 36.876225,1217.5804 L 620.00122,1217.5804 L 620.93872,1218.5179 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3012"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1243.0804 L 35.938725,1243.0804 L 36.876225,1242.1429 L 620.00122,1242.1429 L 620.93872,1243.0804 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3014"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1285.6429 L 35.938725,1285.6429 L 36.876225,1284.7054 L 620.00122,1284.7054 L 620.93872,1285.6429 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3016"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1328.2054 L 35.938725,1328.2054 L 36.876225,1327.2679 L 620.00122,1327.2679 L 620.93872,1328.2054 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3018"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1370.7679 L 35.938725,1370.7679 L 36.876225,1369.8304 L 620.00122,1369.8304 L 620.93872,1370.7679 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3020"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1395.3304 L 35.938725,1395.3304 L 36.876225,1394.3929 L 620.00122,1394.3929 L 620.93872,1395.3304 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3022"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1437.8929 L 35.938725,1437.8929 L 36.876225,1436.9554 L 620.00122,1436.9554 L 620.93872,1437.8929 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3024"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1480.4554 L 35.938725,1480.4554 L 36.876225,1479.5179 L 620.00122,1479.5179 L 620.93872,1480.4554 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3026"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1505.0179 L 35.938725,1505.0179 L 36.876225,1504.0804 L 620.00122,1504.0804 L 620.93872,1505.0179 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3028"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1547.5804 L 35.938725,1547.5804 L 36.876225,1546.6429 L 620.00122,1546.6429 L 620.93872,1547.5804 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3030"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1590.1429 L 35.938725,1590.1429 L 36.876225,1589.2054 L 620.00122,1589.2054 L 620.93872,1590.1429 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3032"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 113.7266,962.2054 L 113.7266,1614.7054 L 112.7891,1613.7679 L 112.7891,963.1429 L 113.7266,962.2054 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3034"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 367.3326,962.2054 L 367.3326,1614.7054 L 366.3951,1613.7679 L 366.3951,963.1429 L 367.3326,962.2054 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3036"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 35.938725,962.2054 L 620.93872,962.2054 L 620.00122,963.1429 L 36.876225,963.1429 L 35.938725,962.2054 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3038"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,1614.7054 L 35.938725,1614.7054 L 36.876225,1613.7679 L 620.00122,1613.7679 L 620.93872,1614.7054 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3040"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 35.938725,1614.7054 L 35.938725,962.2054 L 36.876225,963.1429 L 36.876225,1613.7679 L 35.938725,1614.7054 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3042"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 620.93872,962.2054 L 620.93872,1614.7054 L 620.00122,1613.7679 L 620.00122,963.1429 L 620.93872,962.2054 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3044"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <text
+       id="text3046"
+       x="39.688725"
+       y="823.09314"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724 69.703728 73.858727"
+         y="823.09314"
+         sodipodi:role="line"
+         id="tspan3048">3:20 –</tspan>
+    </text>
+    <text
+       id="text3050"
+       x="39.688725"
+       y="841.09314"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724"
+         y="841.09314"
+         sodipodi:role="line"
+         id="tspan3052">6:00</tspan>
+    </text>
+    <text
+       id="text3054"
+       x="116.5391"
+       y="832.09314"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="116.5391 126.5291 134.86909 140.7041 149.0441 153.1991 157.3541 165.69411 169.84911 174.0041 183.1541 192.30409 197.2991 206.4491 212.2841 216.4391 224.7791 228.9341 237.27409 241.42911 252.25909 256.41409 267.24411 275.58411 288.9191 298.06909"
+         y="832.09314"
+         sodipodi:role="line"
+         id="tspan3056">Parallel Tutorials &amp; Demos</tspan>
+    </text>
+    <text
+       id="text3058"
+       x="116.5391"
+       y="865.65564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 126.5291 134.0291 138.1841 146.52409 154.86411 163.2041 171.9491 181.9391 189.4391 192.7691 201.1091 208.6091 217.3541 228.1841 236.52409 249.0191 257.3591 264.8591 273.6041 286.09909 294.43912 298.59409 306.93408 310.2641 318.6041 322.75909 326.08911 329.4191"
+         y="865.65564"
+         sodipodi:role="line"
+         id="tspan3060">Python+Scipy+Numpy+Matplotlib</tspan>
+    </text>
+    <text
+       id="text3062"
+       x="116.5391"
+       y="883.65564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 124.8791 133.2191 141.5591 145.7141 155.7041 160.6991 164.0291 172.36909 180.70909 184.86411 194.0141 202.3541 206.50909 214.84911 219.8441 223.1741 231.5141"
+         y="883.65564"
+         sodipodi:role="line"
+         id="tspan3064">and Brian Tutorial</tspan>
+    </text>
+    <text
+       id="text3066"
+       x="370.14511"
+       y="874.65564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.9751 389.31509 397.65509 401.81009 413.46509 421.80508 430.14511 438.48511 450.9801 459.3201"
+         y="874.65564"
+         sodipodi:role="line"
+         id="tspan3068">Dan Goodman</tspan>
+    </text>
+    <text
+       id="text3070"
+       x="471.87122"
+       y="874.65564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program1.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="471.87122 476.86621 486.85623 497.68622 507.67621 511.83121 515.98621 525.9762 534.31622 539.31122 542.64124 550.14124"
+         y="874.65564"
+         sodipodi:role="line"
+         id="tspan3072">(ENS, Paris)</tspan>
+    </text>
+    <text
+       id="text3074"
+       x="35.938725"
+       y="940.90564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="35.938725 44.278725 53.428726 57.583725 65.923729 70.078728 78.418724 86.75872 92.593727 101.74373 105.89872 110.05373 118.39372 126.73373 135.07373"
+         y="940.90564"
+         sodipodi:role="line"
+         id="tspan3076">July 23rd, 2009</tspan>
+    </text>
+    <text
+       id="text3078"
+       x="39.688725"
+       y="980.15564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724 69.703728 73.858727"
+         y="980.15564"
+         sodipodi:role="line"
+         id="tspan3080">9:15 –</tspan>
+    </text>
+    <text
+       id="text3082"
+       x="39.688725"
+       y="998.15564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 56.368725 61.363724 69.703728"
+         y="998.15564"
+         sodipodi:role="line"
+         id="tspan3084">10:30</tspan>
+    </text>
+    <text
+       id="text3086"
+       x="116.5391"
+       y="980.15564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 126.5291 134.0291 144.8591 155.6891 159.8441 163.9991 172.3391 176.49409 183.99409 192.33411 204.8291 217.3241 225.66411 234.0041 238.1591 241.48911 249.8291 253.9841 262.3241 267.31909 271.47409 279.81409 287.31409 295.65411 299.80908 303.96411 312.30411"
+         y="980.15564"
+         sodipodi:role="line"
+         id="tspan3088">PyNN: a common interface for</tspan>
+    </text>
+    <text
+       id="text3090"
+       x="116.5391"
+       y="998.15564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 124.8791 133.2191 141.5591 146.55409 154.8941 163.2341 171.5741 174.9041 179.0591 187.39909 195.73911 199.8941 210.72411 219.0641 224.0591 231.5591 235.7141 243.2141 246.5441 259.03909 267.37909 270.70911 279.0491 283.2041 291.5441 296.53909"
+         y="998.15564"
+         sodipodi:role="line"
+         id="tspan3092">neuronal network simulators</tspan>
+    </text>
+    <text
+       id="text3094"
+       x="370.14511"
+       y="980.15564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.1351 388.4751 396.81509 401.81009 410.15012 420.9801 425.1351 435.96509 444.30508 451.80511 455.1351 462.6351 470.9751"
+         y="980.15564"
+         sodipodi:role="line"
+         id="tspan3096">Andrew Davison</tspan>
+    </text>
+    <text
+       id="text3098"
+       x="483.53134"
+       y="980.15564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="483.53134 488.52634 499.35635 510.18634 514.34137 525.17133 529.32635 533.48132 544.31134 555.14136 565.97137 575.96136"
+         y="980.15564"
+         sodipodi:role="line"
+         id="tspan3100">(UNIC, CNRS,</tspan>
+    </text>
+    <text
+       id="text3102"
+       x="370.14511"
+       y="998.15564"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 379.2951 384.2901 392.6301 400.97009 408.47009 416.81009"
+         y="998.15564"
+         sodipodi:role="line"
+         id="tspan3104">France)</tspan>
+    </text>
+    <text
+       id="text3106"
+       x="116.5391"
+       y="1022.7182"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 127.3691 135.70911 144.0491 149.0441 157.38409 166.5341 174.8741 183.2141 186.5441"
+         y="1022.7182"
+         sodipodi:role="line"
+         id="tspan3108">NeuroTools</tspan>
+    </text>
+    <text
+       id="text3110"
+       x="370.14511"
+       y="1022.7182"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.1351 383.46509 391.80508 396.80011 401.7951 410.1351 414.2901 424.28009 432.62009 440.96011"
+         y="1022.7182"
+         sodipodi:role="line"
+         id="tspan3112">Pierre Yger</tspan>
+    </text>
+    <text
+       id="text3114"
+       x="450.17685"
+       y="1022.7182"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="450.17685 455.17184 466.00186 476.83185 480.98685 491.81686 495.97186 500.12686 510.95685 521.78687 532.61688 542.60687 546.76184 550.91687 560.06683 565.06183 573.40186 581.74182 589.24182 597.58185"
+         y="1022.7182"
+         sodipodi:role="line"
+         id="tspan3116">(UNIC, CNRS, France)</tspan>
+    </text>
+    <text
+       id="text3118"
+       x="116.5391"
+       y="1047.2806"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 127.3691 135.70911 139.86411 148.2041 158.19411 161.52409 169.86411 180.69411 189.0341 194.0291 202.36909 213.1991 217.3541 221.50909 231.4991 239.8391 243.99409 252.33411 260.6741 269.0141 277.3541 282.34909 289.84909 298.18912 306.52911 311.52411 319.02411 327.36411"
+         y="1047.2806"
+         sodipodi:role="line"
+         id="tspan3120">DataViewer3D: An open-source,</tspan>
+    </text>
+    <text
+       id="text3122"
+       x="116.5391"
+       y="1065.2806"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 124.0391 129.0341 137.3741 144.8741 152.3741 157.36909 165.70909 169.03909 177.3791 181.5341 185.6891 194.0291 199.02409 211.5191 215.6741 228.1691 236.50909 239.8391 243.99409 247.3241 252.31911 264.81412 273.15411 281.49411 289.83411"
+         y="1065.2806"
+         sodipodi:role="line"
+         id="tspan3124">cross-platform multi-modal</tspan>
+    </text>
+    <text
+       id="text3126"
+       x="116.5391"
+       y="1083.2806"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 124.8791 133.2191 141.5591 146.55409 154.8941 158.22411 170.7191 179.0591 187.39909 190.7291 199.06911 207.4091 211.5641 219.9041 228.24409 232.39911 240.73911 244.8941 252.3941 255.72411 263.22409 271.56409 279.90411 283.2341 286.56412 294.06412 302.40411 306.55911 309.8891 318.2291 326.56909 330.72412 334.87909 343.21909 351.55911"
+         y="1083.2806"
+         sodipodi:role="line"
+         id="tspan3128">neuroimaging data visualization tool</tspan>
+    </text>
+    <text
+       id="text3130"
+       x="116.5391"
+       y="1101.2806"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 124.8791 133.2191 136.5491 139.8791 144.0341 148.1891 156.5291 164.86909 169.02409 179.0141 186.5141 190.6691 199.00909 207.34911"
+         y="1101.2806"
+         sodipodi:role="line"
+         id="tspan3132">built on Python</tspan>
+    </text>
+    <text
+       id="text3134"
+       x="370.14511"
+       y="1065.2806"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.1351 388.4751 396.81509 401.81009 410.15012 414.30508 425.96011 434.30011 442.64011 453.47009"
+         y="1065.2806"
+         sodipodi:role="line"
+         id="tspan3136">Andre Gouws</tspan>
+    </text>
+    <text
+       id="text3138"
+       x="465.19147"
+       y="1065.2806"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="465.19147 470.18646 481.01648 489.35648 492.68646 500.18646 508.52646 513.52148 521.02148 524.35144 528.50647 536.00647 540.1615 548.50146 552.65649 556.81146 566.80145 575.14148 580.13647 587.63647"
+         y="1065.2806"
+         sodipodi:role="line"
+         id="tspan3140">(University of York,</tspan>
+    </text>
+    <text
+       id="text3142"
+       x="370.14511"
+       y="1083.2806"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.9751 390.96509"
+         y="1083.2806"
+         sodipodi:role="line"
+         id="tspan3144">UK)</tspan>
+    </text>
+    <text
+       id="text3146"
+       x="39.688725"
+       y="1125.8431"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 56.368725 61.363724 69.703728 78.043724 82.198723"
+         y="1125.8431"
+         sodipodi:role="line"
+         id="tspan3148">10:30 –</tspan>
+    </text>
+    <text
+       id="text3150"
+       x="39.688725"
+       y="1143.8431"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 56.368725 61.363724 69.703728"
+         y="1143.8431"
+         sodipodi:role="line"
+         id="tspan3152">11:00</tspan>
+    </text>
+    <text
+       id="text3154"
+       x="120.70647"
+       y="1134.8431"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="120.70647 131.53647 140.68648 145.68147 150.67647 159.01646"
+         y="1134.8431"
+         sodipodi:role="line"
+         id="tspan3156">Coffee</tspan>
+    </text>
+    <text
+       id="text3158"
+       x="39.688725"
+       y="1168.4056"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 56.368725 61.363724 69.703728 78.043724 82.198723"
+         y="1168.4056"
+         sodipodi:role="line"
+         id="tspan3160">11:00 –</tspan>
+    </text>
+    <text
+       id="text3162"
+       x="39.688725"
+       y="1186.4056"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 56.368725 61.363724 69.703728"
+         y="1186.4056"
+         sodipodi:role="line"
+         id="tspan3164">11:30</tspan>
+    </text>
+    <text
+       id="text3166"
+       x="116.5391"
+       y="1177.4056"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="116.5391 125.6891 129.8441 138.99409 148.1441 153.1391 162.28909 166.44411 175.5941 184.74409 188.89909 193.8941 202.2341 206.3891 214.7291"
+         y="1177.4056"
+         sodipodi:role="line"
+         id="tspan3168">Lightning talks</tspan>
+    </text>
+    <text
+       id="text3170"
+       x="116.5391"
+       y="1210.9681"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 126.5291 137.3591"
+         y="1210.9681"
+         sodipodi:role="line"
+         id="tspan3172">BCI</tspan>
+    </text>
+    <text
+       id="text3174"
+       x="370.14511"
+       y="1210.9681"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.1351 388.4751 395.9751 400.1301 403.46011 411.80011 420.14011 424.2951 434.2851 442.62509 450.96509 455.12012 463.46011 471.80011"
+         y="1210.9681"
+         sodipodi:role="line"
+         id="tspan3176">Bastian Venthur</tspan>
+    </text>
+    <text
+       id="text3178"
+       x="116.5391"
+       y="1235.5306"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 126.5291 137.3591 147.34911 154.84911 163.1891 171.5291 179.86909"
+         y="1235.5306"
+         sodipodi:role="line"
+         id="tspan3180">BCPy2000</tspan>
+    </text>
+    <text
+       id="text3182"
+       x="370.14511"
+       y="1235.5306"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 377.64511 385.98511 390.9801 399.3201 411.81509 419.31509 423.47009 434.30011 437.6301 440.96011"
+         y="1235.5306"
+         sodipodi:role="line"
+         id="tspan3184">Jeremy Hill</tspan>
+    </text>
+    <text
+       id="text3186"
+       x="39.688725"
+       y="1260.0931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 56.368725 61.363724 69.703728 78.043724 82.198723"
+         y="1260.0931"
+         sodipodi:role="line"
+         id="tspan3188">11:30 –</tspan>
+    </text>
+    <text
+       id="text3190"
+       x="39.688725"
+       y="1278.0931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 56.368725 61.363724 69.703728"
+         y="1278.0931"
+         sodipodi:role="line"
+         id="tspan3192">12:30</tspan>
+    </text>
+    <text
+       id="text3194"
+       x="116.5391"
+       y="1260.0931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="116.5391 127.3691 131.52409 139.86411 148.2041 157.3541 165.69411 174.0341 178.1891"
+         y="1260.0931"
+         sodipodi:role="line"
+         id="tspan3196">Discussio</tspan>
+    </text>
+    <text
+       id="text3198"
+       x="187.40085"
+       y="1260.0931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="187.40085"
+         y="1260.0931"
+         id="tspan3200">n</tspan>
+    </text>
+    <text
+       id="text3202"
+       x="196.56348"
+       y="1260.0931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="196.56348 200.71848 204.87347 209.86847 224.01347 232.35347 240.69347 245.68848 254.02847 258.18347 261.51346 269.01346 273.16846 283.15848 290.65848 294.81348 303.15347 311.49347"
+         y="1260.0931"
+         sodipodi:role="line"
+         id="tspan3204">: “Where is Python</tspan>
+    </text>
+    <text
+       id="text3206"
+       x="116.5391"
+       y="1278.0931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="116.5391 124.0391 132.3791 140.7191 148.2191 156.5591 161.55411 169.8941 178.2341 186.5741 194.0741 202.41409 206.56911 210.72411 219.0641 226.5641 229.8941 238.2341 246.5741 250.7291 259.06909 266.56909 274.90909"
+         y="1278.0931"
+         sodipodi:role="line"
+         id="tspan3208">convergence taking us?&quot;</tspan>
+    </text>
+    <text
+       id="text3210"
+       x="370.14511"
+       y="1269.0931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 382.64011 390.9801 399.3201 407.6601 412.65509 420.99509 425.15012 428.4801 436.8201 445.1601 449.31509 457.65509 465.99509 474.33508 482.67511 486.0051"
+         y="1269.0931"
+         sodipodi:role="line"
+         id="tspan3212">Moderation panel:</tspan>
+    </text>
+    <text
+       id="text3214"
+       x="494.39322"
+       y="1269.0931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="494.39322 498.54822 506.88821"
+         y="1269.0931"
+         sodipodi:role="line"
+         id="tspan3216">tba</tspan>
+    </text>
+    <text
+       id="text3218"
+       x="515.24524"
+       y="1269.0931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="515.24524"
+         y="1269.0931"
+         id="tspan3220">.</tspan>
+    </text>
+    <text
+       id="text3222"
+       x="39.688725"
+       y="1302.6556"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 56.368725 61.363724 69.703728 78.043724 82.198723"
+         y="1302.6556"
+         sodipodi:role="line"
+         id="tspan3224">12:30 –</tspan>
+    </text>
+    <text
+       id="text3226"
+       x="39.688725"
+       y="1320.6556"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724"
+         y="1320.6556"
+         sodipodi:role="line"
+         id="tspan3228">2:00</tspan>
+    </text>
+    <text
+       id="text3230"
+       x="116.5391"
+       y="1311.6556"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="116.5391 127.3691 133.2041 141.5441 149.88409 158.22411 162.3791 167.3741 176.52409 182.3591 186.5141 190.6691 199.81911 208.9691 217.3091"
+         y="1311.6556"
+         sodipodi:role="line"
+         id="tspan3232">Break for lunch</tspan>
+    </text>
+    <text
+       id="text3234"
+       x="39.688725"
+       y="1345.2181"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724 69.703728 73.858727"
+         y="1345.2181"
+         sodipodi:role="line"
+         id="tspan3236">2:00 –</tspan>
+    </text>
+    <text
+       id="text3238"
+       x="39.688725"
+       y="1363.2181"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724"
+         y="1363.2181"
+         sodipodi:role="line"
+         id="tspan3240">3:30</tspan>
+    </text>
+    <text
+       id="text3242"
+       x="116.5391"
+       y="1354.2181"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="116.5391 126.5291 134.86909 140.7041 149.0441 153.1991 157.3541 165.69411 169.84911 174.0041 183.1541 192.30409 197.2991 206.4491 212.2841 216.4391 224.7791 228.9341 237.27409 241.42911 252.25909 256.41409 267.24411 275.58411 288.9191 298.06909"
+         y="1354.2181"
+         sodipodi:role="line"
+         id="tspan3244">Parallel Tutorials &amp; Demos</tspan>
+    </text>
+    <text
+       id="text3246"
+       x="116.5391"
+       y="1387.7806"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 126.5291 129.8591 137.3591 140.6891 149.0291 157.36909 167.3591 175.6991"
+         y="1387.7806"
+         sodipodi:role="line"
+         id="tspan3248">VisionEgg</tspan>
+    </text>
+    <text
+       id="text3250"
+       x="370.14511"
+       y="1387.7806"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.1351 388.4751 396.81509 401.81009 410.15012 420.9801 425.1351 435.12509 439.28009 444.27512 452.61511"
+         y="1387.7806"
+         sodipodi:role="line"
+         id="tspan3252">Andrew Straw</tspan>
+    </text>
+    <text
+       id="text3254"
+       x="116.5391"
+       y="1421.3431"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 127.3691 137.3591 148.1891 159.0191 170.6741 181.5041 190.2491 200.23911 207.73911 211.89409 220.2341 228.5741"
+         y="1421.3431"
+         sodipodi:role="line"
+         id="tspan3256">NEURON+Python</tspan>
+    </text>
+    <text
+       id="text3258"
+       x="370.14511"
+       y="1412.3431"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 382.64011 385.97009 393.47009 401.81009 410.15012 418.49011 421.8201 425.9751 436.80508 440.1351 448.4751 456.81509 464.31509 468.47009 472.62509 482.61511 490.95511 499.2951 504.2901 512.63013 523.46008 527.61511 538.44513 546.7851 554.2851 557.61511 565.11511 573.45508 581.7951 585.95007 590.1051 600.09509 603.42511 606.75507 610.08508"
+         y="1412.3431"
+         sodipodi:role="line"
+         id="tspan3260">Michael Hines, Andrew Davison, Eilif</tspan>
+    </text>
+    <text
+       id="text3262"
+       x="370.14511"
+       y="1430.3431"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 382.64011 390.9801 394.31009 397.64011 405.9801"
+         y="1430.3431"
+         sodipodi:role="line"
+         id="tspan3264">Muller</tspan>
+    </text>
+    <text
+       id="text3266"
+       x="116.5391"
+       y="1463.9056"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 126.5291 134.0291 144.8591 154.84911 163.9991 172.3391 180.67911"
+         y="1463.9056"
+         sodipodi:role="line"
+         id="tspan3268">PyDSTool</tspan>
+    </text>
+    <text
+       id="text3270"
+       x="370.14511"
+       y="1454.9056"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.9751 389.31509 397.65509 405.99509 410.99011 415.14511 419.30011 430.1301 433.46011 441.80011 452.6301 455.96011 464.30011"
+         y="1454.9056"
+         sodipodi:role="line"
+         id="tspan3272">Robert Clewley</tspan>
+    </text>
+    <text
+       id="text3274"
+       x="476.01672"
+       y="1454.9056"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="476.01672 481.01172 492.66672 501.00671 509.34671 514.34174 522.6817 526.01172 534.35175 538.50671 548.4967 552.65173 560.9917 565.14673"
+         y="1454.9056"
+         sodipodi:role="line"
+         id="tspan3276">(Georgia State</tspan>
+    </text>
+    <text
+       id="text3278"
+       x="370.14511"
+       y="1472.9056"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.9751 389.31509 392.64511 400.14511 408.48511 413.4801 420.9801 424.31009 428.46509 435.96509 440.12009 444.27512 455.1051 465.09509 475.08511"
+         y="1472.9056"
+         sodipodi:role="line"
+         id="tspan3280">University, USA)</tspan>
+    </text>
+    <text
+       id="text3282"
+       x="116.5391"
+       y="1497.4681"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 129.0341 139.86411"
+         y="1497.4681"
+         sodipodi:role="line"
+         id="tspan3284">MDP</tspan>
+    </text>
+    <text
+       id="text3286"
+       x="370.14511"
+       y="1497.4681"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 379.2951 382.62509 390.12509 393.45511 401.7951 410.1351 418.4751 422.6301 431.78009 435.11011 439.26511"
+         y="1497.4681"
+         sodipodi:role="line"
+         id="tspan3288">Tiziano Zito</tspan>
+    </text>
+    <text
+       id="text3290"
+       x="39.688725"
+       y="1522.0306"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724 69.703728 73.858727"
+         y="1522.0306"
+         sodipodi:role="line"
+         id="tspan3292">3:30 –</tspan>
+    </text>
+    <text
+       id="text3294"
+       x="39.688725"
+       y="1540.0306"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724"
+         y="1540.0306"
+         sodipodi:role="line"
+         id="tspan3296">4:00</tspan>
+    </text>
+    <text
+       id="text3298"
+       x="116.5391"
+       y="1531.0306"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="116.5391 127.3691 136.5191 141.5141 146.50909 154.84911 163.1891 167.3441 178.1741 184.00911 192.34911 200.6891"
+         y="1531.0306"
+         sodipodi:role="line"
+         id="tspan3300">Coffee Break</tspan>
+    </text>
+    <text
+       id="text3302"
+       x="39.688725"
+       y="1564.5931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724 69.703728 73.858727"
+         y="1564.5931"
+         sodipodi:role="line"
+         id="tspan3304">4:00 –</tspan>
+    </text>
+    <text
+       id="text3306"
+       x="39.688725"
+       y="1582.5931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="39.688725 48.028725 53.023724 61.363724"
+         y="1582.5931"
+         sodipodi:role="line"
+         id="tspan3308">6:00</tspan>
+    </text>
+    <text
+       id="text3310"
+       x="116.5391"
+       y="1573.5931"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="116.5391 126.5291 134.86909 140.7041 149.0441 153.1991 157.3541 165.69411 169.84911 174.0041 183.1541 192.30409 197.2991 206.4491 212.2841 216.4391 224.7791 228.9341 237.27409 241.42911 252.25909 256.41409 267.24411 275.58411 288.9191 298.06909"
+         y="1573.5931"
+         sodipodi:role="line"
+         id="tspan3312">Parallel Tutorials &amp; Demos</tspan>
+    </text>
+    <text
+       id="text3314"
+       x="116.5391"
+       y="1607.1556"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.5391 126.5291 134.0291 144.8591"
+         y="1607.1556"
+         sodipodi:role="line"
+         id="tspan3316">PyNN</tspan>
+    </text>
+    <text
+       id="text3318"
+       x="370.14511"
+       y="1607.1556"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.14511 380.1351 388.4751 396.81509 401.81009 410.15012 420.9801 425.1351 435.96509 444.30508 451.80511 455.1351 462.6351 470.9751"
+         y="1607.1556"
+         sodipodi:role="line"
+         id="tspan3320">Andrew Davison</tspan>
+    </text>
+    <path
+       d="M 36.07143,1686.4821 L 621.07143,1686.4821 L 621.07143,1611.8571 L 36.07143,1611.8571 L 36.07143,1686.4821 z"
+       style="fill:#d0e0e3;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path3516"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 621.07143,1637.3571 L 36.07143,1637.3571 L 37.00893,1636.4196 L 620.13393,1636.4196 L 621.07143,1637.3571 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3518"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 621.07143,1661.9196 L 36.07143,1661.9196 L 37.00893,1660.9821 L 620.13393,1660.9821 L 621.07143,1661.9196 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3520"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 113.85931,1611.8571 L 113.85931,1686.4821 L 112.92181,1685.5446 L 112.92181,1612.7946 L 113.85931,1611.8571 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3522"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 367.46531,1611.8571 L 367.46531,1686.4821 L 366.52781,1685.5446 L 366.52781,1612.7946 L 367.46531,1611.8571 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3524"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 36.07143,1611.8571 L 621.07143,1611.8571 L 620.13393,1612.7946 L 37.00893,1612.7946 L 36.07143,1611.8571 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3526"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 621.07143,1686.4821 L 36.07143,1686.4821 L 37.00893,1685.5446 L 620.13393,1685.5446 L 621.07143,1686.4821 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3528"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 36.07143,1686.4821 L 36.07143,1611.8571 L 37.00893,1612.7946 L 37.00893,1685.5446 L 36.07143,1686.4821 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3530"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <path
+       d="M 621.07143,1611.8571 L 621.07143,1686.4821 L 620.13393,1685.5446 L 620.13393,1612.7946 L 621.07143,1611.8571 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path3532"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845" />
+    <text
+       id="text3534"
+       x="116.67181"
+       y="1629.8074"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.67181 127.50181 135.84181 144.18181 149.1768 157.51682 166.66681 175.00681 183.34682 186.67682"
+         y="1629.8074"
+         sodipodi:role="line"
+         id="tspan3536">NeuroTools</tspan>
+    </text>
+    <text
+       id="text3538"
+       x="370.2778"
+       y="1629.8074"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.2778 380.26779 383.59781 391.93781 396.9328 401.9278 410.26779 414.42279 424.41281 432.75281 441.0928 446.0878 450.2428 454.3978 461.8978 470.23779 478.57779 486.07779 490.23279 500.22281 505.2178 513.5578 526.0528 533.5528 541.89282"
+         y="1629.8074"
+         sodipodi:role="line"
+         id="tspan3540">Pierre Yger, Jens Kremkow</tspan>
+    </text>
+    <text
+       id="text3542"
+       x="116.67181"
+       y="1654.3699"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.67181 126.66181 134.1618 144.99181 154.98181 164.9718"
+         y="1654.3699"
+         sodipodi:role="line"
+         id="tspan3544">PyNEST</tspan>
+    </text>
+    <text
+       id="text3546"
+       x="370.2778"
+       y="1654.3699"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.2778 377.7778 386.1178 393.6178 401.95779 410.29779 418.63779 422.79282 432.78281 441.1228 449.4628 452.79282 461.13281"
+         y="1654.3699"
+         sodipodi:role="line"
+         id="tspan3548">Jochen Eppler</tspan>
+    </text>
+    <text
+       id="text3550"
+       x="116.67181"
+       y="1678.9324"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-style:italic;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Italic"
+         x="116.67181 127.50181 135.84181 139.99681 148.33681 158.32681 161.65681 169.99681 180.82681 189.16681 194.1618 202.50182"
+         y="1678.9324"
+         sodipodi:role="line"
+         id="tspan3552">DataViewer3D</tspan>
+    </text>
+    <text
+       id="text3554"
+       x="370.2778"
+       y="1678.9324"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="370.2778 380.26779 388.60779 396.94781 401.94281 410.28281 414.43781 426.0928 434.4328 442.7728 453.60281"
+         y="1678.9324"
+         sodipodi:role="line"
+         id="tspan3556">Andre Gouws</tspan>
+    </text>
+    <text
+       id="text3558"
+       x="36.07143"
+       y="1725.4719"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+         x="36.07143 47.726429 53.561428 62.71143 71.05143 80.201431 84.35643 91.85643 100.19643 106.03143 114.37143"
+         y="1725.4719"
+         sodipodi:role="line"
+         id="tspan3560">Organizers:</tspan>
+    </text>
+    <text
+       id="text3562"
+       x="123.5958"
+       y="1725.4719"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="123.5958 133.5858 136.9158 140.2458 143.57581 147.7308 151.8858 164.3808 172.72079 176.0508 179.3808 187.72079"
+         y="1725.4719"
+         sodipodi:role="line"
+         id="tspan3564">Eilif Muller</tspan>
+    </text>
+    <text
+       id="text3566"
+       x="192.77306"
+       y="1718.6824"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="192.77306"
+         y="1718.6824"
+         id="tspan3568">1</tspan>
+    </text>
+    <text
+       id="text3570"
+       x="201.11543"
+       y="1725.4719"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="201.11543 205.27043 209.42543 216.92543 225.26543 233.60544 241.10544 245.26044 255.25043 260.24542 268.58542 281.08044 288.58044 296.92044"
+         y="1725.4719"
+         sodipodi:role="line"
+         id="tspan3572">, Jens Kremkow</tspan>
+    </text>
+    <text
+       id="text3574"
+       x="307.81454"
+       y="1718.6824"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="307.81454 316.15454 320.30954"
+         y="1718.6824"
+         sodipodi:role="line"
+         id="tspan3576">2,3</tspan>
+    </text>
+    <text
+       id="text3578"
+       x="328.66669"
+       y="1725.4719"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="328.66669 332.82169 336.97668 346.96667 355.30667 363.64667 368.64169 376.98169 387.81168 391.96667 402.79669 411.13669 418.63669 421.96667 429.46667 437.80667"
+         y="1725.4719"
+         sodipodi:role="line"
+         id="tspan3580">, Andrew Davison</tspan>
+    </text>
+    <text
+       id="text3582"
+       x="446.22031"
+       y="1718.6824"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="446.22031"
+         y="1718.6824"
+         id="tspan3584">4</tspan>
+    </text>
+    <text
+       id="text3586"
+       x="454.56268"
+       y="1725.4719"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="454.56268 458.71768 462.87268 473.70267 482.04269 494.53769 502.87769 506.20767 514.54767 518.7027 528.69269 533.68768 542.02771 546.18268 550.33771"
+         y="1725.4719"
+         sodipodi:role="line"
+         id="tspan3588">, Romain Brette</tspan>
+    </text>
+    <text
+       id="text3590"
+       x="558.77167"
+       y="1718.6824"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="558.77167"
+         y="1718.6824"
+         id="tspan3592">5</tspan>
+    </text>
+    <text
+       id="text3594"
+       x="36.07143"
+       y="1761.4719"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="36.07143"
+         y="1761.4719"
+         id="tspan3596">1</tspan>
+    </text>
+    <text
+       id="text3598"
+       x="48.581181"
+       y="1768.2614"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="48.581181 56.921181 65.261177 73.601181 81.941177 86.93618 95.276176 99.431183 107.77118 112.76618 120.26618 124.42118 132.76118 136.91618 141.07118 151.90118 160.24118 172.73618 181.07619 189.41618 193.57118 201.91118 206.06618 209.39616 217.73619 226.07619 234.41618 237.74619 241.90118 252.73119 261.0712 269.41119 274.40619 282.74619 290.24619 297.74619 301.07617 309.41617 317.75616 325.25616 333.59616 337.75119 341.90619 351.89618 359.39618 367.73618 371.06619 379.40619 383.56119 393.55121 401.8912 405.22119 412.72119 416.87616 425.21619 432.71619 441.05618 449.39618 452.7262 461.06619 469.40619 477.74619 481.90118 491.05121 499.3912 507.7312 516.07117 521.06616 529.40619 532.73621 541.07617 545.2312 553.57117"
+         y="1768.2614"
+         sodipodi:role="line"
+         id="tspan3600">Laboratory of Computational Neuroscience, Ecole Polytechnique Fédérale de</tspan>
+    </text>
+    <text
+       id="text3602"
+       x="36.07143"
+       y="1786.2614"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="36.07143 44.41143 52.751431 61.091431 68.591431 76.931427 85.271431 93.611435 101.95143 106.10643 110.26143 120.25143 131.08144 134.41142 138.56644 146.06644 154.40643 159.40143 162.73143 171.07143 179.41142"
+         y="1786.2614"
+         sodipodi:role="line"
+         id="tspan3604">Lausanne, Switzerland</tspan>
+    </text>
+    <text
+       id="text3606"
+       x="36.07143"
+       y="1804.2614"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="36.07143"
+         y="1804.2614"
+         id="tspan3608">2</tspan>
+    </text>
+    <text
+       id="text3610"
+       x="48.581181"
+       y="1811.051"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="48.581181 52.736179 61.07618 68.57618 72.731178 76.06118 80.216179 88.556183 92.711182 96.86618 105.20618 113.54618 117.70118 128.53117 136.87119 145.21118 150.20618 158.54617 166.04617 173.54617 176.87617 185.21617 193.55618 201.05618 209.39616 216.89616 221.05118 231.88118 240.22118 248.56117 256.90118 260.2312 264.38617 267.71619 275.21619 283.55618 291.05618 295.21118 303.55118 311.89117 316.04617 319.37619 327.71619 331.87119 344.36618 352.70618 361.04617 364.37619 368.53119 376.87115 381.86618 386.86118 395.20117 403.54117 411.8812 420.22119 424.37616 428.53116 439.36118 450.19116 461.02118 471.01117 475.1662 479.3212 488.47116 493.46616 501.80615 510.14621 517.64618"
+         y="1811.051"
+         sodipodi:role="line"
+         id="tspan3612">Institut de Neurosciences Cognitives de la Méditerranée, CNRS, France</tspan>
+    </text>
+    <text
+       id="text3614"
+       x="36.07143"
+       y="1829.051"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="36.07143"
+         y="1829.051"
+         id="tspan3616">3</tspan>
+    </text>
+    <text
+       id="text3618"
+       x="48.581181"
+       y="1835.8405"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="48.581181 58.571178 66.911179 71.906181 80.246178 87.746178 91.901176 100.24118 103.57118 111.91118 116.06618 126.89618 135.23618 143.57619 147.73119 156.07118 161.06618 165.22118 169.37617 177.71617 182.71118 186.86618 197.69618 206.03618 218.53119 226.87119 235.21118 239.36618 247.70618 251.86118 255.19118 263.53119 271.87119 280.21118 283.54117 287.6962 298.52618 306.86618 315.20618 320.20117 328.54117 336.04117 343.54117 346.87119 355.21118 363.55118 371.05121 379.3912 383.54617 387.70117 397.69116 401.02118 409.36118 417.70117 422.69617 426.85117 431.84619 440.18619 448.52618 456.86618 467.69617 471.02618 479.36618 486.86618 491.86118 502.69116 511.03116 514.36115 521.86115 530.20117 535.19617 542.69617 546.02618 550.18115"
+         y="1835.8405"
+         sodipodi:role="line"
+         id="tspan3620">Bernstein Center for Computational Neuroscience, Albert-Ludwigs-University</tspan>
+    </text>
+    <text
+       id="text3622"
+       x="36.07143"
+       y="1853.8405"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="36.07143 45.221432 50.216431 58.556431 61.886429 70.226433 78.566429 83.561432 91.901428 96.056427 100.21143 111.86643 120.20643 125.20143 137.69643 146.03642 154.37642"
+         y="1853.8405"
+         sodipodi:role="line"
+         id="tspan3624">Freiburg, Germany</tspan>
+    </text>
+    <text
+       id="text3626"
+       x="36.07143"
+       y="1871.8405"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="36.07143"
+         y="1871.8405"
+         id="tspan3628">4</tspan>
+    </text>
+    <text
+       id="text3630"
+       x="48.581181"
+       y="1878.6301"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="48.581181 59.411179 67.751183 71.081177 75.236176 83.57618 87.731178 96.071182 104.41118 108.56618 119.39618 127.73618 136.07619 141.07118 149.41118 156.91118 164.41118 167.74118 176.08118 184.42117 191.92117 200.26118 207.76118 211.91618 216.07118 224.41118 228.56619 236.90619 245.24619 250.24118 258.58118 262.73618 266.06619 273.56619 281.90619 289.40619 293.56116 301.90118 306.05618 310.21118 321.04117 329.38116 341.87619 350.21619 358.55618 362.71118 371.05121 375.20618 378.53616 386.87616 395.21619 403.55618 406.8862 410.21619 418.55618 426.05618 430.21115 434.36618 445.19617 456.02618 466.85617 476.84619 481.00119 485.15619 494.30615 499.30118 507.64117 515.9812 523.4812"
+         y="1878.6301"
+         sodipodi:role="line"
+         id="tspan3632">Unité de Neurosciences Intégratives et Computationelles, CNRS, France</tspan>
+    </text>
+    <text
+       id="text3634"
+       x="36.07143"
+       y="1896.6301"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="36.07143"
+         y="1896.6301"
+         id="tspan3636">5</tspan>
+    </text>
+    <text
+       id="text3638"
+       x="48.581181"
+       y="1903.4196"
+       style="font-size:15px"
+       inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/images/program2.png"
+       inkscape:export-xdpi="115.35845"
+       inkscape:export-ydpi="115.35845">
+      <tspan
+         style="font-size:15px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="48.581181 58.571178 66.071182 74.411179 77.74118 86.081177 90.236183 101.06618 109.40618 114.40118 126.89618 135.23618 138.56618 146.90619 151.06119 161.05118 169.39119 177.73119 186.07118 191.06618 194.39618 202.73618 211.07619 216.07118 224.41118 228.56619 236.90619 245.24619 249.40118 259.39117 267.7312 272.72617 276.05618 283.55618 287.71118 291.86618 301.01617 306.01117 314.35117 322.69116 330.19116"
+         y="1903.4196"
+         sodipodi:role="line"
+         id="tspan3640">Ecole Normale Supérieure de Paris, France</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800px"
+   height="600px"
+   id="svg2383"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   inkscape:export-filename="/home/emuller/theway-svn/talks/talkCNS09_PythonWS/slide_images/bf1.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="bf1.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2385">
+    <linearGradient
+       id="linearGradient3197">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3199" />
+      <stop
+         style="stop-color:#00008f;stop-opacity:1"
+         offset="1"
+         id="stop3201" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="6.1230318e-14 : 1000 : 0"
+       inkscape:vp_z="800 : 300 : 1"
+       inkscape:persp3d-origin="400 : 200 : 1"
+       id="perspective2391" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3197"
+       id="linearGradient3203"
+       x1="355.9104"
+       y1="603.21539"
+       x2="355.9104"
+       y2="-0.64800316"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.6"
+     inkscape:cx="433.7037"
+     inkscape:cy="282.55287"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="952"
+     inkscape:window-height="688"
+     inkscape:window-x="0"
+     inkscape:window-y="0" />
+  <metadata
+     id="metadata2388">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3225"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial"
+       transform="translate(-21.666667,-6.6666667)"><flowRegion
+         id="flowRegion3227"><rect
+           id="rect3229"
+           width="348.33334"
+           height="60"
+           x="53.333332"
+           y="33.333332"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial" /></flowRegion><flowPara
+         id="flowPara3231">Brainfuck syntax</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3233"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial"
+       transform="translate(-37.666666,-39.666667)"><flowRegion
+         id="flowRegion3235"><rect
+           id="rect3237"
+           width="763.33331"
+           height="483.33334"
+           x="61.666668"
+           y="128.33333"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffff00;font-family:Arial;-inkscape-font-specification:Arial" /></flowRegion><flowPara
+         id="flowPara3547">&gt; inc ptr (to point to the next cell to the right)</flowPara><flowPara
+         id="flowPara3549" /><flowPara
+         id="flowPara3551">&lt; dec ptr (to point to the next cell to the left).</flowPara><flowPara
+         id="flowPara3553" /><flowPara
+         id="flowPara3555">+ inc byte at the ptr.</flowPara><flowPara
+         id="flowPara3557" /><flowPara
+         id="flowPara3559">- dec byte at the ptr.</flowPara><flowPara
+         id="flowPara3561" /><flowPara
+         id="flowPara3563">. output the value of byte at ptr.</flowPara><flowPara
+         id="flowPara3565" /><flowPara
+         id="flowPara3567">, storing one byte of input in byte at ptr.</flowPara><flowPara
+         id="flowPara3569" /><flowPara
+         id="flowPara3571">[ jump fwd to cmd after the next ] if byte at ptr is 0.</flowPara><flowPara
+         id="flowPara3573" /><flowPara
+         id="flowPara3575">] jump back to cmd after the prev [ if byte at ptr is !0.</flowPara><flowPara
+         id="flowPara3577" /><flowPara
+         id="flowPara3579" /><flowPara
+         id="flowPara3581" /><flowPara
+         id="flowPara3583" /><flowPara
+         id="flowPara3585" /><flowPara
+         id="flowPara3587" /><flowPara
+         id="flowPara3589" /><flowPara
+         id="flowPara3591" /><flowPara
+         id="flowPara3593" /></flowRoot>  </g>
+</svg>

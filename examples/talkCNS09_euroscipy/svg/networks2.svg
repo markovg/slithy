@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800px"
+   height="600px"
+   id="svg12053"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="networks2.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs12055">
+    <marker
+       inkscape:stockid="EmptyTriangleInL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleInL"
+       style="overflow:visible">
+      <path
+         id="path5637"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(-0.8) translate(-6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path5485"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path5646"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(-6,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="21.802185 : 396.901 : 1"
+       inkscape:vp_y="3.0669151e-14 : 429.74282 : 0"
+       inkscape:vp_z="408.31597 : 421.25309 : 1"
+       inkscape:persp3d-origin="207.96325 : 378.27881 : 1"
+       id="perspective12061" />
+    <inkscape:perspective
+       id="perspective12427"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective12851"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.6"
+     inkscape:cx="413.44101"
+     inkscape:cy="906.66667"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:window-width="676"
+     inkscape:window-height="688"
+     inkscape:window-x="287"
+     inkscape:window-y="76" />
+  <metadata
+     id="metadata12058">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <image
+       y="-17.297617"
+       x="10.000005"
+       id="image12429"
+       height="180.46428"
+       width="271.66666"
+       sodipodi:absref="/home/emuller/img/walnut.jpg"
+       xlink:href="walnut.jpg" />
+    <image
+       y="9.1827745"
+       x="319.99158"
+       id="image12853"
+       height="594.78955"
+       width="478.21814"
+       sodipodi:absref="/home/emuller/img/mount2.png"
+       xlink:href="mount2.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#EmptyTriangleOutL);marker-end:url(#EmptyTriangleInL);stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 298.33333,38.333333 L 298.33333,571.66667"
+       id="path12857"
+       sodipodi:nodetypes="cc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot16500"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial"
+       transform="matrix(0,-1.1236357,1.6625259,0,-184.86898,475.82575)"><flowRegion
+         id="flowRegion16502"><rect
+           id="rect16504"
+           width="103.33334"
+           height="105"
+           x="128.33333"
+           y="263.33334" /></flowRegion><flowPara
+         id="flowPara16506">2 mm</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot16508"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial"
+       transform="matrix(1.782629,0,0,1.723709,-10.21392,-119.41365)"><flowRegion
+         id="flowRegion16510"><rect
+           id="rect16512"
+           width="258.33334"
+           height="53.333332"
+           x="11.666667"
+           y="163.33333" /></flowRegion><flowPara
+         id="flowPara16514">Cortex</flowPara></flowRoot>    <g
+       sodipodi:type="inkscape:box3d"
+       style="opacity:0.95;fill:#ffff00;fill-opacity:1;stroke:#ff0000;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="g16516"
+       inkscape:perspectiveID="#perspective12061"
+       inkscape:corner0="9.0191974 : -0.64239884 : 0 : 1"
+       inkscape:corner7="4.2363747 : -1.6230579 : 1.503028 : 1">
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path16526"
+         style="fill:#afafde;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="13"
+         d="M 40.382622,274.57375 L 57.353702,339.85768 L 135.62564,303.9266 L 88.378049,262.07353 L 40.382622,274.57375 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path16518"
+         style="fill:#353564;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="6"
+         d="M 40.382622,232.51138 L 40.382622,274.57375 L 88.378049,262.07353 L 88.378049,225.49802 L 40.382622,232.51138 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path16528"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="11"
+         d="M 88.378049,225.49802 L 135.62564,241.39418 L 135.62564,303.9266 L 88.378049,262.07353 L 88.378049,225.49802 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path16520"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="5"
+         d="M 40.382622,232.51138 L 57.353702,259.37619 L 135.62564,241.39418 L 88.378049,225.49802 L 40.382622,232.51138 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path16524"
+         style="fill:#d7d7ff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="14"
+         d="M 57.353702,259.37619 L 57.353702,339.85768 L 135.62564,303.9266 L 135.62564,241.39418 L 57.353702,259.37619 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path16522"
+         style="fill:#8686bf;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:box3dsidetype="3"
+         d="M 40.382622,232.51138 L 57.353702,259.37619 L 57.353702,339.85768 L 40.382622,274.57375 L 40.382622,232.51138 z" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot16530"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial;-inkscape-font-specification:Arial"
+       transform="translate(-26.666667,-26.666667)"><flowRegion
+         id="flowRegion16532"><rect
+           id="rect16534"
+           width="275"
+           height="116.66666"
+           x="31.666666"
+           y="381.66666"
+           style="font-size:32px" /></flowRegion><flowPara
+         id="flowPara16536">1mm^3 =</flowPara><flowPara
+         id="flowPara16538"> 1^4 - 1^5 neurons</flowPara></flowRoot>  </g>
+</svg>

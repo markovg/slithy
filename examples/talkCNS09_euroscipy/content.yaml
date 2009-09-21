@@ -1,0 +1,386 @@
+---
+bmark: Intro
+#objects:
+#  - !Image [
+content: |
+  
+  cap = Text( get_camera().inset(0.1),text='if shoe.untied:\n   shoe.tie()',color = white, font = 'mono', size = 30, _alpha = 1.0, justify = 0.5, vjustify=0.5 )
+
+  start(bg,cap)
+
+  #fade_in(1.0,im)
+
+  #pause()
+
+  #fade_in(1.0,cap)
+  #wave( cap._alpha, period = 2.0, min = 25.0, max = 40.0 )
+  #linear(1.0,cap.size,55)
+  #linear(1.0,cap.size,25)
+  #linear(1.0,cap.size,55)
+
+
+---
+bmark: BF
+library: slide_images
+images: 
+  - bf1
+  - bf2
+
+---
+content: |
+  
+  cap = Text( get_camera().inset(0.1),text='Why Python\nin particular?',color = white, font = 'body', size = 35, _alpha = 1.0, justify = 0.5, vjustify=0.5 )
+
+  start(bg,cap)
+
+
+---
+bmark: xkcd
+content: |
+  im = Image(get_camera(), 'flying_full',_alpha=1)
+
+  cap = Text( get_camera().bottom(0.1).move_down(1.0),text='source: http://xkcd.com/353/', color=white, font='mono', size=8, _alpha=1.0, justify = 0.5)
+
+  start(bg,cap,im)
+
+  wait(1.0)
+
+  x = 0.4
+  y = 2*x
+  r = get_camera().inset(0.17).move_up(x)
+  get_camera_object().view(r,1.0)
+
+  pause()
+  
+  get_camera_object().view(get_camera().move_down(y),1.0)
+
+
+
+---
+bmark: dilbert
+content: |
+
+  im = Image(get_camera(), 'dilbert', _alpha=0)
+
+  start(bg,im)
+
+  x = 0.6
+  r = get_camera().inset(0.25).move_left(x)
+  get_camera_object().view(r,0.0)
+  fade_in(1.0,im)
+
+  pause()
+  
+  get_camera_object().view(get_camera().move_right(x),1.5)
+
+  pause()
+
+  get_camera_object().view(get_camera().move_right(x),1.5)
+
+
+
+---
+bmark: Brooks quote
+content: |
+
+  im = Image( get_camera(), 'brooks_quote', _alpha = 1.0 )
+
+  start( im )
+
+---
+bmark: CNS intro
+svg: [svg/single_neuron.svg, svg/networks1.svg, svg/networks2.svg] 
+
+---
+bmark: BBP ft
+content: |
+  mov = Movie( get_camera().inset(0.1), './movies/bbp_flythough.mpg',loop=True)
+  start(bg, mov)
+
+
+
+---
+bmark: 2 elements
+content: |
+  
+  bl = BulletedList( get_camera().inset(0.1).bottom(0.7),font = fonts['body'], color = white, bullet = [fonts['dingbats'], 'w'], size = 24, _alpha = 1.0)
+
+  start(bg, bl)
+
+  bl.add_item( 0, 'Building complex software is challenging' )
+  bl.add_item( 0, 'The brain is complex' )
+
+
+---
+bmark: Cox quote
+content: |
+
+  im = Image( get_camera(), 'cox_quote', _alpha = 1.0 )
+
+  start( im )
+
+---
+bmark: 4 elements
+content: |
+  
+  bl = BulletedList( get_camera().inset(0.1).bottom(0.8),font = fonts['body'], color = white, bullet = [fonts['dingbats'], ''], size = 24, _alpha = 1.0 )
+
+  start(bg, bl)
+
+  bl.add_item( 0, 'Iterative (Growth)' )
+  bl.add_item( 0, 'Modular (Marketplace)' )
+  bl.add_item( 0, 'Distributed (Science bazaar)' )
+  bl.add_item( 0, 'Collaborative (Open-source)' )
+
+
+
+
+
+---
+bmark: Blooming
+content: |
+  
+  cap = Text( get_camera(),text='The blooming\n "Python in Neuroscience" ecosystem',
+  color = yellow, font = 'body', size = 25, _alpha = 1.0, justify = 0.5, vjustify=0.5 )
+
+  start( bg, cap)
+
+
+---
+bmark: 4 elements
+content: |
+  
+  bl = BulletedList( get_camera().inset(0.1).bottom(0.8),font = fonts['body'], color = white, bullet = [fonts['dingbats'], ''], size = 24, _alpha = 1.0 )
+
+  start(bg, bl)
+
+  bl.add_item( 0, [yellow,'Iterative (Growth)'] )
+  bl.add_item( 0, [yellow,'Modular (Marketplace)'] )
+  bl.add_item( 0, 'Distributed (Science bazaar)' )
+  bl.add_item( 0, 'Collaborative (Open-source)' )
+
+
+
+
+
+
+---
+bmark: Python SI
+content: |
+
+  im = Image( get_camera(), 'pin-si', _alpha = 0 )
+
+  start( im)
+
+  fade_in(1.0,im)
+    
+  wait(1.0)
+  
+  r = get_camera().inset(0.31).move_up(0.9)
+  get_camera_object().view(r,1.0)
+
+  pause()
+
+  r = get_camera().inset(0.2).move_down(0.45)
+  get_camera_object().view(r,1.0)
+
+  r = get_camera().move_down(2.8)
+  get_camera_object().view(r,20.0)
+
+
+---
+bmark: Concrete Example
+content: |
+
+  cap = Text( get_camera(),text='A concrete example:\nNeuronal simulation environments',color = white, font = 'body', size = 24, _alpha = 1.0, justify = 0.5, vjustify=0.5)
+
+  start( bg, cap)
+
+
+---
+bmark: Concrete Example slides
+pdf: pdf/cns_talk.pdf
+slides: [1,2,3,4,5,6,3]
+
+
+
+#---
+#bmark: Timeline
+#content:
+#  cap = Text( get_camera(),text='Placeholder - timeline',
+#  color = white, font = 'body', size = 24, _alpha = 1.0, justify = 0.5, vjustify=0.5 )
+#
+#  start( bg, cap)
+
+
+---
+bmark: Caring
+content: |
+  
+  cap = Text( get_camera(),text='Caring for the Environment',
+  color = green, font = 'body', size = 24, _alpha = 1.0, justify = 0.5, vjustify=0.5 )
+
+  start( bg, cap)
+
+
+---
+bmark: 4 elements
+content: |
+  
+  bl = BulletedList( get_camera().inset(0.1).bottom(0.8),font = fonts['body'], color = white, bullet = [fonts['dingbats'], ''], size = 24, _alpha = 1.0 )
+
+  start(bg, bl)
+
+  bl.add_item( 0, 'Iterative (Growth)' )
+  bl.add_item( 0, 'Modular (Marketplace)' )
+  bl.add_item( 0, [yellow,'Distributed (Science bazaar)'] )
+  bl.add_item( 0, [yellow,'Collaborative (Open-source)'] )
+
+
+---
+bmark: neo
+content: |
+    im = Image( get_camera(), 'neo-site', _alpha = 0 )
+
+    start_animation( im)
+
+    fade_in(1.0,im)
+    
+    
+    pause()
+    r = get_camera().inset(0.14).move_left(0.24)
+    get_camera_object().view(r,1.0)
+    pause()
+    get_camera_object().view(get_camera().move_down(0.3),1.0)
+
+
+---
+bmark: PyNN
+library: slide_images
+images: 
+  - pynn
+
+---
+bmark: PyNN talk slides
+pdf: pdf/pynn_talk_v3.pdf
+slides: [4,5,36,37]
+
+#---
+#bmark: PyNN on Hardware
+#pdf: pdf/DARPA-IDA_printed_s.pdf
+#slides: [15]
+
+
+---
+bmark: 4 elements
+content: |
+  
+  bl = BulletedList( get_camera().inset(0.1).bottom(0.8),font = fonts['body'], color = white, bullet = [fonts['dingbats'], ''], size = 24, _alpha = 1.0 )
+
+  start(bg, bl)
+
+  bl.add_item( 0, 'Iterative (Growth)' )
+  bl.add_item( 0, 'Modular (Marketplace)' )
+  bl.add_item( 0, 'Distributed (Science bazaar)' )
+  bl.add_item( 0, [yellow,'Collaborative (Open-source)'] )
+
+
+---
+bmark: Mozaik
+library: slide_images
+images: 
+  - jens_slide1
+  - jens_slide2
+
+
+
+---
+bmark: CodeJam
+pdf: pdf/CodeJam3_Freiburg.pdf
+slides: [1]
+
+
+---
+bmark: Cox quote 2
+content: |
+
+  im = Image( get_camera(), 'cox_quote2', _alpha = 1.0 )
+
+  start( im )
+
+
+---
+bmark: Thank You
+#objects:
+#  - !Image [
+content: |
+
+  
+  im = Image( get_camera(), 'thankyou',_alpha=0)
+  cap = Text( get_camera().inset(0.1),text='Thank you to all\nwho contribute!',color = yellow, font = 'title', size = 25, _alpha = 0.0, justify = 0.5, vjustify=0.5 )
+
+  title_cam = get_camera().top(0.5).bottom(0.85).inset(0.05)
+
+  lgreen = Color( 0.3, 0.6, 0.3 )
+  
+  cap1 = Text( title_cam,
+    color = yellow, font = 'title', size = 18, _alpha = 1.0,
+    justify = 0.5, text='The blooming "Python in Neuroscience" ecosystem')
+
+  start(bg,im,cap,cap1)
+
+  fade_in(1.0,im)
+
+  pause()
+
+  fade_in(1.0,cap)
+  #wave( cap._alpha, period = 2.0, min = 25.0, max = 40.0 )
+  linear(1.0,cap.size,35)
+  linear(1.0,cap.size,25)
+  linear(1.0,cap.size,35)
+
+
+
+
+---
+bmark: FACETS ITN
+content: |
+
+  im = Image( get_camera(), 'ITN', _alpha = 0 )
+
+  start( im)
+
+  fade_in(1.0,im)
+
+  x = 0.5
+  y = 1.0
+
+  r = get_camera().inset(0.20).move_up(x)
+  get_camera_object().view(r,1.0)
+
+  r = get_camera().move_down(y)
+  get_camera_object().view(r,10.0)
+
+  r = get_camera().move_up(y)
+  get_camera_object().view(r,10.0)
+
+  r = get_camera().move_down(y)
+  get_camera_object().view(r,10.0)
+
+  r = get_camera().move_up(y)
+  get_camera_object().view(r,10.0)
+
+  r = get_camera().move_down(y)
+  get_camera_object().view(r,10.0)
+
+  r = get_camera().move_up(y)
+  get_camera_object().view(r,10.0)
+
+  r = get_camera().move_down(y)
+  get_camera_object().view(r,10.0)
+
+  r = get_camera().move_up(y)
+  get_camera_object().view(r,10.0)
+
+  r = get_camera().move_down(y)
+  get_camera_object().view(r,10.0)

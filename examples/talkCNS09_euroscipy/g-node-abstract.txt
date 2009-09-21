@@ -1,0 +1,51 @@
+Caring for the environment: The blooming “Python in Neuroscience” ecosystem
+Eilif Muller1 , Andrew P. Davison2
+1 Laboratory for Computational Neuroscience, Ecole Polytechnique Fédérale de Lausanne, Switzerland
+2 Unité de Neurosciences Intégratives et Computationnelles, CNRS, Gif­sur­Yvette, France
+E­mail: eilif.mueller@epfl.ch
+
+Abstract
+
+Recent years have seen a bloom in adoption of the Python environment
+in Neuroscience [1].  Widely used simulators such as NEURON and NEST
+having recently depreciated legacy programming interfaces in favour of
+modern yet mature Python equivalents [2,3], as complex work­flows
+flourish in the modern, expressive and intuitive Python language with
+its thriving ecosystem of both Neuroscience specific and
+general­purpose modules.
+ 
+This metamorphosis, a shift to a standard general purpose interpreter
+language which is widely used outside of Neuroscience, has engulfed
+the simulator development community relatively rapidly and without
+central coordination.  A plausible explanation might be that the field
+was in critical need of the solutions Python offers.  Python allows
+simulation developers to outsource interpreter development to the
+computer science community, while unifying simulation with analysis
+work­flows traditionally done in MATLAB.  Python has powerful parallel
+computing features without restrictive licensing costs, and opens new
+possibilities to implement the on­going interoperability needs of the
+field [4,5].  Specifically, it has made PyNN possible, a shared API
+between NEURON, NEST, PCSIM, and Brian with support for MOOSE/Genesis
+3 and NeuroML export in development [6].  PyNN facilitates the
+development of conceptually satisfying and productivity boosting
+higher level modeling concepts in a simulator agnostic way while still
+allowing simulator specific optimization, with an elegant side effect:
+The software investment requirements for making use of exotic neuron
+solvers such as the FACETS VLSI neuromorphic hardware [7,8] or GPUs
+[9] are minimized, as all state­of­the­art work­flow infrastructure is
+available once basic API compliance is implemented.  Porting existing
+models implemented using the PyNN API to such platforms becomes
+trivial and verification is straight­forward by comparison to results
+obtained using NEURON or NEST.  For students, Python is an attractive
+alternative to the traditionally domain specific languages of the
+field, as competence thereof represents a widely recognized practical
+and employable skill.  As such, long running courses like the Advanced
+Course in Computational Neuroscience have started to feature Python as
+an important part of their curriculum [10].  It now appears plausible
+that Python will become the de­facto standard systems integration
+language in the field, a role it commonly enjoys in wider circles,
+opening new avenues for innovation in Neuroinformatics and
+Computational Neuroscience which we have only begun to explore.  For
+demos, tutorials, and exciting talks from the developers which have
+made “Python in Neuroscience” possible, we welcome you to join us
+for the CNS*09 “Python in Neuroscience” workshop, July 22­23, 2009.

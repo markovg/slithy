@@ -1,0 +1,49 @@
+# Here I define the slithy libraries
+image_library:
+  # the library which is used if none is specified
+  path:
+    - ./images
+    - ./slide_images
+  default:
+    neo_light: neo_lightback.png
+    pin-si: sipin_toc.png
+    dilbert: dilbert.gif
+    bccn: bccn.png
+    flying_full: xkcd_python.png
+    program1: program1.png
+    program2: program2.png
+    brooks_quote: brooks_nosilverbullet_quote.png
+    cox_quote: cox_silverbullet_quote.png
+    cox_quote2: cox_silverbullet_quote2.png
+    thankyou: thankyou.png
+    neo-site: neo-site.png
+    ITN: ITN_PositionsPoster1.png
+  slide_images:
+    bf1: bf1.png
+    bf2: bf2.png
+    pynn: pynn.png
+    jens_slide1: jens_slide1.png
+    jens_slide2: jens_slide2.png
+
+
+font_library:
+  path:
+    - ./fonts
+
+#add_extra_characters( u'\u201c\u201d' )
+
+  default:
+
+    times: times.slf
+    ehrhardt: ehrhardt.slf
+    body: minion.slf
+    bodyi: minion_i.slf
+    title: myriad_b.slf
+    titlei: myriad_bi.slf
+    roman: myriad.slf
+    mono: courier_b.slf
+    dingbats: wingding.slf
+    facets: courier_b.slf
+
+
+

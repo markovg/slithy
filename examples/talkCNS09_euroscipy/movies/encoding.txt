@@ -1,0 +1,3 @@
+mencoder 3KquJWhsx_g.flv -of mpeg -mpegopts format=mpeg1:tsaf:muxrate=2000 -o bbp_flythough.mpg -srate 44100 -af lavcresample=44100 -oac twolame -twolameopts br=160 -ovc lavc -lavcopts vcodec=mpeg1video:vbitrate=1152:keyint=15:mbd=2
+
+mencoder -ovc copy -nosound bbp_flythrough.avi -o bbp_ft_nosound.avi
