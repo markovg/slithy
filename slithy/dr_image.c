@@ -97,7 +97,7 @@ static int parse_image_anchor( PyObject* anchor, double* ax, double* ay )
 
 PyObject* draw_image( PyObject* self, PyObject* args, PyObject* keywds )
 {
-  static char* kwlist[] = { "positionx", "positiony", "image", "width", "height", "anchor", "alpha", "stretch", NULL };
+  static char* kwlist[] = { "positionx", "positiony", "image", "width", "height", "anchor", "stretch", "alpha", NULL };
     
     ImageObject* imageobj;
     static ImageObjectMethods* c_methods = NULL;
@@ -108,12 +108,18 @@ PyObject* draw_image( PyObject* self, PyObject* args, PyObject* keywds )
     double alpha = 1.0;
     double x, y, w = 1.0, h;
     double ax, ay;
-    int stretch = 0;
+    PyObject* pObjStretch = Py_False;
     
-    if ( !PyArg_ParseTupleAndKeywords( args, keywds, "ddO|OOOdi", kwlist,
+    if ( !PyArg_ParseTupleAndKeywords( args, keywds, "ddO|OOOOd", kwlist,
 				       &x, &y, &imageobj,
-				       &widthobj, &heightobj, &anchorobj, &alpha, &stretch ) )
+				       &widthobj, &heightobj, &anchorobj, &pObjStretch, &alpha ) )
 	return NULL;
+
+    if (!PyBool_Check(pObjStretch)) {
+	PyErr_SetString( DrawError, "stretch must be bool type" );
+	return NULL;
+    }
+
 
     if ( widthobj == NULL && heightobj == NULL )
     {
@@ -121,7 +127,7 @@ PyObject* draw_image( PyObject* self, PyObject* args, PyObject* keywds )
 	return NULL;
     }
 
-    if ( (widthobj == NULL || heightobj == NULL) && stretch )
+    if ( (widthobj == NULL || heightobj == NULL) && pObjStretch==Py_True )
     {
       
 	PyErr_SetString( DrawError, "stretch=True: must specify image width and height" );
@@ -146,7 +152,8 @@ PyObject* draw_image( PyObject* self, PyObject* args, PyObject* keywds )
     if ( heightobj )
 	h = PyFloat_AsDouble( heightobj );
 
-    if (!stretch) {
+    // !stretch
+    if (pObjStretch==Py_False) {
       if ( !widthobj )
 	w = h / imageobj->h * imageobj->w;
       else
