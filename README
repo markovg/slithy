@@ -1,2 +1,29 @@
 
 Welcome to the NE.O Slithy hg repo!
+
+
+
+
+To build:
+
+make sure you have the required software installed.
+
+On an ubuntu karmic system, I required the following packages:
+
+$ sudo apt-get install tk8.5-dev  libfreetype6-dev mesa-common-dev python-opengl libglu1-mesa-dev python-pmw python-pygame python-yaml
+
+Then go into the source directory
+
+$ cd slithy
+
+Have a look at the Makefile and make sure everything is ok.
+The Tk version, is 8.4 on <jaunty systems.  8.5 for jaunty, karmic
+
+$ make
+
+$ cd ..
+
+$ sudo python setup.py install
+
+Try out some of the presentations in examples
+
