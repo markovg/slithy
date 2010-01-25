@@ -717,6 +717,10 @@ static int OpenGLSetup( Soggy* soggyPtr, Tcl_Interp* interp )
 	Tcl_SetResult( interp, "can't get appropriate visual", TCL_STATIC );
 	return TCL_ERROR;
     }
+    else
+    {
+      printf("Visual ID: %d\n", (int)vi->visualid);
+    }
 
     soggyPtr->pl.cx = glXCreateContext( soggyPtr->dpy, vi, last_created_context, GL_TRUE );
     if ( soggyPtr->pl.cx == NULL )
@@ -740,6 +744,7 @@ static int OpenGLSetup( Soggy* soggyPtr, Tcl_Interp* interp )
     glXGetConfig( soggyPtr->dpy, vi, GLX_ACCUM_ALPHA_SIZE, &soggyPtr->alpha_accum_bits );
     glXGetConfig( soggyPtr->dpy, vi, GLX_DEPTH_SIZE, &soggyPtr->depth_bits );
     glXGetConfig( soggyPtr->dpy, vi, GLX_STENCIL_SIZE, &soggyPtr->stencil_bits );
+    //glXSwapIntervalSGI(1);
 
     return TCL_OK;
 }
@@ -850,8 +855,16 @@ void SoggySwap( void )
     aglSwapBuffers( g_saveswap->pl.context );
     ale ( "aglSwapBuffers");
 #else
-    if ( g_saveswap )
+    int retraceCount;
+
+    if ( g_saveswap ) {
+
+      __glewXGetVideoSyncSGI(&retraceCount);
+      __glewXWaitVideoSyncSGI(2, (retraceCount+1)%2, &retraceCount);
+
 	glXSwapBuffers( g_saveswap->dpy, Tk_WindowId( g_saveswap->tkwin ) );
+
+    }
 #endif
 }
 

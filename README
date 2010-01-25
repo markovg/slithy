@@ -4,13 +4,14 @@ Welcome to the NE.O Slithy hg repo!
 
 
 
+
 To build:
 
 make sure you have the required software installed.
 
-On an ubuntu karmic system, I required the following packages:
+On an ubuntu jaunty or karmic system, I required the following packages:
 
-$ sudo apt-get install tk8.5-dev  libfreetype6-dev mesa-common-dev python-opengl libglu1-mesa-dev python-pmw python-pygame python-yaml
+$ sudo apt-get install tk8.5-dev  libfreetype6-dev mesa-common-dev python-opengl libglu1-mesa-dev python-pmw python-pygame python-yaml python-dev
 
 Then go into the source directory
 

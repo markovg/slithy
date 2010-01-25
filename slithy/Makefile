@@ -48,7 +48,7 @@ CFLAGS = -g -O2 -fPIC \
 	-I/usr/include/tcl$(TKVER) \
 	`$(FTCONFIG) --cflags` 
 LIBPATH = -L/usr/lib -L/uns/lib -L/usr/X11R6/lib
-LIBS = -lGL -lGLU -ldl -lXext -lX11 -lm -ltcl$(TKVER) -ltk$(TKVER) `$(FTCONFIG) --libs`
+LIBS = -lGL -lGLU -lGLEW -ldl -lXext -lX11 -lm -ltcl$(TKVER) -ltk$(TKVER) `$(FTCONFIG) --libs`
 DLEXT=so
 endif
 

@@ -21,8 +21,9 @@
 #include <glu.h>
 #include <agl.h>
 #else
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include <GL/glew.h>
+//#include <GL/gl.h>
+//#include <GL/glu.h>
 #include <GL/glx.h>
 #endif
 

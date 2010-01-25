@@ -58,6 +58,49 @@ static PyObject* opengl_init( PyObject* self, PyObject* args )
     printf( "glu version : %s\n", gluGetString( GLU_VERSION ) );
     /*printf( "extensions : %s\n", glGetString( GL_EXTENSIONS ) );*/
     
+    glewExperimental=GL_TRUE;
+    GLenum err = glewInit();
+    if (GLEW_OK != err)
+      {
+	/* Problem: glewInit failed, something is seriously wrong. */
+	printf("Error: %s\n", glewGetErrorString(err));
+
+      }
+    printf("Status: Using GLEW %s\n", glewGetString(GLEW_VERSION));
+
+    if (glewIsSupported("GLX_SGI_swap_control"))
+      {
+	/* It is safe to use the ARB_vertex_program extension here. */
+	printf("GLX_SGI_swap_control supported!\n");
+	//glXSwapIntervalSGI(1);
+      }
+    else
+      {
+	printf("No GLX_SGI_swap_control support.\n");
+      }
+
+
+    if (glewIsSupported("GLX_SGI_video_sync"))
+      {
+	/* It is safe to use the ARB_vertex_program extension here. */
+	printf("GLX_SGI_video_sync supported!\n");
+	//glXSwapIntervalSGI(1);
+
+	int retraceCount;
+	__glewXGetVideoSyncSGI(&retraceCount);
+	__glewXWaitVideoSyncSGI(2, (retraceCount+1)%2, &retraceCount);
+
+
+      }
+    else
+      {
+	printf("GLX_SGI_video_sync support.\n");
+	int c;
+	//__glewXWaitVideoSyncSGI(5,0,&c);
+      }
+
+
+
     glEnable( GL_VERTEX_ARRAY );
     /* on mac, we expect that to fail; must be enabled as 
        client state instead, */
