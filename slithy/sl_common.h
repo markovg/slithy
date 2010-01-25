@@ -22,9 +22,10 @@
 #include <agl.h>
 #else
 #include <GL/glew.h>
+#include <GL/glxew.h>
 //#include <GL/gl.h>
 //#include <GL/glu.h>
-#include <GL/glx.h>
+//#include <GL/glx.h>
 #endif
 
 #include <assert.h>

@@ -859,8 +859,8 @@ void SoggySwap( void )
 
     if ( g_saveswap ) {
 
-      __glewXGetVideoSyncSGI(&retraceCount);
-      __glewXWaitVideoSyncSGI(2, (retraceCount+1)%2, &retraceCount);
+        glXGetVideoSyncSGI(&retraceCount);
+        glXWaitVideoSyncSGI(2, (retraceCount+1)%2, &retraceCount);
 
 	glXSwapBuffers( g_saveswap->dpy, Tk_WindowId( g_saveswap->tkwin ) );
 

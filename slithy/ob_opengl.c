@@ -87,8 +87,8 @@ static PyObject* opengl_init( PyObject* self, PyObject* args )
 	//glXSwapIntervalSGI(1);
 
 	int retraceCount;
-	__glewXGetVideoSyncSGI(&retraceCount);
-	__glewXWaitVideoSyncSGI(2, (retraceCount+1)%2, &retraceCount);
+        glXGetVideoSyncSGI(&retraceCount);
+	glXWaitVideoSyncSGI(2, (retraceCount+1)%2, &retraceCount);
 
 
       }
