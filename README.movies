@@ -5,7 +5,7 @@ MPEG-1 video, and MPEG-2 audio ... and even then it is rather fussy.
 
 In short, encode mpegs for this module as the following example:
 
-mencoder something_completely.flv -of mpeg -mpegopts
+mencoder something_completely.flv -vf scale=320:240 -of mpeg -mpegopts
 format=mpeg1:tsaf:muxrate=2000 \
   -o test.mpg -srate 44100 -af lavcresample=44100 -oac twolame
 -twolameopts br=160 \
