@@ -40,6 +40,19 @@ Cut
 mencoder -ovc copy -nosound -o stomp.mpg -ss 37 test.mpg
 
 
+For adjusting fps:
+
+mencoder -really-quiet -lavdopts threads=4 "gumon.mpeg" -ovc raw -nosound -vf scale,format=i420,harddup  -ofps 30 -of rawvideo -o - | x264 --crf 18 --partitions none --me dia --merange 4 --mvrange 64 --subme 0 --no-chroma-me --aq-mode 0 --threads auto --no-cabac --no-deblock --no-psnr --no-ssim --progress --fps 30 --output "gumon_30fps.mp4" - 1028x792
+
+                         ^^^^^^^^
+			 this is the WxH of the gumon.mpeg input file
+
+
+then run the above (top) command on gumon_30fps.mp4
+
+
+
+
 More information at:
 
 http://www.mplayerhq.hu/DOCS/HTML/en/menc-feat-vcd-dvd.html
