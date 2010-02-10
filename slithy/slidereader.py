@@ -98,6 +98,8 @@ def include_slides(filename):
 
     slides = yaml.load_all(file(filename)) 
 
+    background='bg'
+
     for i,slide in enumerate(slides):
         if slide==None:
             continue
@@ -109,15 +111,17 @@ def include_slides(filename):
             p.bookmark(slide['bmark'])
         else:
             p.bookmark(filename+' - '+str(i))
-        
 
+        if 'background' in slide:
+            background=slide['background']
+            
         if 'pdf' in slide and 'slides' in slide:
             images = pdf2ppm_cache(slide['pdf'],slide['slides'])
-            p.play(load_image_slides(images,library='pdf'))
+            p.play(load_image_slides(images,library='pdf',background=background))
             p.pause()
         elif 'svg' in slide:
             images = svg2png_cache(slide['svg'])
-            p.play(load_image_slides(images,library='svg',background=None))
+            p.play(load_image_slides(images,library='svg',background=background))
             p.pause()
             
         elif 'images' in slide:
@@ -125,7 +129,7 @@ def include_slides(filename):
                 lib = slide['library']
             else:
                 lib = 'default'
-            p.play(load_image_slides(slide['images'],library=lib))
+            p.play(load_image_slides(slide['images'],library=lib, background=background))
             p.pause()
             
                 
@@ -259,7 +263,7 @@ def svg2png_cache(svgs):
 
 
 
-def load_image_slides(images,library='default',background=common.bg):
+def load_image_slides(images,library='default',background='bg'):
     """ returns sequence of image slides animation """
     
     # get a clean slate
@@ -267,11 +271,19 @@ def load_image_slides(images,library='default',background=common.bg):
 
     exec "image = None" in ns
 
+    try:
+        if background is not None:
+            background = common.__getattribute__(background)
+    except AttributeError:
+        print "Warning slidereader.py - load_image_slides: Background common.%s not defined." % background
+        background=None
+
     if background is not None:
         ns['bg'] = background
         exec "start(bg)" in ns
     else:
         exec "start()" in ns
+
 
     cmd = """
 if image:
