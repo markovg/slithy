@@ -170,6 +170,9 @@ def load_slide_content(content):
 
 def gen_ppm_name(cache_dir,filename,slide):
         return os.path.join(cache_dir,filename+'_-%.2d.ppm' % slide)
+
+def gen_err_ppm_name(cache_dir,filename,slide):
+        return os.path.join(cache_dir,filename+'_-%.1d.ppm' % slide)
     
 
 def setup_cachedir(path):
@@ -213,6 +216,16 @@ def pdf2ppm_cache(filename,slides):
             final_cmd = cmd % (slide,slide)
             print final_cmd
             os.system(final_cmd)
+            # fix problem with slides <10 coming out with 1 instead of 01 for slide # in filename 
+            if not os.path.exists(target_file):
+                print "Caught - pdf2ppm bad slide filename numbering"
+                err_target_file = gen_err_ppm_name(cache_dir,pdf_name,slide)
+                os.rename(err_target_file, target_file)
+
+            if not os.path.exists(target_file):
+                raise RuntimeError, "problem getting expected slide file on pdf conversion"
+                
+                
 
         img = diaimage.get_image(target_file)
         print 'target_file: ', img

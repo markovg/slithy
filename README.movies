@@ -5,11 +5,20 @@ MPEG-1 video, and MPEG-2 audio ... and even then it is rather fussy.
 
 In short, encode mpegs for this module as the following example:
 
-mencoder something_completely.flv -vf scale=320:240 -of mpeg -mpegopts
-format=mpeg1:tsaf:muxrate=2000 \
-  -o test.mpg -srate 44100 -af lavcresample=44100 -oac twolame
--twolameopts br=160 \
+mencoder something_completely.flv -vf scale=320:240 -of mpeg -mpegopts format=mpeg1:tsaf:muxrate=2000 \
+  -o test.mpg -srate 44100 -af lavcresample=44100 -oac twolame -twolameopts br=160 \
   -ovc lavc -lavcopts vcodec=mpeg1video:vbitrate=1152:keyint=15:mbd=2
+
+mencoder rtf_cut.avi -vf scale=400:300 -of mpeg -mpegopts format=mpeg1:tsaf:muxrate=2000 \
+  -o rtf_cut_pygame.mpg -srate 44100 -af lavcresample=44100 -oac copy \
+  -ovc lavc -lavcopts vcodec=mpeg1video:vbitrate=1152:keyint=15:mbd=2
+
+mencoder -really-quiet -lavdopts threads=4 "dv3d_waxholm_labels.mpeg" -ovc raw -nosound -vf scale,format=i420,harddup  -ofps 30 -of rawvideo -o - | x264 --crf 18 --partitions none --me dia --merange 4 --mvrange 64 --subme 0 --no-chroma-me --aq-mode 0 --threads auto --no-cabac --no-deblock --no-psnr --no-ssim --progress --fps 30 --output "dv3d_30fps.avi" - 1380x758
+
+mencoder  dv3d_30fps.avi -vf scale=640:480 -of mpeg -mpegopts format=mpeg1:tsaf:muxrate=2000 \
+  -o dv3d.mpg -srate 44100 -af lavcresample=44100 -oac copy \
+  -ovc lavc -lavcopts vcodec=mpeg1video:vbitrate=1152:keyint=15:mbd=2
+
 
 For cutting:
 
