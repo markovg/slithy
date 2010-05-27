@@ -3,6 +3,22 @@ The pygame movie player is used, which is based on SDL/SMPEG.  It is
 no where near as flexible a player as mplayer, for example.  It plays
 MPEG-1 video, and MPEG-2 audio ... and even then it is rather fussy.
 
+Script
+*******************
+
+in ${SLITHY_SRC_DIR}/utils there is a to_pygame_movie.py script 
+for converting xvidcap 
+
+Notes:
+1) xvidcap->settings->XDamage disabled for OpenGL capture
+
+2) ${SLITHY_SRC_DIR}/utils/to_pygame_movie.py test-0000.mpg
+-> generates "pygame_test-0000.mpeg_30fps.avi"
+
+
+Manual
+*******************
+
 In short, encode mpegs for this module as the following example:
 
 mencoder something_completely.flv -vf scale=320:240 -of mpeg -mpegopts format=mpeg1:tsaf:muxrate=2000 \
@@ -18,6 +34,18 @@ mencoder -really-quiet -lavdopts threads=4 "dv3d_waxholm_labels.mpeg" -ovc raw -
 mencoder  dv3d_30fps.avi -vf scale=640:480 -of mpeg -mpegopts format=mpeg1:tsaf:muxrate=2000 \
   -o dv3d.mpg -srate 44100 -af lavcresample=44100 -oac copy \
   -ovc lavc -lavcopts vcodec=mpeg1video:vbitrate=1152:keyint=15:mbd=2
+
+
+804x824
+
+mencoder -really-quiet -lavdopts threads=4 "waxholm_cortex.mpeg" -ovc raw -nosound -vf scale,format=i420,harddup  -ofps 30 -of rawvideo -o - | x264 --crf 18 --partitions none --me dia --merange 4 --mvrange 64 --subme 0 --no-chroma-me --aq-mode 0 --threads auto --no-cabac --no-deblock  --fps 30 --output "waxholm_cortex_30fps.avi" - 804x824
+
+mencoder  waxholm_cortex_30fps.avi -vf scale=640:480 -of mpeg -mpegopts format=mpeg1:tsaf:muxrate=2000 \
+  -o pygame_waxholm_cortex_30fps.avi -srate 44100 -af lavcresample=44100 -oac copy \
+  -ovc lavc -lavcopts vcodec=mpeg1video:vbitrate=1152:keyint=15:mbd=2
+
+
+
 
 
 For cutting:
