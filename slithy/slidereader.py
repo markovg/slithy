@@ -1,6 +1,7 @@
 
 import yaml
 
+import slithy
 import slithy.presentation as presenter
 import slithy.library as sylib
 import slithy.fonts
@@ -16,6 +17,8 @@ import slithy.movie as movie
 #this has to be configure by the user by load_env
 image_library = {'default':{},'pdf':{},'svg':{}}
 font_library = {'default':slithy.fonts.fonts}
+rst_config = {'rst_default_style':os.path.join(slithy.__path__[0],'rst2pdf_default.style')}
+
 
 #from yamlclasses import *
 
@@ -90,6 +93,9 @@ def load_env(filename):
     if 'font_library' in env:
         load_font_library(env['font_library'])
 
+    if 'rst_config' in env:
+        rst_config.update(env['rst_config'])
+
 
 
 def include_slides(filename):
@@ -131,7 +137,11 @@ def include_slides(filename):
                 lib = 'default'
             p.play(load_image_slides(slide['images'],library=lib, background=background))
             p.pause()
-            
+
+        elif 'rst' in slide:
+            images = rst2ppm_cache(i,slide['title'],slide['rst'])
+            p.play(load_image_slides(images,library='pdf',background=background))
+            p.pause()
                 
         else:
             p.play(load_slide_content(slide['content']))
@@ -186,8 +196,10 @@ def setup_cachedir(path):
         
     
 
-
 def pdf2ppm_cache(filename,slides):
+
+    import os.path
+    import time
 
     cache_dir = './.slithy_pdfcache'
     if not cache_dir in sylib.fontpath:
@@ -207,7 +219,9 @@ def pdf2ppm_cache(filename,slides):
     for slide in slides:
         
         target_file = gen_ppm_name(cache_dir,pdf_name,slide)
-        if os.path.exists(target_file):
+
+        # skip if cache exists and newer than pdf
+        if os.path.exists(target_file) and os.path.getmtime(filename)<os.path.getmtime(target_file):
            print target_file," exists.  Skipping." 
         else:
             final_cmd = cmd % (slide,slide)
@@ -260,6 +274,79 @@ def svg2png_cache(svgs):
             
     return images
 
+
+def rst2pdf(rst_file, pdf_file, style_file):
+    # rst2pdf slides.rst -b1 -s slides.style
+
+    cmd = "rst2pdf %s -b1 -o %s -s %s" % (rst_file, pdf_file, style_file)
+
+    os.system(cmd)
+    
+
+
+
+def rst2ppm_cache(slide_num,slide_title, rst_content):
+
+    # directory for caching rst files, etc
+    cache_dir = './.slithy_rstcache'
+    if not cache_dir in sylib.fontpath:
+        sylib.fontpath.append(cache_dir)
+
+    setup_cachedir(cache_dir)
+
+    # rst target filename
+    base_filename = 'slide%d' % slide_num
+
+    # clear white space
+    slide_title = slide_title.strip()
+    
+    # len of title for rst underline
+    underline = '_'*len(slide_title)
+
+    slide_text = """
+%(title)s
+%(underline)s
+
+%(content)s
+""" % {'title':slide_title, 'underline':underline,'content':rst_content}
+
+    rst_target = os.path.join(cache_dir, base_filename+'.rst')
+    pdf_target = os.path.join(cache_dir, base_filename+'.pdf')
+    
+    # logic below to set changed to False 
+    # if pdf doesn't need updating
+    changed = True
+    # check if rst content file differs from slide_text.
+    if os.path.exists(rst_target):
+        f = file(rst_target,'r')
+        old_slide_text = f.read()
+        f.close()
+
+        if old_slide_text==slide_text:
+            changed = False
+        else:
+            # write new content
+            f = file(rst_target,'w')
+            f.write(slide_text)
+            f.close()
+    else:
+        # write rst ... it doesn't exists
+        f = file(rst_target,'w')
+        f.write(slide_text)
+        f.close()
+
+    # if somehow pdf is missing, force generate
+    if not os.path.exists(pdf_target):
+        changed = True
+    
+    # generate pdf if 'changed', i.e. needs updating
+    if changed:
+        rst2pdf(rst_target, pdf_target, rst_config['rst_default_style'])
+        
+
+    return pdf2ppm_cache(pdf_target,[0])
+
+    
 
 
 
