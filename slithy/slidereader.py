@@ -229,7 +229,8 @@ def pdf2ppm_cache(filename,slides):
         else:
             # remove target cuz otherwise
             # erroneous pdf2ppmnumbering is not caught below
-            os.remove(target_file)
+            if os.path.exists(target_file):
+                os.remove(target_file)
             final_cmd = cmd % (slide,slide)
             print final_cmd
             os.system(final_cmd)
