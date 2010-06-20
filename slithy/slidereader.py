@@ -227,13 +227,18 @@ def pdf2ppm_cache(filename,slides):
         if os.path.exists(target_file) and os.path.getmtime(filename)<os.path.getmtime(target_file):
            print target_file," exists.  Skipping." 
         else:
+            # remove target cuz otherwise
+            # erroneous pdf2ppmnumbering is not caught below
+            os.remove(target_file)
             final_cmd = cmd % (slide,slide)
             print final_cmd
             os.system(final_cmd)
             # fix problem with slides <10 coming out with 1 instead of 01 for slide # in filename 
             if not os.path.exists(target_file):
                 print "Caught - pdf2ppm bad slide filename numbering"
+                print "Expected %s" % target_file
                 err_target_file = gen_err_ppm_name(cache_dir,pdf_name,slide)
+                print "Erroneously as %s" % err_target_file
                 os.rename(err_target_file, target_file)
 
             if not os.path.exists(target_file):
@@ -292,6 +297,7 @@ def rst2pdf(rst_file, pdf_file, style_file):
     # rst2pdf slides.rst -b1 -s slides.style
 
     cmd = "rst2pdf %s -b1 -o %s -s %s" % (rst_file, pdf_file, style_file)
+    print cmd
 
     os.system(cmd)
     
@@ -314,7 +320,7 @@ def rst2ppm_cache(slide_num,slide_title, rst_content):
     slide_title = slide_title.strip()
     
     # len of title for rst underline
-    underline = '_'*len(slide_title)
+    underline = '-'*len(slide_title)
 
     slide_text = """
 %(title)s
@@ -357,7 +363,7 @@ def rst2ppm_cache(slide_num,slide_title, rst_content):
         rst2pdf(rst_target, pdf_target, rst_config['rst_default_style'])
         
 
-    return pdf2ppm_cache(pdf_target,[0])
+    return pdf2ppm_cache(pdf_target,[1])
 
     
 
