@@ -121,6 +121,9 @@ def include_slides(filename):
         if 'background' in slide:
             background=slide['background']
             
+        if 'bg' in slide:
+            background=slide['bg']
+
         if 'pdf' in slide and 'slides' in slide:
             images = pdf2ppm_cache(slide['pdf'],slide['slides'])
             p.play(load_image_slides(images,library='pdf',background=background))
@@ -139,7 +142,7 @@ def include_slides(filename):
             p.pause()
 
         elif 'rst' in slide:
-            images = rst2ppm_cache(i,slide['title'],slide['rst'])
+            images = rst2ppm_cache(i,slide.get('title',''),slide['rst'])
             p.play(load_image_slides(images,library='pdf',background=background))
             p.pause()
                 
