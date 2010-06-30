@@ -15,7 +15,7 @@ import slithy.diaimage as diaimage
 import slithy.movie as movie
 
 #this has to be configure by the user by load_env
-image_library = {'default':{},'pdf':{},'svg':{}}
+image_library = {'default':{},'pdf':{},'svg':{},'image_files':{}}
 font_library = {'default':slithy.fonts.fonts}
 rst_config = {'rst_default_style':os.path.join(slithy.__path__[0],'rst2pdf_default.style')}
 
@@ -131,6 +131,10 @@ def include_slides(filename):
         elif 'svg' in slide:
             images = svg2png_cache(slide['svg'])
             p.play(load_image_slides(images,library='svg',background=background))
+            p.pause()
+        elif 'image_files' in slide:
+            images = imagefiles_to_images(slide['image_files'])
+            p.play(load_image_slides(images,library='image_files',background=background))
             p.pause()
             
         elif 'images' in slide:
@@ -295,6 +299,41 @@ def svg2png_cache(svgs):
         images.append(target_file)
             
     return images
+
+
+def imagefiles_to_images(image_files):
+
+    from glob import glob
+
+    # list of images to fill and return
+    images = []
+    
+    # if user sent 1 string instead of list
+    if type(image_files)==str:
+        image_files = [image_files]
+
+    for wildcard in image_files:
+        files = glob(wildcard)
+        files.sort()
+
+        for filename in files:
+
+            img_dir = os.path.dirname(filename)
+
+            # add dir to image search path
+            if not img_dir in sylib.fontpath:
+                sylib.fontpath.append(img_dir)
+
+            # get only trailing image name
+            #img_name = os.path.basename(filename)
+
+            img = diaimage.get_image(filename)
+            print 'target_file: ', img
+            image_library['image_files'][filename] = img 
+            images.append(filename)
+            
+    return images
+
 
 
 def rst2pdf(rst_file, pdf_file, style_file):
