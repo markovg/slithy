@@ -299,8 +299,8 @@ def svg2png_cache(svgs):
         svg_name = os.path.split(svg)[-1]
 
         target_file = os.path.join(cache_dir,svg_name+'.png')
-        if os.path.exists(target_file):
-           print target_file," exists.  Skipping." 
+        if os.path.exists(target_file) and os.path.getmtime(svg)<os.path.getmtime(target_file):
+           print target_file," exists and uptodate.  Skipping." 
         else:
             final_cmd = cmd % (target_file,svg)
             print final_cmd
