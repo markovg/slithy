@@ -136,6 +136,19 @@ def include_slides(filename):
             images = imagefiles_to_images(slide['image_files'])
             p.play(load_image_slides(images,library='image_files',background=background))
             p.pause()
+
+        elif 'slideshow' in slide:
+            images = imagefiles_to_images(slide['slideshow'])
+            slideshow_anim = images_slideshow(images,
+                                              library='image_files',
+                                              background=background,
+                                              delay=slide.get('delay',2.0),
+                                              repeat=slide.get('repeat',1),
+                                              fade_time=slide.get('fade_time',0.5))
+
+            p.play(slideshow_anim)
+            p.pause()
+
             
         elif 'images' in slide:
             if 'library' in slide:
@@ -458,5 +471,61 @@ image = new_image
     exec "anim = end_animation()" in ns
 
     return ns['anim']
+
+
+
+def images_slideshow(images,library='default',background='bg',delay=2.0,fade_time=0.5,repeat=1):
+    """ returns sequence of image slides animation """
+    
+    # get a clean slate
+    ns = clean_slate()
+
+    exec "old_image = None" in ns
+    exec "fade_time = %f" % (fade_time,) in ns
+    exec "delay = %f" % (delay,) in ns
+
+    try:
+        if background is not None:
+            background = common.__getattribute__(background)
+    except AttributeError:
+        print "Warning slidereader.py - image_slideshow: Background common.%s not defined." % background
+        background=None
+
+    if background is not None:
+        ns['bg'] = background
+        exec "start(bg)" in ns
+    else:
+        exec "start()" in ns
+
+
+    cmd = """
+      
+new_image = Image(get_camera(), '%s', library='%s',_alpha=0.0)
+enter(new_image)
+
+fade_in(fade_time,new_image)
+
+if old_image:
+  wait(-fade_time)
+  fade_out(fade_time,old_image)
+
+wait(delay)
+
+if old_image:
+  exit(old_image)
+  
+
+old_image = new_image
+
+
+"""
+
+    for image in images*repeat:
+       exec cmd % (image, library) in ns 
+        
+    exec "anim = end_animation()" in ns
+
+    return ns['anim']
+
 
 
