@@ -13,6 +13,18 @@ On an ubuntu jaunty or karmic system, I required the following packages:
 
 $ sudo apt-get install tk8.5-dev  libfreetype6-dev mesa-common-dev python-opengl libglu1-mesa-dev python-pmw python-pygame python-yaml python-dev libglew1.5-dev inkscape
 
+To use reStructuredText (rst) content in slides, you need to install
+rst2pdf>=0.12.3.  This version is available as of ubuntu 10.04 lucid.
+$ sudo apt-get install rst2pdf
+
+rst2pdf is also available in jaunty and karmic, but with
+version<0.12.3 ... I guess there will be problems.  My presentation
+laptop I use slithy with has jaunty installed, and I have installed
+rst2pdf 0.12.3 from source there.
+
+For use of reStructuredText in slides, see: examples/rst_content_example
+
+
 Then go into the source directory
 
 $ cd slithy
