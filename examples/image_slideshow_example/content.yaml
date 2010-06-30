@@ -1,0 +1,11 @@
+---
+bmark: image_files
+image_files:
+  - images/*.jpg
+---
+bmark: slideshow
+repeat: 4
+delay: 2.0
+fade_time: 2.0 
+slideshow:
+  - images/*.jpg
