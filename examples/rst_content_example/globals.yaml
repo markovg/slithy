@@ -15,15 +15,10 @@ font_library:
 
   default:
 
-    times: times.slf
-    ehrhardt: ehrhardt.slf
     body: minion.slf
     bodyi: minion_i.slf
     title: myriad_b.slf
     titlei: myriad_bi.slf
-    roman: myriad.slf
-    mono: courier_b.slf
-    dingbats: wingding.slf
     facets: courier_b.slf
 
 
