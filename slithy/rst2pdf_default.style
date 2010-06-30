@@ -1,0 +1,97 @@
+{
+  "styles" : [
+    ["base", {
+      "fontSize" : 20,
+      "leading" : 20 ,
+      "spaceBefore": 4,
+      "spaceAfter":4,
+      "textColor":"white"
+    }],
+    ["heading", {
+      "fontSize" : 20,
+      "leading" : 20,
+      "textColor":"yellow"
+    }],
+    ["heading1", {
+      "fontSize" : 21,
+      "leading" : 21,
+      "textColor":"yellow"
+    }],
+    ["heading2", {
+      "fontSize" : 21,
+      "leading" : 21,
+      "textColor":"yellow"
+    }],
+    ["bodytext", {
+      "fontSize" : 20,
+      "leading" : 20,
+      "textColor":"white",
+      "alignment":"TA_LEFT"
+    }],
+    ["quote", {
+      "spaceBefore": 30,
+      "spaceAfter":20,
+      "parent": "bodytext",
+      "fontSize" : 25,
+      "leading" : 25,
+      "textColor":"white",
+      "alignment": "TA_CENTER"
+    }],
+    ["whosaid", {
+      "parent": "bodytext",
+      "fontSize" : 18,
+      "leading" : 18,
+      "textColor":"white"
+    }],
+    ["code", {
+      "spaceBefore": 4,
+      "spaceAfter":4,
+      "textColor":"black",
+      "fontSize" : 20,
+      "leading":20
+    }],
+    ["mathbox", {
+      "textColor":"white",
+      "leftIndent": 0,
+      "spaceBefore": 4,
+      "spaceAfter": 4,
+      "fontSize" : 20,
+      "leading":20,
+      "backColor": "beige",
+      "borderColor": "darkgray",
+      "borderWidth": 0.5,
+      "borderPadding": 6
+    }],
+    ["title" , {
+      "parent": "heading",
+      "fontSize": "120%",
+      "alignment": "TA_CENTER",
+      "keepWithNext": false,
+      "spaceAfter": 10
+    }]
+ 
+
+  ],
+  "pageSetup": {
+    "width": "16cm",
+    "height": "12cm",
+    "margin-top": "2mm",
+    "margin-bottom": "0mm",
+    "margin-left": "0.25cm",
+    "margin-right": "0.25cm",
+    "margin-gutter": "0cm",
+    "spacing-header": "2mm",
+    "spacing-footer": "2mm",
+    "firstTemplate": "cutePage"
+  },
+  "pageTemplates" : {
+    "cutePage": {
+        "frames": [
+            ["0", "0", "100%", "100%"]
+        ],
+        "background" : "rst2pdf_background.png",
+        "showHeader" : false,
+        "showFooter" : false
+    }
+  }
+}
