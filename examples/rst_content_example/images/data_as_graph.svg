@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024px"
+   height="768px"
+   id="svg2458"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="data_as_graph.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2460">
+    <linearGradient
+       id="linearGradient3682">
+      <stop
+         style="stop-color:#0000ef;stop-opacity:1;"
+         offset="0"
+         id="stop3684" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="1"
+         id="stop3686" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 384 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1024 : 384 : 1"
+       inkscape:persp3d-origin="512 : 256 : 1"
+       id="perspective2466" />
+    <inkscape:perspective
+       id="perspective2687"
+       inkscape:persp3d-origin="156.25 : 55.833333 : 1"
+       inkscape:vp_z="312.5 : 83.75 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 83.75 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2876"
+       inkscape:persp3d-origin="140.625 : 55.833333 : 1"
+       inkscape:vp_z="281.25 : 83.75 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 83.75 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="485.40418"
+     inkscape:cy="382"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:window-width="640"
+     inkscape:window-height="688"
+     inkscape:window-x="376"
+     inkscape:window-y="0" />
+  <metadata
+     id="metadata2463">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <g
+       id="graph0"
+       class="graph"
+       transform="matrix(1.6645078,0,0,1.8878276,21.615285,413.9865)">
+      <title
+         id="title5">_anonymous_0</title>
+      <polygon
+         style="fill:#ffffff;stroke:#ffffff"
+         points="-4,4 -4,-130 574,-130 574,4 -4,4 "
+         id="polygon7" />
+<!-- O&#39;Pedalo -->      <g
+         id="node1"
+         class="node">
+        <title
+           id="title10">O'Pedalo</title>
+        <ellipse
+           style="fill:none;stroke:#000000"
+           cx="339"
+           cy="-108"
+           rx="52.116199"
+           ry="18"
+           id="ellipse12"
+           sodipodi:cx="339"
+           sodipodi:cy="-108"
+           sodipodi:rx="52.116199"
+           sodipodi:ry="18" />
+        <text
+           x="339"
+           y="-103.9"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           id="text14">O'Pedalo</text>
+      </g>
+<!-- Av. de Montredon -->      <g
+         id="node3"
+         class="node">
+        <title
+           id="title17">Av. de Montredon</title>
+        <ellipse
+           style="fill:none;stroke:#000000"
+           cx="96"
+           cy="-18"
+           rx="95.893799"
+           ry="18"
+           id="ellipse19"
+           sodipodi:cx="96"
+           sodipodi:cy="-18"
+           sodipodi:rx="95.893799"
+           sodipodi:ry="18" />
+        <text
+           x="96"
+           y="-13.9"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           id="text21">Av. de Montredon</text>
+      </g>
+<!-- O&#39;Pedalo&#45;&gt;Av. de Montredon -->      <g
+         id="edge2"
+         class="edge">
+        <title
+           id="title24">O'Pedalo-&gt;Av. de Montredon</title>
+        <path
+           style="fill:none;stroke:#000000"
+           d="M 303,-95 C 263,-80 196,-56 150,-38"
+           id="path26" />
+        <polygon
+           style="fill:#000000;stroke:#000000"
+           points="150.585,-34.4643 140,-34 147.985,-40.9636 150.585,-34.4643 "
+           id="polygon28" />
+        <text
+           x="268"
+           y="-58.900002"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           id="text30">Address</text>
+      </g>
+<!-- Restaurant -->      <g
+         id="node5"
+         class="node">
+        <title
+           id="title33">Restaurant</title>
+        <ellipse
+           style="fill:none;stroke:#000000"
+           cx="274"
+           cy="-18"
+           rx="64.1231"
+           ry="18"
+           id="ellipse35"
+           sodipodi:cx="274"
+           sodipodi:cy="-18"
+           sodipodi:rx="64.1231"
+           sodipodi:ry="18" />
+        <text
+           x="274"
+           y="-13.9"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           id="text37">Restaurant</text>
+      </g>
+<!-- O&#39;Pedalo&#45;&gt;Restaurant -->      <g
+         id="edge4"
+         class="edge">
+        <title
+           id="title40">O'Pedalo-&gt;Restaurant</title>
+        <path
+           style="fill:none;stroke:#000000"
+           d="M 326,-90 C 317,-77 304,-59 293,-44"
+           id="path42" />
+        <polygon
+           style="fill:#000000;stroke:#000000"
+           points="295.8,-41.9 287,-36 290.2,-46.1 295.8,-41.9 "
+           id="polygon44" />
+        <text
+           x="330"
+           y="-58.900002"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           id="text46">Class</text>
+      </g>
+<!-- Seaside -->      <g
+         id="node7"
+         class="node">
+        <title
+           id="title49">Seaside</title>
+        <ellipse
+           style="fill:none;stroke:#000000"
+           cx="404"
+           cy="-18"
+           rx="47.946899"
+           ry="18"
+           id="ellipse51"
+           sodipodi:cx="404"
+           sodipodi:cy="-18"
+           sodipodi:rx="47.946899"
+           sodipodi:ry="18" />
+        <text
+           x="404"
+           y="-13.9"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           id="text53">Seaside</text>
+      </g>
+<!-- O&#39;Pedalo&#45;&gt;Seaside -->      <g
+         id="edge6"
+         class="edge">
+        <title
+           id="title56">O'Pedalo-&gt;Seaside</title>
+        <path
+           style="fill:none;stroke:#000000"
+           d="M 352,-90 C 362,-77 375,-58 385,-43"
+           id="path58" />
+        <polygon
+           style="fill:#000000;stroke:#000000"
+           points="387.8,-45.1 391,-35 382.2,-40.9 387.8,-45.1 "
+           id="polygon60" />
+        <text
+           x="400"
+           y="-58.900002"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           id="text62">Special</text>
+      </g>
+<!-- Mediter. -->      <g
+         id="node9"
+         class="node">
+        <title
+           id="title65">Mediter.</title>
+        <ellipse
+           style="fill:none;stroke:#000000"
+           cx="520"
+           cy="-18"
+           rx="50.031502"
+           ry="18"
+           id="ellipse67"
+           sodipodi:cx="520"
+           sodipodi:cy="-18"
+           sodipodi:rx="50.031502"
+           sodipodi:ry="18" />
+        <text
+           x="520"
+           y="-13.9"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           id="text69">Mediter.</text>
+      </g>
+<!-- O&#39;Pedalo&#45;&gt;Mediter. -->      <g
+         id="edge8"
+         class="edge">
+        <title
+           id="title72">O'Pedalo-&gt;Mediter.</title>
+        <path
+           style="fill:none;stroke:#000000"
+           d="M 374,-95 C 391,-88 410,-80 428,-72 C 447,-62 469,-50 486,-39"
+           id="path74" />
+        <polygon
+           style="fill:#000000;stroke:#000000"
+           points="487.958,-41.916 495,-34 484.559,-35.7969 487.958,-41.916 "
+           id="polygon76" />
+        <text
+           x="492"
+           y="-58.900002"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           id="text78">Food type</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.3316062,0,0,1.5102621,105.20725,668.70382)"
+       class="graph"
+       id="g2690">
+      <title
+         id="title2623">_anonymous_0</title>
+      <polygon
+         id="polygon2625"
+         points="-4,4 -4,-130 246,-130 246,4 -4,4 "
+         style="fill:#ffffff;stroke:#ffffff" />
+<!-- Steve -->      <g
+         class="node"
+         id="g2694">
+        <title
+           id="title2628">Steve</title>
+        <ellipse
+           id="ellipse2630"
+           ry="18"
+           rx="38.913399"
+           cy="-108"
+           cx="109"
+           style="fill:none;stroke:#000000"
+           sodipodi:cx="109"
+           sodipodi:cy="-108"
+           sodipodi:rx="38.913399"
+           sodipodi:ry="18" />
+        <text
+           id="text2632"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-103.9"
+           x="109">Steve</text>
+      </g>
+<!-- CEO -->      <g
+         class="node"
+         id="g2699">
+        <title
+           id="title2635">CEO</title>
+        <ellipse
+           id="ellipse2637"
+           ry="18"
+           rx="31.9646"
+           cy="-18"
+           cx="32"
+           style="fill:none;stroke:#000000"
+           sodipodi:cx="32"
+           sodipodi:cy="-18"
+           sodipodi:rx="31.9646"
+           sodipodi:ry="18" />
+        <text
+           id="text2639"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-13.9"
+           x="32">CEO</text>
+      </g>
+<!-- Steve&#45;&gt;CEO -->      <g
+         class="edge"
+         id="g2704">
+        <title
+           id="title2642">Steve-&gt;CEO</title>
+        <path
+           id="path2644"
+           d="M 93,-91 C 88,-85 81,-78 76,-72 C 68,-62 60,-52 52,-43"
+           style="fill:none;stroke:#000000" />
+        <polygon
+           id="polygon2646"
+           points="54.2191,-40.221 45,-35 48.9511,-44.8306 54.2191,-40.221 "
+           style="fill:#000000;stroke:#000000" />
+        <text
+           id="text2648"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-58.900002"
+           x="92">Role</text>
+      </g>
+<!-- Bill -->      <g
+         class="node"
+         id="g2710">
+        <title
+           id="title2651">Bill</title>
+        <ellipse
+           id="ellipse2653"
+           ry="18"
+           rx="27"
+           cy="-18"
+           cx="109"
+           style="fill:none;stroke:#000000"
+           sodipodi:cx="109"
+           sodipodi:cy="-18"
+           sodipodi:rx="27"
+           sodipodi:ry="18" />
+        <text
+           id="text2655"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-13.9"
+           x="109">Bill</text>
+      </g>
+<!-- Steve&#45;&gt;Bill -->      <g
+         class="edge"
+         id="g2715">
+        <title
+           id="title2658">Steve-&gt;Bill</title>
+        <path
+           id="path2660"
+           d="M 109,-90 C 109,-77 109,-61 109,-46"
+           style="fill:none;stroke:#000000" />
+        <polygon
+           id="polygon2662"
+           points="112.5,-46 109,-36 105.5,-46 112.5,-46 "
+           style="fill:#000000;stroke:#000000" />
+        <text
+           id="text2664"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-58.900002"
+           x="131">knows</text>
+      </g>
+<!-- Person -->      <g
+         class="node"
+         id="g2721">
+        <title
+           id="title2667">Person</title>
+        <ellipse
+           id="ellipse2669"
+           ry="18"
+           rx="43.777599"
+           cy="-18"
+           cx="198"
+           style="fill:none;stroke:#000000"
+           sodipodi:cx="198"
+           sodipodi:cy="-18"
+           sodipodi:rx="43.777599"
+           sodipodi:ry="18" />
+        <text
+           id="text2671"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-13.9"
+           x="198">Person</text>
+      </g>
+<!-- Steve&#45;&gt;Person -->      <g
+         class="edge"
+         id="g2726">
+        <title
+           id="title2674">Steve-&gt;Person</title>
+        <path
+           id="path2676"
+           d="M 132,-93 C 140,-87 150,-80 158,-72 C 166,-64 174,-53 181,-44"
+           style="fill:none;stroke:#000000" />
+        <polygon
+           id="polygon2678"
+           points="183.8,-46.1 187,-36 178.2,-41.9 183.8,-46.1 "
+           style="fill:#000000;stroke:#000000" />
+        <text
+           id="text2680"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-58.900002"
+           x="188">Class</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.7651099,0,0,2.0141935,571.09179,704.41045)"
+       class="graph"
+       id="g2879">
+      <title
+         id="title2828">_anonymous_0</title>
+      <polygon
+         id="polygon2830"
+         points="-4,4 -4,-130 221,-130 221,4 -4,4 "
+         style="fill:#ffffff;stroke:#ffffff" />
+<!-- subject -->      <g
+         class="node"
+         id="g2883">
+        <title
+           id="title2833">subject</title>
+        <ellipse
+           id="ellipse2835"
+           ry="18"
+           rx="45.167301"
+           cy="-108"
+           cx="102"
+           style="fill:none;stroke:#000000"
+           sodipodi:cx="102"
+           sodipodi:cy="-108"
+           sodipodi:rx="45.167301"
+           sodipodi:ry="18" />
+        <text
+           id="text2837"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-103.9"
+           x="102">subject</text>
+      </g>
+<!-- objectX -->      <g
+         class="node"
+         id="g2888">
+        <title
+           id="title2840">objectX</title>
+        <ellipse
+           id="ellipse2842"
+           ry="18"
+           rx="46.754601"
+           cy="-18"
+           cx="47"
+           style="fill:none;stroke:#000000"
+           sodipodi:cx="47"
+           sodipodi:cy="-18"
+           sodipodi:rx="46.754601"
+           sodipodi:ry="18" />
+        <text
+           id="text2844"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-13.9"
+           x="47">objectX</text>
+      </g>
+<!-- subject&#45;&gt;objectX -->      <g
+         class="edge"
+         id="g2893">
+        <title
+           id="title2847">subject-&gt;objectX</title>
+        <path
+           id="path2849"
+           d="M 80,-92 C 73,-86 67,-80 62,-72 C 57,-64 54,-55 52,-46"
+           style="fill:none;stroke:#000000" />
+        <polygon
+           id="polygon2851"
+           points="55.3933,-45.1194 50,-36 48.5292,-46.4922 55.3933,-45.1194 "
+           style="fill:#000000;stroke:#000000" />
+        <text
+           id="text2853"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-58.900002"
+           x="99">predicateU</text>
+      </g>
+<!-- objectY -->      <g
+         class="node"
+         id="g2899">
+        <title
+           id="title2856">objectY</title>
+        <ellipse
+           id="ellipse2858"
+           ry="18"
+           rx="45.862202"
+           cy="-18"
+           cx="158"
+           style="fill:none;stroke:#000000"
+           sodipodi:cx="158"
+           sodipodi:cy="-18"
+           sodipodi:rx="45.862202"
+           sodipodi:ry="18" />
+        <text
+           id="text2860"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-13.9"
+           x="158">objectY</text>
+      </g>
+<!-- subject&#45;&gt;objectY -->      <g
+         class="edge"
+         id="g2904">
+        <title
+           id="title2863">subject-&gt;objectY</title>
+        <path
+           id="path2865"
+           d="M 120,-91 C 126,-86 132,-79 136,-72 C 141,-64 146,-54 149,-46"
+           style="fill:none;stroke:#000000" />
+        <polygon
+           id="polygon2867"
+           points="152.479,-46.584 152,-36 145.774,-44.5725 152.479,-46.584 "
+           style="fill:#000000;stroke:#000000" />
+        <text
+           id="text2869"
+           style="font-size:14px;text-anchor:middle;font-family:Times New Roman"
+           y="-58.900002"
+           x="180">predicateV</text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+       x="156"
+       y="94"
+       id="text3690"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3692"
+         x="156"
+         y="94">Structured Data as a Graph</tspan></text>
+  </g>
+</svg>

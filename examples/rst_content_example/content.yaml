@@ -1,0 +1,221 @@
+---
+title: What is the Semantic Web ?
+bg: white
+rst: |
+  
+  Answer: The GGG (Giant Global Graph)
+
+  * generic structured data repr. as graph 
+  * joining of many small graphs   
+  * easy for software to process
+
+--- 
+title: 'Data as a Graph'
+svg: images/data_as_graph.svg
+
+--- 
+title: 'Data as a Graph: RDF'
+rst: |
+
+  * Resource Description Format (RDF)
+  * A W3C recommendation since 1999
+  * Assert facts about something
+  * Collection of triples:
+
+    **subject** - *predicate* - **object**
+  * URIs: http://example.org/URI8234
+  * Literals: "Steve", 20, 3.14
+  * Namespaces, e.g.: FOAF, RDFS, OWL
+
+---
+title: Three layers of Semantic Web
+rst: |
+
+  * RDF:
+    Assertion of facts
+    ::
+
+     @prefix ex: <http://example.org/> .
+     @prefix FAOF: <http://xmlns.com/foaf/0.1/> .
+     ex:URI0 FOAF:name "Steve".
+     ex:URI0 RDF:type FOAF:Person.
+     ex:URI0 FOAF:knows ex:URI1.
+     ex:URI1 FOAF:name "Bill".
+  * RDF Schema (RDFS):
+    Definition of Vocab, Classes
+    ::
+    
+     ex:CEO RDF:type RDFS:Class.
+     ex:CEO RDFS:subClassOf FOAF:Person.
+
+---
+rst: |
+
+  * Web Ontology Language (OWL):
+
+    - Reasoning, Relationships between vocabularies
+    - Used by: NIF Neurolex, ABA
+    ::
+
+      @prefix abamouse: <http://.../atlas/index.html#>.
+
+      abamouse:COAa3 a owl:Class;
+       rdfs:label "Cortical amygdalar area ...";
+       rdfs:comment "";
+       rdfs:isDefinedBy "... COAa3.html";
+       rdfs:subClassOf abamouse:COAa. 
+
+
+---
+title: rdflib - RDF in Python
+rst: |
+
+  .. code-block:: python
+
+    from rdflib import ConjunctiveGraph, 
+    from rdflib import Namespace,Literal
+
+    foaf = Namespace('http://xmlns.com/foaf/0.1/')
+    ex = Namespace('http://example.org/')
+
+    #print foaf.name
+    #rdflib.URIRef('http://xmlns.com/foaf/0.1/namne')
+
+    g = ConjunctiveGraph()
+    g.add((ex.id123,foaf.name,Literal('Steve')))
+    g.add((ex.id124,foaf.name,Literal('Bill')))
+    g.add((ex.id123,foaf.knows, ex.id124))
+
+    print g.serialize(format='n3')
+
+
+
+---
+rst: |
+  ::
+
+    @prefix _3: <http://example.org/>.
+    @prefix _4: <http://xmlns.com/foaf/0.1/>.
+
+     _3:id123 _4:knows _3:id124;
+       _4:name "Steve". 
+
+     _3:id124 _4:name "Bill". 
+
+
+--- 
+title: SQL Triple-store for rdflib
+rst: |
+  .. code-block:: python
+
+    from rdflib import plugin
+    from rdflib.store import Store
+
+    # Here also MySQL, PostgreSQL, ...
+    store = plugin.get('SQLite', Store)('aba_local.sqlite')
+    try:
+      status = store.open('.',create=True)
+    except:
+      print "db exists, reusing."
+      status = store.open('.',create=False)
+        
+    g = ConjunctiveGraph(store)
+    g.parse('.onto_data/ABA.owl')
+    g.commit()
+
+
+
+---
+title: Queries - Simple RDF
+rst: |
+
+  .. code-block:: python
+
+    g = ConjunctiveGraph(store)
+
+    for x in g.triples((None,RDFS.subClassOf,aba.Brain)):
+      print shorten(x)
+      for y in g.triples((x[0],None,None)):
+        print '\t',shorten(y[1:])
+
+  ::
+   
+   ---------------------------------------------
+   (u'CH', u'subClassOf', u'Brain')          
+     (u'type', u'Class')
+     (u'label', 'Cerebrum')
+     (u'subClassOf', u'Brain')
+     (u'disjointWith', u'CB')
+     (u'disjointWith', u'BS')
+   (u'CB', u'subClassOf', u'Brain')
+     (u'label', 'Cerebellum') ...
+   (u'BS', u'subClassOf', u'Brain')
+     (u'label', 'Brain stem') ...
+
+
+---
+title: Queries - SPARQL
+rst: |
+
+  .. code-block:: python
+
+    sparq = """
+
+    SELECT ?part 
+    WHERE { ?part rdfs:subClassOf aba:Brain . }
+
+    """
+
+    r = g.query(sparq,initNs={'aba':aba,
+                              'rdfs':rdfs})
+
+  ::
+  
+   CH, CB, BS
+   
+
+---
+title: RDFAlchemy - ORM for RDF
+rst: |
+
+  .. code-block:: python
+
+    from rdfalchemy.rdfsSubject import owlClass
+    from rdfalchemy import rdfSingle, rdfMultiple
+
+
+    class ABAStruct(owlClass):
+       isDefinedBy = rdfSingle(RDFS.isDefinedBy)
+       subClassOf = rdfSingle(RDFS.subClassOf)
+       ID = rdfSingle(RDF.ID)
+       label = rdfSingle(RDFS.label)
+       disjointWith = rdfMultiple(owl.disjointWith) 
+
+    # Apply ORM to a graph   
+    ABAStruct.db = g
+
+    for x in ABAStruct.filter_by(subClassOf=aba.Brain):
+       print x.label
+  
+  ::
+
+   Cerebrum, Cerebellum, Brain stem
+
+
+---
+title: Further reading
+rst: |
+  
+  * Protege - OWL Editor
+  * SPARQL
+  * RDFAlchemy
+  * Existing Vocabularies: FOAF, Neurolex, ...
+  * Swoogle
+
+---
+bmark: swoogle
+image_files:
+  - images/swoogle.png
+
+
+
