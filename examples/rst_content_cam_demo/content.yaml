@@ -1,0 +1,23 @@
+---
+title: Content cam demo
+rst: |
+
+ * Some rst text
+
+  * Image content is overlayed
+
+content: |
+
+  i = Image(common.cam.body.top(0.5).right(0.3).inset(0.05), 'images/omap_buzas_2006_fudged.png', library='image_files',_alpha=1.0,stretch=True)
+  enter(i)
+
+  i = Image(common.cam.body, 'images/omap_buzas_2006_fudged.png', library='image_files',_alpha=0.1,stretch=True)
+  enter(i)
+
+  i = Image(common.cam.title, 'images/omap_buzas_2006_fudged.png', library='image_files',_alpha=0.1,stretch=True)
+  enter(i)
+
+
+
+
+

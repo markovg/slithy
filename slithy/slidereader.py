@@ -160,7 +160,8 @@ def include_slides(filename):
 
         elif 'rst' in slide:
             images = rst2ppm_cache(i,slide.get('title',''),slide['rst'])
-            p.play(load_image_slides(images,library='pdf',background=background))
+            p.play(load_image_slides(images,library='pdf',
+                                     background=background,content=slide.get('content',None)))
             p.pause()
                 
         else:
@@ -182,7 +183,8 @@ def clean_slate():
     ns['bg'] = common.bg
     ns['Text'] = Text
     ns['Movie'] = movie.Movie
-    
+    ns['common'] = common
+
     return ns
 
 
@@ -341,7 +343,7 @@ def imagefiles_to_images(image_files):
             #img_name = os.path.basename(filename)
 
             img = diaimage.get_image(filename)
-            print 'target_file: ', img
+            print 'target_file: %s' % (filename,), img
             image_library['image_files'][filename] = img 
             images.append(filename)
             
@@ -425,7 +427,7 @@ def rst2ppm_cache(slide_num,slide_title, rst_content):
 
 
 
-def load_image_slides(images,library='default',background='bg'):
+def load_image_slides(images,library='default',background='bg',content=None):
     """ returns sequence of image slides animation """
     
     # get a clean slate
@@ -467,7 +469,11 @@ image = new_image
 
     for image in images:
        exec cmd % (image, library) in ns 
-        
+
+    # do external slithy content if any
+    if content:
+        exec content in ns
+       
     exec "anim = end_animation()" in ns
 
     return ns['anim']

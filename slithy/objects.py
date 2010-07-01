@@ -395,7 +395,8 @@ class Image(Element):
         self._params = ( ('image', 'object', None),
                          ('_alpha', 'scalar', 1.0),
                          ('fit', 'object', BOTH),
-                         ('anchor', 'object', 'c') )
+                         ('anchor', 'object', 'c'),
+                         ('stretch','object',False))
 
         bad = parameter_check( self._params, _params )
         if bad:
@@ -429,8 +430,10 @@ class Image(Element):
                     f = HEIGHT
                 else:
                     f = WIDTH
-            
-            if f == WIDTH:
+            if d['stretch']:
+                fd = { 'width' : ulen, 'height' : ulen / aspect }
+                fd['stretch'] = d['stretch']
+            elif f == WIDTH:
                 fd = { 'width' : ulen }
                 y += a[1] * ulen * (1.0 / aspect - 1.0 / im.aspect)
             elif f == HEIGHT:
