@@ -9,29 +9,13 @@ import slithy.slidereader as slidereader
 from slithy.slidereader import load_env, include_slides, imagefiles_to_images
 
 # load the image and font environments
-load_env('globals.yaml')
+#load_env('globals.yaml')
 
-# Parse images in directories
+# Parse images in directories instead of in globals
 imagefiles_to_images('images/*')
 
-# the sections of the talk using old style
-
-#import title
-
-
-#bookmark( 'title' )
-#play( title.title2_anim )
-#pause()
-
+# include slide content
 include_slides('content.yaml')
-
-#bookmark( 'something completely different' )
-#play( movie_test.title1_anim )
-
-#pause()
-#bookmark( 'overview' )
-#play( overview.overview_anim )
-
 
 run_presentation()
 
