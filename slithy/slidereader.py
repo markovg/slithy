@@ -192,11 +192,22 @@ def clean_slate():
 
 def load_slide_content(content):
     """ returns the slide animation """
-    
+    import traceback,sys
+
     # get a clean slate
     ns = clean_slate()
 
-    exec content in ns
+    try:
+        exec content in ns
+    except Exception,e:
+        print "Exception in user code:"
+        print 'v'*60
+        for i,line in enumerate(content.split('\n')):
+            print "%d: %s" % (i+1,line)
+        print '^'*60
+        traceback.print_exc(file=sys.stdout)
+        print '-'*60
+        raise e
     exec "anim = end_animation()" in ns
 
     return ns['anim']

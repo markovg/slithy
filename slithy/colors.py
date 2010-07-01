@@ -55,7 +55,10 @@ blue = Color( 0.0, 0.0, 1.0 )
 purple = Color( 0.6, 0.0, 0.8 )
 black = Color( 0.0 )
 white = Color( 1.0 )
+grey = Color( 0.5 )
+gray = grey
 invisible = Color( 0.0, 0.0 )
+navy_blue = Color( float(0x25)/0xff, float(0x24)/0xff, float(0x7b)/0xff )
 
 try:
     f = open( '/usr/lib/X11/rgb.txt', 'r' )
