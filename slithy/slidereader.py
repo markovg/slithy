@@ -126,15 +126,15 @@ def include_slides(filename):
 
         if 'pdf' in slide and 'slides' in slide:
             images = pdf2ppm_cache(slide['pdf'],slide['slides'])
-            p.play(load_image_slides(images,library='pdf',background=background))
+            p.play(load_image_slides(images,library='pdf',background=background, content=slide.get('content',None)))
             p.pause()
         elif 'svg' in slide:
             images = svg2png_cache(slide['svg'])
-            p.play(load_image_slides(images,library='svg',background=background))
+            p.play(load_image_slides(images,library='svg',background=background, content=slide.get('content',None)))
             p.pause()
         elif 'image_files' in slide:
             images = imagefiles_to_images(slide['image_files'])
-            p.play(load_image_slides(images,library='image_files',background=background))
+            p.play(load_image_slides(images,library='image_files',background=background, content=slide.get('content',None)))
             p.pause()
 
         elif 'slideshow' in slide:
@@ -144,7 +144,8 @@ def include_slides(filename):
                                               background=background,
                                               delay=slide.get('delay',2.0),
                                               repeat=slide.get('repeat',1),
-                                              fade_time=slide.get('fade_time',0.5))
+                                              fade_time=slide.get('fade_time',0.5),
+                                              content=slide.get('content',None))
 
             p.play(slideshow_anim)
             p.pause()
@@ -155,7 +156,8 @@ def include_slides(filename):
                 lib = slide['library']
             else:
                 lib = 'default'
-            p.play(load_image_slides(slide['images'],library=lib, background=background))
+            p.play(load_image_slides(slide['images'],library=lib, background=background,
+                                     content=slide.get('content',None)))
             p.pause()
 
         elif 'rst' in slide:
@@ -277,13 +279,7 @@ def pdf2ppm_cache(filename,slides):
     return images
 
 
-def svg2png_cache(svgs):
-
-    cache_dir = './.slithy_svgcache'
-    if not cache_dir in sylib.fontpath:
-        sylib.fontpath.append(cache_dir)
-
-    setup_cachedir(cache_dir)
+def svg2png_cache(svgs,library='svg'):
 
     width,height = 800,600
 
@@ -300,6 +296,13 @@ def svg2png_cache(svgs):
         # get only trailing pdf name
         svg_name = os.path.split(svg)[-1]
 
+        # cache dir in image dir
+        cache_dir = os.path.join(os.path.dirname(svg),'.svgcache')
+        if not cache_dir in sylib.fontpath:
+            sylib.fontpath.append(cache_dir)
+
+        setup_cachedir(cache_dir)
+
         target_file = os.path.join(cache_dir,svg_name+'.png')
         if os.path.exists(target_file) and os.path.getmtime(svg)<os.path.getmtime(target_file):
            print target_file," exists and uptodate.  Skipping." 
@@ -310,7 +313,7 @@ def svg2png_cache(svgs):
 
         img = diaimage.get_image(target_file)
         print 'target_file: ', img
-        image_library['svg'][target_file] = img 
+        image_library[library][target_file] = img 
         images.append(target_file)
             
     return images
@@ -335,6 +338,15 @@ def imagefiles_to_images(image_files):
 
             img_dir = os.path.dirname(filename)
 
+            ext = os.path.splitext(filename)
+            
+            # handle svgs
+            
+            if ext[-1]=='.svg':
+                # replace filename with cached png of svg
+                print "SVG: %s", filename
+                filename = svg2png_cache(filename,library='image_files')[0]
+
             # add dir to image search path
             if not img_dir in sylib.fontpath:
                 sylib.fontpath.append(img_dir)
@@ -342,8 +354,9 @@ def imagefiles_to_images(image_files):
             # get only trailing image name
             #img_name = os.path.basename(filename)
 
+            print 'target_file: %s' % (filename,),
             img = diaimage.get_image(filename)
-            print 'target_file: %s' % (filename,), img
+            print img
             image_library['image_files'][filename] = img 
             images.append(filename)
             
