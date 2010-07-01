@@ -161,7 +161,7 @@ def include_slides(filename):
             p.pause()
 
         elif 'rst' in slide:
-            images = rst2ppm_cache(i,slide.get('title',''),slide['rst'])
+            images = rst2ppm_cache(i,slide.get('title',''),slide['rst'],slide.get('rst_style'))
             p.play(load_image_slides(images,library='pdf',
                                      background=background,content=slide.get('content',None)))
             p.pause()
@@ -386,7 +386,10 @@ def rst2pdf(rst_file, pdf_file, style_file):
 
 
 
-def rst2ppm_cache(slide_num,slide_title, rst_content):
+def rst2ppm_cache(slide_num,slide_title, rst_content, style_file=None):
+
+    if not style_file:
+        style_file = rst_config['rst_default_style']
 
     # directory for caching rst files, etc
     cache_dir = './.slithy_rstcache'
@@ -442,7 +445,7 @@ def rst2ppm_cache(slide_num,slide_title, rst_content):
     
     # generate pdf if 'changed', i.e. needs updating
     if changed:
-        rst2pdf(rst_target, pdf_target, rst_config['rst_default_style'])
+        rst2pdf(rst_target, pdf_target, style_file)
         
 
     return pdf2ppm_cache(pdf_target,[1])
