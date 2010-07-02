@@ -144,8 +144,8 @@ def include_slides(filename):
                                               background=background,
                                               delay=slide.get('delay',2.0),
                                               repeat=slide.get('repeat',1),
-                                              fade_time=slide.get('fade_time',0.5),
-                                              content=slide.get('content',None))
+                                              fade_time=slide.get('fade_time',0.5))
+
 
             p.play(slideshow_anim)
             p.pause()
