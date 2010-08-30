@@ -1,0 +1,12 @@
+HowTo - Making a pdf from you presentation
+
+1. Go through the presentation and press '=' for each frame you would like to grab
+
+2. Step 1. will have created a bunch of slithy%04d-%5.3f.png files.
+   Move the to a directory such as build_pdf
+
+3. cd build_pdf
+
+4. convert *.png talk.pdf
+
+
