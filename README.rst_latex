@@ -1,3 +1,12 @@
+Install:
+
+Latex in rst needs epspdf.
+On my 10.04 Ubuntu box, I need to do this:
+
+sudo chmod 755 /usr/share/texmf-texlive/scripts/epspdf/epspdf.rb
+
+
+
 Here is an example of a slide in rst including latex
 
 
