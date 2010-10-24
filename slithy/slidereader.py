@@ -378,12 +378,42 @@ def imagefiles_to_images(image_files):
 def rst2pdf(rst_file, pdf_file, style_file):
     # rst2pdf slides.rst -b1 -s slides.style
 
-    cmd = "rst2pdf %s -b1 -o %s -s %s" % (rst_file, pdf_file, style_file)
+    cmd = "rst2pdf %s --fit-background-mode=scale -b1 -o %s -s %s" % (rst_file, pdf_file, style_file)
     print cmd
 
     os.system(cmd)
     
 
+def process_latex(rst_content, math_dir, prefix):
+    """ Find @ltx@ eqn @ltx@ tokens, cut out the
+    eqns, feed 'em to latexmath2pdf
+    in the math_dir, and
+    insert the files back into rst_content
+    as images
+
+    math_dir is typically './.slithy_rstcache/slideX/
+    """
+    
+    import re, os
+    import latexmath2pdf
+    
+
+    ltx_token = "@ltx@"
+    p_ltx = re.compile(ltx_token+"(.*?)"+ltx_token,re.S)
+    result = rst_content
+    for i,f in enumerate(p_ltx.finditer(rst_content)):
+        f = f.group()
+        eqn = f.replace(ltx_token,"")
+        # size=10 is hard-coded for now.
+        latexmath2pdf.math2pdf(eqn,math_dir,prefix=prefix,num=i,size=1)
+        # filename of rendered pdf in rst
+        #fn = os.path.join(math_dir, "%s%.4d.pdf" % (prefix,i))
+        fn = "%s%.4d.pdf" % (prefix,i)
+        replace = "  .. image:: %s\n     :scale: 160%%\n     :align: center" % fn
+        
+        result = result.replace(f,replace)
+
+    return result
 
 
 def rst2ppm_cache(slide_num,slide_title, rst_content, style_file=None):
@@ -400,6 +430,11 @@ def rst2ppm_cache(slide_num,slide_title, rst_content, style_file=None):
 
     # rst target filename
     base_filename = 'slide%d' % slide_num
+
+    # Process math expressions
+
+    if '@ltx@' in rst_content:
+        rst_content = process_latex(rst_content,cache_dir,prefix=os.path.join(base_filename,"ltx_"))
 
     # clear white space
     slide_title = slide_title.strip()

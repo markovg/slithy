@@ -1,0 +1,23 @@
+Here is an example of a slide in rst including latex
+
+
+---
+bmarks: minihints 
+title: 'Solution: external mini-column'
+rst_style: ./rst2pdf_default.style
+rst: |
+
+  * Augment BlueBuilder to accept external mini-column placement hints from the meso-tiler
+ 
+  @ltx@
+  \langle \tau_{i+1}\tau_i \\
+  \rangle_{\tau_{i+1}}
+  @ltx@
+
+  * BlueBuilder mini-column placement hints from the
+
+  @ltx@
+  \langle \eta_{i+1}\tau_i \rangle \\
+  \rangle_{\tau_{i+1}} \rangle
+  @ltx@
+

@@ -575,6 +575,7 @@ class Text(Element):
                          ('justify', 'scalar', 0.0),
                          ('vjustify', 'scalar', 0.0),
                          ('show_viewport', object, None),
+                         ('anchor', object, 'fw')
                          )
         
         bad = parameter_check( self._params, _params )
@@ -606,15 +607,15 @@ class Text(Element):
             vert = d['vjustify']
             if vert == 0.0:
                 text( x, y - size, d['text'], d['font'],
-                           size = size, justify = d['justify'], anchor = 'fw',
+                           size = size, justify = d['justify'], anchor = d['anchor'],
                            wrap = ulen, _alpha = d['_alpha'] )
             else:
                 bbox = text( x, y - size, d['text'], d['font'],
-                             size = size, justify = d['justify'], anchor = 'fw',
+                             size = size, justify = d['justify'], anchor = d['anchor'],
                              wrap = ulen, _alpha = d['_alpha'], nodraw = 1 )
                 y -= vert * ((ulen/aspect) - size * bbox['lines']) + size
                 text( x, y, d['text'], d['font'],
-                      size = size, justify = d['justify'], anchor = 'fw',
+                      size = size, justify = d['justify'], anchor = d['anchor'],
                       wrap = ulen, _alpha = d['_alpha'] )
         finally:
             pop()

@@ -62,7 +62,7 @@ def __build_preamble(packages):
     preamble += "\pagestyle{empty}\n\\begin{document}\n"
     return preamble
 
-def __write_output(infile, outdir, workdir = '.', prefix = '', num = 1, size = 1):
+def __write_output(infile, outdir, workdir = '.', prefix = '', num = 0, size = 1):
     try:
         # Generate the DVI file
         latexcmd = 'latex -halt-on-error -output-directory %s %s'\
@@ -87,7 +87,7 @@ def __write_output(infile, outdir, workdir = '.', prefix = '', num = 1, size = 1
         rc = os.system(dvicmd)
         if rc != 0:
             raise Exception('dvips error')
-        pdfcmd = "epspdf %s math.pdf" % (epsfile,)
+        pdfcmd = "epspdf %s %s%.4d.pdf" % (epsfile,outprefix,num)
         rc = os.system(pdfcmd)
         if rc != 0:
             raise Exception('epspdf error')
@@ -101,13 +101,13 @@ def __write_output(infile, outdir, workdir = '.', prefix = '', num = 1, size = 1
                 os.remove(tempfile)
 
 
-def math2pdf(eqs, outdir, packages = default_packages, prefix = '', size = 1):
+def math2pdf(eqs, outdir, packages = default_packages, prefix = '', num = 0, size = 1):
     """
     Generate png images from $...$ style math environment equations.
 
     Parameters:
         eqs         - A list of equations
-        outdir      - Output directory for PNG images
+        outdir      - Output directory for PDF images
         packages    - Optional list of packages to include in the LaTeX preamble
         prefix      - Optional prefix for output files
         size        - Scale factor for output
@@ -128,7 +128,7 @@ def math2pdf(eqs, outdir, packages = default_packages, prefix = '', size = 1):
         with os.fdopen(fd, 'w+') as f:
             f.writelines(tex_lines)
 
-        __write_output(texfile, outdir, workdir, prefix, size)
+        __write_output(texfile, outdir, workdir, prefix, num, size)
     finally:
         if os.path.exists(texfile):
             os.remove(texfile)
