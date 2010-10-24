@@ -409,7 +409,7 @@ def process_latex(rst_content, math_dir, prefix):
         # filename of rendered pdf in rst
         #fn = os.path.join(math_dir, "%s%.4d.pdf" % (prefix,i))
         fn = "%s%.4d.pdf" % (prefix,i)
-        replace = "  .. image:: %s\n     :scale: 160%%\n     :align: center" % fn
+        replace = ".. image:: %s\n   :scale: 160%%\n   :align: center" % fn
         
         result = result.replace(f,replace)
 
@@ -431,48 +431,59 @@ def rst2ppm_cache(slide_num,slide_title, rst_content, style_file=None):
     # rst target filename
     base_filename = 'slide%d' % slide_num
 
-    # Process math expressions
-
-    if '@ltx@' in rst_content:
-        rst_content = process_latex(rst_content,cache_dir,prefix=os.path.join(base_filename,"ltx_"))
-
     # clear white space
     slide_title = slide_title.strip()
     
     # len of title for rst underline
     underline = '-'*len(slide_title)
 
-    slide_text = """
+    slide_template = """
 %(title)s
 %(underline)s
 
 %(content)s
-""" % {'title':slide_title, 'underline':underline,'content':rst_content}
+"""
+    
+    slide_text_ltx = slide_template % {'title':slide_title, 'underline':underline,'content':rst_content}
 
     rst_target = os.path.join(cache_dir, base_filename+'.rst')
+    rst_target_ltx = os.path.join(cache_dir, base_filename+'.rst_ltx')
     pdf_target = os.path.join(cache_dir, base_filename+'.pdf')
+
+    def write_rst():
+        # write rst_ltx
+        f = file(rst_target_ltx,'w')
+        f.write(slide_text_ltx)
+        f.close()
+
+        # Process math expressions
+        setup_cachedir(os.path.join(cache_dir,base_filename))
+        if '@ltx@' in slide_text_ltx:
+            slide_text = process_latex(slide_text_ltx,cache_dir,prefix=os.path.join(base_filename,"ltx_"))
+
+        #slide_text = slide_template % {'title':slide_title, 'underline':underline,'content':rst_content}
+        # write new content
+        f = file(rst_target,'w')
+        f.write(slide_text)
+        f.close()
     
     # logic below to set changed to False 
     # if pdf doesn't need updating
     changed = True
-    # check if rst content file differs from slide_text.
-    if os.path.exists(rst_target):
-        f = file(rst_target,'r')
-        old_slide_text = f.read()
+    # check if rst_ltx content file differs from slide_text.
+    if os.path.exists(rst_target_ltx):
+        f = file(rst_target_ltx,'r')
+        old_slide_text_ltx = f.read()
         f.close()
 
-        if old_slide_text==slide_text:
+        if old_slide_text_ltx==slide_text_ltx:
             changed = False
         else:
             # write new content
-            f = file(rst_target,'w')
-            f.write(slide_text)
-            f.close()
+            write_rst()
     else:
         # write rst ... it doesn't exists
-        f = file(rst_target,'w')
-        f.write(slide_text)
-        f.close()
+        write_rst()
 
     # if somehow pdf is missing, force generate
     if not os.path.exists(pdf_target):
