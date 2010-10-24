@@ -460,7 +460,8 @@ def rst2ppm_cache(slide_num,slide_title, rst_content, style_file=None):
         setup_cachedir(os.path.join(cache_dir,base_filename))
         if '@ltx@' in slide_text_ltx:
             slide_text = process_latex(slide_text_ltx,cache_dir,prefix=os.path.join(base_filename,"ltx_"))
-
+        else:
+            slide_text = slide_text_ltx
         #slide_text = slide_template % {'title':slide_title, 'underline':underline,'content':rst_content}
         # write new content
         f = file(rst_target,'w')
