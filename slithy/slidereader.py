@@ -384,6 +384,37 @@ def rst2pdf(rst_file, pdf_file, style_file):
     os.system(cmd)
     
 
+def parse_latex_opts(f):
+    """ f is something like:
+    '@ltx[repl=hello;align=center;scale=60%]@foo@ltx@'
+    returns {'repl':'hello', 'align':"center,top", "scale":"60%"}"""
+
+    # remove first '@ltx'
+    op_str = f[4:]
+
+    # get uptil first @
+    op_str = op_str.split('@')[0]
+
+    # case of no options
+    if op_str=='':
+        return {}
+
+    # remove []
+    assert op_str[0]=="["
+    assert op_str[-1]=="]"
+    op_str = op_str[1:-1]
+
+    d = {}
+    for x in op_str.split(','):
+        key,val = map(str.strip,x.split('='))
+        d[key] = val
+    
+    return d
+
+    
+    
+
+
 def process_latex(rst_content, math_dir, prefix):
     """ Find @ltx@ eqn @ltx@ tokens, cut out the
     eqns, feed 'em to latexmath2pdf
@@ -399,17 +430,36 @@ def process_latex(rst_content, math_dir, prefix):
     
 
     ltx_token = "@ltx@"
-    p_ltx = re.compile(ltx_token+"(.*?)"+ltx_token,re.S)
+    ltx_head = "@ltx.*?@"
+    p_ltx = re.compile(ltx_head+"(.*?)"+ltx_token,re.S)
     result = rst_content
     for i,f in enumerate(p_ltx.finditer(rst_content)):
+        eqn = f.group(1)
         f = f.group()
-        eqn = f.replace(ltx_token,"")
+        opts = parse_latex_opts(f)
+        if 'align' not in opts:
+            opts['align']='center'
+        if 'scale' not in opts:
+            opts['scale'] = '160%%'
+        if 'repl' in opts:
+            repl = opts['repl']
+            del opts['repl']
+            # align center -> align middle for repl
+            if opts['align']=='center':
+                opts['align']='middle'
+                
+        else:
+            repl = None
         # size=10 is hard-coded for now.
         latexmath2pdf.math2pdf(eqn,math_dir,prefix=prefix,num=i,size=1)
         # filename of rendered pdf in rst
         #fn = os.path.join(math_dir, "%s%.4d.pdf" % (prefix,i))
         fn = "%s%.4d.pdf" % (prefix,i)
-        replace = ".. image:: %s\n   :scale: 160%%\n   :align: center" % fn
+        opts_str = "\n".join(["   :%s: %s" % (k,v) for k,v in opts.iteritems()])
+        if repl:
+            replace = ".. |%s| image:: %s\n%s" % (repl,fn,opts_str)
+        else:
+            replace = ".. image:: %s\n%s" % (fn,opts_str)
         
         result = result.replace(f,replace)
 
