@@ -62,7 +62,7 @@ def __build_preamble(packages):
     preamble += "\pagestyle{empty}\n\\begin{document}\n"
     return preamble
 
-def __write_output(infile, outdir, workdir = '.', prefix = '', num = 0, size = 1):
+def __write_output_pdf(infile, outdir, workdir = '.', prefix = '', num = 0, size = 1):
     try:
         # Generate the DVI file
         latexcmd = 'latex -halt-on-error -output-directory %s %s'\
@@ -101,7 +101,47 @@ def __write_output(infile, outdir, workdir = '.', prefix = '', num = 0, size = 1
                 os.remove(tempfile)
 
 
-def math2pdf(eqs, outdir, packages = default_packages, prefix = '', num = 0, size = 1):
+def __write_output_png(infile, outdir, workdir = '.', prefix = '', num = 0, size = 1):
+    try:
+        # Generate the DVI file
+        latexcmd = 'latex -halt-on-error -output-directory %s %s'\
+                % (workdir, infile)
+        rc = os.system(latexcmd)
+        # Something bad happened, abort
+        if rc != 0:
+            raise Exception('latex error')
+
+        # Convert the DVI file to PNG's
+        dvifile = infile.replace('.tex', '.dvi')
+        outprefix = os.path.join(outdir, prefix)
+        dvicmd = "dvipng -T tight -x %.4f -D 600.0 -z 6 -bg transparent " % (size * 1000.0) + \
+                "-o %s%.4d.png %s" % (outprefix, num, dvifile)
+#        dvicmd = "dvips -E -x %.4f  "\
+#                "-o %s%d.eps %s" % (size * 1000.0, outprefix, num, dvifile)
+
+#        epsfile = infile.replace('.tex', '.eps')
+#        dvicmd = ("dvips -E -x %.4f  "\
+#                "-o %s %s") % (size * 1000.0, epsfile, dvifile)
+        print dvicmd
+        rc = os.system(dvicmd)
+        if rc != 0:
+            raise Exception('dvipng error')
+#        pdfcmd = "epspdf %s %s%.4d.pdf" % (epsfile,outprefix,num)
+#        rc = os.system(pdfcmd)
+#        if rc != 0:
+#            raise Exception('epspdf error')
+    finally:
+        # Cleanup temporaries
+        basefile = infile.replace('.tex', '')
+        tempext = [ '.aux', '.dvi', '.log' ]
+        for te in tempext:
+            tempfile = basefile + te
+            if os.path.exists(tempfile):
+                os.remove(tempfile)
+
+
+
+def math2img(eqs, outdir, packages = default_packages, prefix = '', num = 0, size = 1, fmt='pdf'):
     """
     Generate png images from $...$ style math environment equations.
 
@@ -128,7 +168,12 @@ def math2pdf(eqs, outdir, packages = default_packages, prefix = '', num = 0, siz
         with os.fdopen(fd, 'w+') as f:
             f.writelines(tex_lines)
 
-        __write_output(texfile, outdir, workdir, prefix, num, size)
+        if fmt=='pdf':
+            __write_output_pdf(texfile, outdir, workdir, prefix, num, size)
+        elif fmt=='png':
+            __write_output_png(texfile, outdir, workdir, prefix, num, size)
+        else:
+            raise "math2img: unknown format '%s'" % fmt
     finally:
         if os.path.exists(texfile):
             os.remove(texfile)
@@ -136,7 +181,7 @@ def math2pdf(eqs, outdir, packages = default_packages, prefix = '', num = 0, siz
 def usage():
     print """
 Usage: %s [OPTION] ... [FILE] ...
-Converts LaTeX math input to PNG.
+Converts LaTeX math input to PDF or PNG.
 
 Options are:
     -h, --help              Display this help information
@@ -148,6 +193,8 @@ Options are:
                             Default: no prefix
     --scale=SCALE           Scale the output by a factor of SCALE. 
                             Default: 1 = 100%%
+
+    --format=[pdf|png]
 
 Reads equations from the specified FILEs or standard input if none is given. One
 equation is allowed per line of text and each equation is rendered to a separate
@@ -163,6 +210,7 @@ def main():
                 'packages=',
                 'prefix=',
                 'scale=',
+                'format=',
                 ]
         opts, args = getopt.getopt(sys.argv[1:], shortopts, longopts)
     except getopt.GetoptError, err:
@@ -175,6 +223,8 @@ def main():
     prefix = ''
     outdir = os.getcwd()
     scale = 1.0
+    fmt = 'png'
+    
     for o, a in opts:
         if o in ("-h", "--help"):
             usage()
@@ -187,7 +237,9 @@ def main():
             outdir = os.path.abspath(a)
         if o in ("--scale"):
             scale = float(a)
-
+        if o in ("--format"):
+            fmt = str(a)
+            assert fmt in ("png","pdf"), "Format either pdf, or png"
 
     input = []
     if args:
@@ -202,7 +254,7 @@ def main():
         input = map(lambda i: i.strip('\n'), sys.stdin.readlines())
 
     # Engage!
-    math2pdf(input, outdir, packages, prefix, scale)
+    math2img("\n".join(input), outdir, packages, prefix, size=scale, fmt = fmt)
 
 if __name__ == '__main__':
     main()

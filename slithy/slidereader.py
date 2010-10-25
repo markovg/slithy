@@ -450,16 +450,19 @@ def process_latex(rst_content, math_dir, prefix):
                 
         else:
             repl = None
-        # size=10 is hard-coded for now.
-        latexmath2pdf.math2pdf(eqn,math_dir,prefix=prefix,num=i,size=1)
-        # filename of rendered pdf in rst
-        #fn = os.path.join(math_dir, "%s%.4d.pdf" % (prefix,i))
-        fn = "%s%.4d.pdf" % (prefix,i)
         opts_str = "\n".join(["   :%s: %s" % (k,v) for k,v in opts.iteritems()])
-        if repl:
-            replace = ".. |%s| image:: %s\n%s" % (repl,fn,opts_str)
-        else:
+        # size=1 is hard-coded for now.
+        if repl==None:
+            # use pdf, repl does not support pdf
+            latexmath2pdf.math2img(eqn,math_dir,prefix=prefix,num=i,size=1,fmt='pdf')
+            # filename of rendered pdf in rst
+            #fn = os.path.join(math_dir, "%s%.4d.pdf" % (prefix,i))
+            fn = "%s%.4d.pdf" % (prefix,i)
             replace = ".. image:: %s\n%s" % (fn,opts_str)
+        else:
+            latexmath2pdf.math2img(eqn,math_dir,prefix=prefix,num=i,size=0.4,fmt='png')
+            fn = "%s%.4d.png" % (prefix,i)
+            replace = ".. |%s| image:: %s\n%s" % (repl,fn,opts_str)
         
         result = result.replace(f,replace)
 
