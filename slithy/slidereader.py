@@ -530,7 +530,7 @@ def rst2ppm_cache(slide_num,slide_title, rst_content, style_file=None):
         old_slide_text_ltx = f.read()
         f.close()
 
-        if old_slide_text_ltx==slide_text_ltx:
+        if old_slide_text_ltx==slide_text_ltx and os.path.exists(rst_target):
             changed = False
         else:
             # write new content

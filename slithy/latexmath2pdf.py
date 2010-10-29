@@ -59,6 +59,7 @@ def __build_preamble(packages):
     preamble = '\documentclass{article}\n'
     for p in packages:
         preamble += "\usepackage{%s}\n" % p
+    preamble += "\usepackage[mathscr]{euscript}\n"
     preamble += "\pagestyle{empty}\n\\begin{document}\n"
     return preamble
 
