@@ -15,4 +15,4 @@ class cam:
     pass
 
 cam.body = get_camera().bottom(0.85)
-cam.title = get_camera().top(0.15)
+cam.title = get_camera().top(0.10)

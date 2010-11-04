@@ -1,5 +1,7 @@
 ---
 title: Content cam demo
+rst_style: ./rst2pdf_default.style
+background: white
 rst: |
 
   @ltx[repl=rho]@\rho(\tau,t)\,\,@ltx@
@@ -24,12 +26,6 @@ rst: |
   @ltx[scale=120%]@\mathscr{F}(\Delta t, t_s^{0}, t) = \exp \left(-\int_{0}^{\Delta t}{h(t_s^{0}+s, t+s) \mbox{d}s} \right).@ltx@ 
 
 content: |
-
-  i = Image(common.cam.body.top(0.5).right(0.3).inset(0.05), 'images/omap_buzas_2006_fudged.png', library='image_files',_alpha=1.0,stretch=True)
-  enter(i)
-
-  i = Image(common.cam.body, 'images/omap_buzas_2006_fudged.png', library='image_files',_alpha=0.1,stretch=True)
-  enter(i)
 
   i = Image(common.cam.title, 'images/omap_buzas_2006_fudged.png', library='image_files',_alpha=0.1,stretch=True)
   enter(i)
