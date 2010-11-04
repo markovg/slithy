@@ -1,0 +1,40 @@
+---
+title: Content cam demo
+rst: |
+
+  @ltx[repl=rho]@\rho(\tau,t)\,\,@ltx@
+  @ltx[repl=tmtau]@t-\tau\,\,@ltx@
+  
+  
+  * The renewal hazard, |rho|, the firing rate of the sub-population
+    which previously spiked at time |tmtau|:
+
+  @ltx[scale=130%]@\rho(\tau,t) & = & \frac{1}{\mathscr{W}(\tau,t-\tau)}\int_{-\infty}^{\infty}{h(t_s,t) \mathscr{F}(\tau,t_s-\tau,t-\tau) P^{\dagger}(t_s-\tau,t-\tau) \mbox{d}t_s}.@ltx@
+
+  * Whereby the standard homogeneous renewal result (Cox's law?) **even** holds for inhomogeneous Markov processes:
+
+  @ltx[scale=130%]@\rho(\tau,t) = \frac{f(\tau,t-\tau)}{\mathscr{W}(\tau,t-\tau)},@ltx@
+
+  * with the renewal survival:
+
+  @ltx[scale=130%]@\mathscr{W}(\tau,t) = \int_{-\infty}^{\infty} \mathscr{F}(\tau,t_s,t) P^{\dagger}(t_s,t) \mbox{d}t_s,@ltx@
+
+  * and again the general Markovian survival:
+
+  @ltx[scale=120%]@\mathscr{F}(\Delta t, t_s^{0}, t) = \exp \left(-\int_{0}^{\Delta t}{h(t_s^{0}+s, t+s) \mbox{d}s} \right).@ltx@ 
+
+content: |
+
+  i = Image(common.cam.body.top(0.5).right(0.3).inset(0.05), 'images/omap_buzas_2006_fudged.png', library='image_files',_alpha=1.0,stretch=True)
+  enter(i)
+
+  i = Image(common.cam.body, 'images/omap_buzas_2006_fudged.png', library='image_files',_alpha=0.1,stretch=True)
+  enter(i)
+
+  i = Image(common.cam.title, 'images/omap_buzas_2006_fudged.png', library='image_files',_alpha=0.1,stretch=True)
+  enter(i)
+
+
+
+
+
