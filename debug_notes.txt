@@ -1,0 +1,114 @@
+echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+
+ddd
+attach pid
+
+
+PyArg_ParseTuple( args, "O:new_image", &pilobj )
+
+diaimage.c: In function ‘image_new’:
+diaimage.c:256:5: warning: passing argument 3 of ‘PyString_AsStringAndSize’ from incompatible pointer type [enabled by default]
+     PyString_AsStringAndSize( datastrobj, (char**)&data, &i );
+     ^
+In file included from /usr/include/python2.7/Python.h:94:0,
+                 from sl_common.h:43,
+                 from diaimage.c:1:
+/usr/include/python2.7/stringobject.h:172:17: note: expected ‘Py_ssize_t *’ but argument is of type ‘int *’
+ PyAPI_FUNC(int) PyString_AsStringAndSize(
+
+
+
+
+
+
+
+
+dr_path.c: In function ‘draw_path_fill’:
+dr_path.c:213:2: warning: passing argument 3 of ‘gluTessCallback’ from incompatible pointer type [enabled by default]
+  gluTessCallback( tess, GLU_TESS_VERTEX, glVertex2dv );
+  ^
+In file included from /usr/include/GL/glew.h:1188:0,
+                 from sl_common.h:24,
+                 from dr_path.c:1:
+/usr/include/GL/glu.h:340:23: note: expected ‘_GLUfuncptr’ but argument is of type ‘void (*)(const GLdouble *)’
+ GLAPI void GLAPIENTRY gluTessCallback (GLUtesselator* tess, GLenum which, _GLUfuncptr CallBackFunc);
+                       ^
+dr_path.c:216:2: warning: passing argument 3 of ‘gluTessCallback’ from incompatible pointer type [enabled by default]
+  gluTessCallback( tess, GLU_TESS_BEGIN, glBegin );
+  ^
+In file included from /usr/include/GL/glew.h:1188:0,
+                 from sl_common.h:24,
+                 from dr_path.c:1:
+/usr/include/GL/glu.h:340:23: note: expected ‘_GLUfuncptr’ but argument is of type ‘void (*)(GLenum)’
+ GLAPI void GLAPIENTRY gluTessCallback (GLUtesselator* tess, GLenum which, _GLUfuncptr CallBackFunc);
+                       ^
+dr_path.c:218:2: warning: passing argument 3 of ‘gluTessCallback’ from incompatible pointer type [enabled by default]
+  gluTessCallback( tess, GLU_TESS_COMBINE, combine_cb );
+  ^
+In file included from /usr/include/GL/glew.h:1188:0,
+                 from sl_common.h:24,
+                 from dr_path.c:1:
+/usr/include/GL/glu.h:340:23: note: expected ‘_GLUfuncptr’ but argument is of type ‘void (*)(GLdouble *, void **, GLfloat *, GLdouble **)’
+ GLAPI void GLAPIENTRY gluTessCallback (GLUtesselator* tess, GLenum which, _GLUfuncptr CallBackFunc);
+
+
+
+dr_draw.c: In function ‘draw_polygon’:
+dr_draw.c:1212:5: warning: passing argument 3 of ‘gluTessCallback’ from incompatible pointer type [enabled by default]
+     gluTessCallback( tess, GLU_TESS_VERTEX, glVertex2dv );
+     ^
+In file included from /usr/include/GL/glew.h:1188:0,
+                 from sl_common.h:24,
+                 from dr_draw.c:1:
+/usr/include/GL/glu.h:340:23: note: expected ‘_GLUfuncptr’ but argument is of type ‘void (*)(const GLdouble *)’
+ GLAPI void GLAPIENTRY gluTessCallback (GLUtesselator* tess, GLenum which, _GLUfuncptr CallBackFunc);
+                       ^
+dr_draw.c:1213:5: warning: passing argument 3 of ‘gluTessCallback’ from incompatible pointer type [enabled by default]
+     gluTessCallback( tess, GLU_TESS_BEGIN, glBegin );
+     ^
+In file included from /usr/include/GL/glew.h:1188:0,
+                 from sl_common.h:24,
+                 from dr_draw.c:1:
+/usr/include/GL/glu.h:340:23: note: expected ‘_GLUfuncptr’ but argument is of type ‘void (*)(GLenum)’
+ GLAPI void GLAPIENTRY gluTessCallback (GLUtesselator* tess, GLenum which, _GLUfuncptr CallBackFunc);
+                       ^
+dr_draw.c:1215:5: warning: passing argument 3 of ‘gluTessCallback’ from incompatible pointer type [enabled by default]
+     gluTessCallback( tess, GLU_TESS_COMBINE, combine_cb );
+     ^
+In file included from /usr/include/GL/glew.h:1188:0,
+                 from sl_common.h:24,
+                 from dr_draw.c:1:
+/usr/include/GL/glu.h:340:23: note: expected ‘_GLUfuncptr’ but argument is of type ‘void (*)(GLdouble *, GLdouble **, GLfloat *, GLdouble **)’
+ GLAPI void GLAPIENTRY gluTessCallback (GLUtesselator* tess, GLenum which, _GLUfuncptr CallBackFunc);
+                       ^
+
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007f0b9bce280d in initdobj () at ob_opengl.c:48
+(gdb) 
+
+initdobj( void )
+{
+    PyObject* m;
+    
+    m = Py_InitModule( "dobj", OpenGLMethods );
+    
+    Tcl_StaticPackage( NULL, "Slsoggy", Slsoggy_Init, NULL );
+    
+}
+
+
+CFLAGS = -g -O2 -fPIC -DUSE_TCL_STUBS \
+
+
+
+import Tkinter as Tk
+root = Tk.Tk()
+from slithy import dobj
+root.tk.call( 'load', '', 'Slsoggy' )
+
+
+
+
+
+
