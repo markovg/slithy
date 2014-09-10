@@ -145,7 +145,7 @@ static PyObject* image_new( PyObject* self, PyObject* args )
     if ( PyString_Check( pilobj ) )
     {
 	// object is a string; assume it's a filename and attempt to create the PIL object ourselves;
-#if 1
+#if 0
 	printf( "fine, creating the PIL object myself\n" );
 #endif
 
@@ -190,7 +190,7 @@ static PyObject* image_new( PyObject* self, PyObject* args )
     }
     else
     {
-#if 1
+#if 0
 	printf( "attempting conversion to RGB\n" );
 #endif
 	
@@ -222,7 +222,7 @@ static PyObject* image_new( PyObject* self, PyObject* args )
 		      imageobj->w, imageobj->h );
 	goto error;
     }
-#if 1
+#if 0
     printf( "image is %d x %d\n", imageobj->w, imageobj->h );
 #endif
 
@@ -247,7 +247,7 @@ static PyObject* image_new( PyObject* self, PyObject* args )
 	}
     }
 
-#if 1
+#if 0
     printf( "texture must be %d x %d\n", imageobj->tw, imageobj->th );
 #endif
 

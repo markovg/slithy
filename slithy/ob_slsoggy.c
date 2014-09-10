@@ -141,7 +141,7 @@ int Slsoggy_Init( Tcl_Interp* interp )
      }
   */
 #if 1
-    printf( "-- slsoggy_init\n" );
+    printf( "-- slsoggy_init2\n" );
 #endif
 
      if (Tcl_PkgProvide( interp, "Slsoggy", SOGGY_VERSION )== TCL_ERROR) {
