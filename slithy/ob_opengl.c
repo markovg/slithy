@@ -45,6 +45,7 @@ initdobj( void )
 
     m = Py_InitModule( "dobj", OpenGLMethods );
 
+    printf( "-- slsoggy_static2\n" );
     Tcl_StaticPackage( NULL, "Slsoggy", Slsoggy_Init, NULL );
 
 }

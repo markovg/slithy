@@ -135,13 +135,21 @@ BOOL WINAPI DllMain( HINSTANCE hInst, DWORD dwReason, LPVOID reserved )
 
 int Slsoggy_Init( Tcl_Interp* interp )
 {
-    Tcl_PkgProvide( interp, "Slsoggy", SOGGY_VERSION );
+  /*
+     if (Tcl_InitStubs(interp, TCL_VERSION, 0) == NULL) {
+         return TCL_ERROR;
+     }
+  */
+#if 1
+    printf( "-- slsoggy_init\n" );
+#endif
+
+     if (Tcl_PkgProvide( interp, "Slsoggy", SOGGY_VERSION )== TCL_ERROR) {
+         return TCL_ERROR;
+     }
     
     Tcl_CreateObjCommand( interp, "Slsoggy::soggy", SoggyCmd, NULL, NULL );
 
-#if 0
-    printf( "-- slsoggy_init\n" );
-#endif
     
     return TCL_OK;
 }

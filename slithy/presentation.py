@@ -31,6 +31,7 @@ try:
 except ImportError:
     video_available = 0
 
+    
 class PresentationViewer:
     def add_bookmark( self, name ):
         self.bookmarks.append( (str(name), len(self.segments)) )
@@ -110,30 +111,30 @@ class PresentationViewer:
             if not os.path.exists("quicktime-frames"):
                 os.mkdir("quicktime-frames")
 
-        try:
-            if visual:
-                d = system.parse_visual_arg( visual )
-            else:
-                d = {}
+        #try:
+        if visual:
+            d = system.parse_visual_arg( visual )
+        else:
+            d = {}
 
-            self.s = SlSoggy.Soggy( root, width = screen_size[0], height = screen_size[1],
-                                    init = dobj.init, reshape = self.reshape, redraw = self.redraw,
-                                    **d )
-            soggy_xid = self.s.winfo_id()
-            # Force SDL to write on our drawing area
-            print 'SDL_WINDOWID ', str(soggy_xid)
-            #os.putenv('SDL_WINDOWID', str(soggy_xid))
-            os.environ['SDL_WINDOWID'] = str(soggy_xid)
-            print 'SDL_WINDOWID ', os.getenv('SDL_WINDOWID')
+        self.s = SlSoggy.Soggy( root, width = screen_size[0], height = screen_size[1],
+                                init = dobj.init, reshape = self.reshape, redraw = self.redraw,
+                                **d )
+        soggy_xid = self.s.winfo_id()
+        # Force SDL to write on our drawing area
+        print 'SDL_WINDOWID ', str(soggy_xid)
+        #os.putenv('SDL_WINDOWID', str(soggy_xid))
+        os.environ['SDL_WINDOWID'] = str(soggy_xid)
+        print 'SDL_WINDOWID ', os.getenv('SDL_WINDOWID')
 
-            # pygame needed for movie support
-            pygame.init()
-            pygame.display.set_mode(screen_size, 0, 0)
+        # pygame needed for movie support
+        pygame.init()
+        pygame.display.set_mode(screen_size, 0, 0)
 
 
-        except (Tk.TclError, ValueError), msg:
-            print msg
-            sys.exit(1)
+        #except (Tk.TclError, ValueError), msg:
+        #    print msg
+        #    sys.exit(1)
 
         self.show_soggy_visual()
 

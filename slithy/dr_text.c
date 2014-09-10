@@ -142,7 +142,7 @@ FUNC_PY_KEYWD( draw_diatext )
     PyObject* nodrawobj = NULL;
     
     int j, k, n;
-    int textstrlen;
+    Py_ssize_t textstrlen;
     char vert_anchor, horz_anchor;
     double bxmin, bxmax, bymin, bymax;
     double xpos, ypos;

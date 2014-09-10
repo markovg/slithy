@@ -132,6 +132,7 @@ static PyObject* image_new( PyObject* self, PyObject* args )
     unsigned char* data;
     char* modestr;
     int i;
+    Py_ssize_t size;
     int pixelsize;
     static PyObject* PILmodule = NULL;
     PyObject* oldpilobj;
@@ -144,7 +145,7 @@ static PyObject* image_new( PyObject* self, PyObject* args )
     if ( PyString_Check( pilobj ) )
     {
 	// object is a string; assume it's a filename and attempt to create the PIL object ourselves;
-#if 0
+#if 1
 	printf( "fine, creating the PIL object myself\n" );
 #endif
 
@@ -189,7 +190,7 @@ static PyObject* image_new( PyObject* self, PyObject* args )
     }
     else
     {
-#if 0
+#if 1
 	printf( "attempting conversion to RGB\n" );
 #endif
 	
@@ -221,7 +222,7 @@ static PyObject* image_new( PyObject* self, PyObject* args )
 		      imageobj->w, imageobj->h );
 	goto error;
     }
-#if 0
+#if 1
     printf( "image is %d x %d\n", imageobj->w, imageobj->h );
 #endif
 
@@ -246,17 +247,17 @@ static PyObject* image_new( PyObject* self, PyObject* args )
 	}
     }
 
-#if 0
+#if 1
     printf( "texture must be %d x %d\n", imageobj->tw, imageobj->th );
 #endif
 
     datastrobj = PyObject_CallMethod( pilobj, "tostring", NULL );
     if ( datastrobj == NULL )
 	goto error;
-    PyString_AsStringAndSize( datastrobj, (char**)&data, &i );
-    if ( i != imageobj->w * imageobj->h * pixelsize )
+    PyString_AsStringAndSize( datastrobj, (char**)&data, &size );
+    if ( size != imageobj->w * imageobj->h * pixelsize )
     {
-	PyErr_Format( ImageError, "got %d bytes of image data; expected %d", i,
+      PyErr_Format( ImageError, "got %d bytes of image data; expected %d", (int)size,
 		      imageobj->w * imageobj->h * pixelsize );
 	goto error;
     }

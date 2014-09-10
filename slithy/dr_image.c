@@ -13,7 +13,7 @@ static int parse_image_anchor( PyObject* anchor, double* ax, double* ay )
     else if ( PyString_Check( anchor ) )
     {
 	char* str;
-	int len;
+	Py_ssize_t len;
 
 	if ( PyString_AsStringAndSize( anchor, &str, &len ) == -1 )
 	    return -1;
