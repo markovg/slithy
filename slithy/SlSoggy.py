@@ -24,9 +24,21 @@ class Soggy(Tkinter.Widget):
                 loadee = None
         else:
             loadee = master
-        loadee.tk.call( 'load', '', 'Slsoggy' )
-        Tkinter.Widget.__init__(self, master, 'Slsoggy::soggy', cnf, kw)
-
+        #loadee.tk.call( 'load', '', 'Slsoggy' )
+        try:
+            Tkinter.Widget.__init__(self, master, 'Slsoggy::soggy', cnf, kw)
+        except Tkinter.TclError, e:
+            # activate Tkinter hook
+            try:
+                import dobj
+                try:
+                    dobj.tkinit(loadee.tk.interpaddr(), 1)
+                except AttributeError:
+                    dobj.tkinit(id(loadee.tk), 0)
+                Tkinter.Widget.__init__(self, master, 'Slsoggy::soggy', cnf, kw)
+            except (ImportError, AttributeError, Tkinter.TclError):
+                raise RuntimeError, "configuration problem; cannot attach Slsoggy to Tkinter"
+        print "Success. Past that."
     def redraw( self, *dummy ):
         self.tk.call( self._w, 'redraw' )
         

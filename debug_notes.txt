@@ -107,7 +107,7 @@ root = Tk.Tk()
 from slithy import dobj
 root.tk.call( 'load', '', 'Slsoggy' )
 
-
+root.tk.call('package', 'require', 'Slsoggy')
 
 
 

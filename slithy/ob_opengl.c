@@ -9,6 +9,7 @@
 #endif
 
 static PyObject* opengl_init( PyObject* self, PyObject* args );
+static PyObject* opengl_tkinit( PyObject* self, PyObject* args );
 static PyObject* opengl_reshape( PyObject* self, PyObject* args );
 static PyObject* opengl_startdraw( PyObject* self, PyObject* args );
 static PyObject* opengl_enddraw( PyObject* self, PyObject* args );
@@ -16,7 +17,7 @@ static PyObject* opengl_blank( PyObject* self, PyObject* args );
 static PyObject* opengl_unproject( PyObject* self, PyObject* args );
 static PyObject* opengl_notify( PyObject* self, PyObject* args );
 
-int Slsoggy_Init( Tcl_Interp* );
+extern int Slsoggy_Init( Tcl_Interp* );
 void SoggySwap( void );
 
 double window_aspect = 1.0;
@@ -25,6 +26,7 @@ int window_width, window_height;
 PyObject* glcamera;
 
 static PyMethodDef OpenGLMethods[] = {
+    { "tkinit", (PyCFunction)opengl_tkinit, METH_VARARGS },
     { "init", opengl_init, METH_VARARGS },
     { "reshape", opengl_reshape, METH_VARARGS },
     { "startdraw", opengl_startdraw, METH_VARARGS },
@@ -46,9 +48,44 @@ initdobj( void )
     m = Py_InitModule( "dobj", OpenGLMethods );
 
     printf( "-- slsoggy_init1\n" );
-    Tcl_StaticPackage( NULL, "Slsoggy", Slsoggy_Init, NULL );
+    Tcl_StaticPackage( NULL, "Slsoggy", Slsoggy_Init, Slsoggy_Init );
 
 }
+/* copied from _tkinter.c (this isn't as bad as it may seem: for new                                                                                                               
+   versions, we use _tkinter's interpaddr hook instead, and all older                                                                                                              
+   versions use this structure layout) */
+
+typedef struct {
+    PyObject_HEAD
+    Tcl_Interp* interp;
+} TkappObject;
+
+
+static PyObject* opengl_tkinit(PyObject* self, PyObject* args)
+{
+    Tcl_Interp* interp;
+
+    long arg;
+    int is_interp;
+    if (!PyArg_ParseTuple(args, "li", &arg, &is_interp))
+        return NULL;
+
+    if (is_interp)
+        interp = (Tcl_Interp*) arg;
+    else {
+        TkappObject* app;
+        /* Do it the hard way.  This will break if the TkappObject layout changes */
+        app = (TkappObject*) arg;
+        interp = app->interp;
+    }
+
+    /* This will bomb if interp is invalid... */
+    Slsoggy_Init(interp);
+
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+
 
 static PyObject* opengl_init( PyObject* self, PyObject* args )
 {

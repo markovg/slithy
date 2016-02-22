@@ -1209,10 +1209,10 @@ static FUNC_PY( draw_polygon )
 	tess = gluNewTess();
     }
     
-    gluTessCallback( tess, GLU_TESS_VERTEX, glVertex2dv );
-    gluTessCallback( tess, GLU_TESS_BEGIN, glBegin );
+    gluTessCallback( tess, GLU_TESS_VERTEX, (_GLUfuncptr)glVertex2dv );
+    gluTessCallback( tess, GLU_TESS_BEGIN, (_GLUfuncptr)glBegin );
     gluTessCallback( tess, GLU_TESS_END, glEnd );
-    gluTessCallback( tess, GLU_TESS_COMBINE, combine_cb );
+    gluTessCallback( tess, GLU_TESS_COMBINE, (_GLUfuncptr)combine_cb );
     gluTessProperty( tess, GLU_TESS_BOUNDARY_ONLY, GL_FALSE );
 
     gluTessBeginPolygon( tess, NULL );
